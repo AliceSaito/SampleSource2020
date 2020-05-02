@@ -1,0 +1,94 @@
+//
+//  TopViewController.swift
+//  SampleSource2020
+//
+//  Created by 長内幸太郎 on 2020/05/01.
+//
+
+import UIKit
+
+class TopViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var cellDatas: [CellData] {
+        return [
+            CellData(identifier: "AboutButton", title: "UIButtonについて", subTitle: "")
+        ]
+    }
+    
+    /// 画面作成時に1回だけ呼ばれる
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // nothing todo
+    }
+    
+    /// 画面が表示された時に毎回呼ばれる（呼ばれないときも一部ある）
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)  // お決まりのコード
+        // nothing todo
+    }
+    
+    /// 画面が表示された時に毎回呼ばれる
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // nothing todo
+    }
+
+}
+
+extension TopViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    /// UITableViewDataSourceで定義されている
+    /// セルの数を返す
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return cellDatas.count
+    }
+    
+    /// UITableViewDataSourceで定義されている
+    /// IndexPath番目のセルを返す
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // tableViewに紐付いているCellを生成する（リサイクルされることもあり、前に使ったセルが返ってくることもある）
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TopTableViewCell", for: indexPath) as! TopTableViewCell
+        
+        // indexPath.row番目のデータを1個だけ取り出す
+        let cellData = cellDatas[indexPath.row]
+        
+        // データをセットする
+        cell.titleLabel.text = cellData.title
+        cell.subTitleLabel.text = cellData.subTitle
+        
+        return cell
+    }
+    
+    /// UITableViewDelegateで定義されている
+    /// セルをタップした時に呼ばれる
+    /// 呼ばれた位置はindexParhで返ってくる（セクション:indexPath.sectioin, 行:indexPath.raw）
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // セレクト状態（灰色）をすぐ解除する
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        // indexPath.row番目のデータを1個だけ取り出す
+        let cellData = cellDatas[indexPath.row]
+        
+        if cellData.identifier == "AboutButton" {
+            // 画面遷移させる
+            self.performSegue(withIdentifier: "AboutButton", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
+}
+
+
+// ---------------------------------------------------- //
+
+/// セルのデータ
+struct CellData {
+    var identifier: String  // 識別子
+    var title: String
+    var subTitle: String
+}

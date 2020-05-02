@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XkA-vL-3e1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--UIButtonについて-->
+        <scene sceneID="pIl-ad-t88">
+            <objects>
+                <viewController title="UIButtonについて" id="XkA-vL-3e1" customClass="AboutButtonViewController" customModule="SampleSource2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w6M-EP-E3C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AboutButtonViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqt-mj-sGR">
+                                <rect key="frame" x="10" y="54" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QhW-3t-vIf">
+                                <rect key="frame" x="10" y="94.5" width="394" height="70"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zJp-5y-igf">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAD-mj-EzU">
+                                                <rect key="frame" x="0.0" y="0.0" width="102" height="30"/>
+                                                <state key="normal" title="TouchUpInside"/>
+                                                <connections>
+                                                    <action selector="button1WasTapped:" destination="XkA-vL-3e1" eventType="touchUpInside" id="z85-2Z-C0S"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="😑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhW-3I-aLI">
+                                                <rect key="frame" x="112" y="0.0" width="21" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普通のボタン" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7R-pv-TTL">
+                                                <rect key="frame" x="143" y="0.0" width="251" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gvu-vD-Kfm">
+                                        <rect key="frame" x="0.0" y="40" width="394" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lh1-VG-BAv">
+                                                <rect key="frame" x="0.0" y="0.0" width="105" height="30"/>
+                                                <state key="normal" title="いろんなAction"/>
+                                                <connections>
+                                                    <action selector="button2TouchDown:" destination="XkA-vL-3e1" eventType="touchDown" id="qOf-mE-U0D"/>
+                                                    <action selector="button2TouchDragInside:" destination="XkA-vL-3e1" eventType="touchDragInside" id="cac-XC-F7C"/>
+                                                    <action selector="button2TouchDragOutside:" destination="XkA-vL-3e1" eventType="touchDragOutside" id="U6H-rY-dVY"/>
+                                                    <action selector="button2TouchUpInside:" destination="XkA-vL-3e1" eventType="touchUpInside" id="lWE-Jv-Wyl"/>
+                                                    <action selector="button2TouchUpOutside:" destination="XkA-vL-3e1" eventType="touchUpOutside" id="rie-jV-MoV"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="😑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiM-uN-CeN">
+                                                <rect key="frame" x="115" y="0.0" width="21" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いろんなAction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XD-pq-v7y">
+                                                <rect key="frame" x="146" y="0.0" width="248" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qqt-mj-sGR" firstAttribute="leading" secondItem="ksh-Me-PHR" secondAttribute="leading" constant="10" id="0OQ-6x-zOR"/>
+                            <constraint firstItem="QhW-3t-vIf" firstAttribute="leading" secondItem="ksh-Me-PHR" secondAttribute="leading" constant="10" id="590-ZG-bF3"/>
+                            <constraint firstItem="ksh-Me-PHR" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="QhW-3t-vIf" secondAttribute="bottom" id="71Q-12-lty"/>
+                            <constraint firstItem="ksh-Me-PHR" firstAttribute="trailing" secondItem="qqt-mj-sGR" secondAttribute="trailing" constant="10" id="R6W-3P-NJA"/>
+                            <constraint firstItem="QhW-3t-vIf" firstAttribute="top" secondItem="qqt-mj-sGR" secondAttribute="bottom" constant="20" id="hVV-wO-gYi"/>
+                            <constraint firstItem="qqt-mj-sGR" firstAttribute="top" secondItem="ksh-Me-PHR" secondAttribute="top" constant="10" id="rZp-VP-vnO"/>
+                            <constraint firstItem="ksh-Me-PHR" firstAttribute="trailing" secondItem="QhW-3t-vIf" secondAttribute="trailing" constant="10" id="vLt-Ne-aUO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ksh-Me-PHR"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="AAD-mj-EzU" id="adb-ZY-b7R"/>
+                        <outlet property="button2" destination="Lh1-VG-BAv" id="gvq-l6-bLm"/>
+                        <outlet property="descriptionLabel1" destination="N7R-pv-TTL" id="mBK-RG-5Wk"/>
+                        <outlet property="descriptionLabel2" destination="4XD-pq-v7y" id="d2u-KX-Fbu"/>
+                        <outlet property="iconLabel1" destination="WhW-3I-aLI" id="5TF-Jc-R4A"/>
+                        <outlet property="iconLabel2" destination="tiM-uN-CeN" id="dPF-i6-JIA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10j-ps-5Qd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113" y="130"/>
+        </scene>
+    </scenes>
+</document>
