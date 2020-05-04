@@ -33,7 +33,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" tag="2" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dot-2y-DE2">
-                                                    <rect key="frame" x="10" y="5" width="363" height="30"/>
+                                                    <rect key="frame" x="10" y="10" width="363" height="30"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlV-vt-ZpW">
                                                             <rect key="frame" x="0.0" y="0.0" width="363" height="18"/>
@@ -52,9 +52,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="dot-2y-DE2" firstAttribute="leading" secondItem="V9q-41-ZGk" secondAttribute="leading" constant="10" id="EDO-Ho-TDI"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dot-2y-DE2" secondAttribute="bottom" constant="5" id="LhV-P3-Ufp"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dot-2y-DE2" secondAttribute="bottom" constant="10" id="LhV-P3-Ufp"/>
                                                 <constraint firstAttribute="trailing" secondItem="dot-2y-DE2" secondAttribute="trailing" constant="10" id="TZE-bL-zYN"/>
-                                                <constraint firstItem="dot-2y-DE2" firstAttribute="top" secondItem="V9q-41-ZGk" secondAttribute="top" constant="5" id="bt1-Cf-yxf"/>
+                                                <constraint firstItem="dot-2y-DE2" firstAttribute="top" secondItem="V9q-41-ZGk" secondAttribute="top" constant="10" id="bt1-Cf-yxf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -81,6 +81,7 @@
                     <connections>
                         <outlet property="tableView" destination="sNE-QR-ddt" id="Tje-51-84i"/>
                         <segue destination="DlI-Oo-uf6" kind="show" identifier="AboutButton" id="ahy-My-HML"/>
+                        <segue destination="NMn-lH-iwi" kind="show" identifier="AboutClass" id="CK6-Br-Nuc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uiy-kL-m7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -95,7 +96,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rge-Ke-OHk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113" y="-76"/>
+            <point key="canvasLocation" x="-99" y="-113"/>
+        </scene>
+        <!--AboutClass-->
+        <scene sceneID="Yi2-sB-4Gm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AboutClass" id="NMn-lH-iwi" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wZn-Sj-YjP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvY-hu-9Y4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-99" y="-59"/>
         </scene>
     </scenes>
 </document>

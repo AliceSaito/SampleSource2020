@@ -13,7 +13,8 @@ class TopViewController: UIViewController {
     
     var cellDatas: [CellData] {
         return [
-            CellData(identifier: "AboutButton", title: "UIButtonについて", subTitle: "")
+            CellData(identifier: "AboutButton", title: "UIButtonについて", subTitle: ""),
+            CellData(identifier: "AboutClass", title: "Classの基本について", subTitle: "")
         ]
     }
     
@@ -75,6 +76,9 @@ extension TopViewController: UITableViewDataSource, UITableViewDelegate {
         if cellData.identifier == "AboutButton" {
             // 画面遷移させる
             self.performSegue(withIdentifier: "AboutButton", sender: nil)
+        }
+        if cellData.identifier == "AboutClass" {
+            self.performSegue(withIdentifier: "AboutClass", sender: nil)
         }
     }
     

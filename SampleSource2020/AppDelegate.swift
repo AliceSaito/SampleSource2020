@@ -14,6 +14,9 @@
 // Xcode11でアプリを作るとこの中身がガラッと変わるので注意！
 // まずはXcode10でアプリを作った方で覚えよう（このアプリはXcode10で作った）
 
+// 他のclassからAppDelegateを取得するには
+// let appDelegate: AppDelegate = UIApplication.shared.delegate as AppDelegate
+
 import UIKit
 
 @UIApplicationMain
