@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sam-XG-Puz">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sam-XG-Puz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,31 +17,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SEb-CS-k17">
-                                <rect key="frame" x="20" y="125" width="374" height="30"/>
+                                <rect key="frame" x="20" y="225" width="374" height="34"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIDatePickerの設定していないUITextField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6k-Ya-mYk">
-                                <rect key="frame" x="20" y="94" width="323" height="21"/>
+                                <rect key="frame" x="20" y="194" width="323" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIDatePickerの設定をしたUITextField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Imv-bQ-VbE">
-                                <rect key="frame" x="20" y="205" width="288.5" height="21"/>
+                                <rect key="frame" x="20" y="309" width="288.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zfd-zB-0bD">
-                                <rect key="frame" x="20" y="246" width="374" height="30"/>
+                                <rect key="frame" x="20" y="350" width="374" height="34"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AboutDatePickerViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAm-Om-GAc">
+                                <rect key="frame" x="20" y="94" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -52,11 +54,14 @@
                             <constraint firstItem="r1a-0B-MUh" firstAttribute="trailing" secondItem="zfd-zB-0bD" secondAttribute="trailing" constant="20" id="ERd-BK-PYF"/>
                             <constraint firstItem="SEb-CS-k17" firstAttribute="leading" secondItem="r1a-0B-MUh" secondAttribute="leading" constant="20" id="HeJ-mJ-pYL"/>
                             <constraint firstItem="zfd-zB-0bD" firstAttribute="top" secondItem="Imv-bQ-VbE" secondAttribute="bottom" constant="20" id="Npi-Hx-cZt"/>
+                            <constraint firstAttribute="trailing" secondItem="IAm-Om-GAc" secondAttribute="trailing" constant="20" id="PDl-RX-apa"/>
                             <constraint firstItem="Imv-bQ-VbE" firstAttribute="top" secondItem="SEb-CS-k17" secondAttribute="bottom" constant="50" id="Reb-hr-LO2"/>
                             <constraint firstItem="r1a-0B-MUh" firstAttribute="trailing" secondItem="SEb-CS-k17" secondAttribute="trailing" constant="20" id="Y2Q-V0-O13"/>
+                            <constraint firstItem="IAm-Om-GAc" firstAttribute="leading" secondItem="r0U-7F-nbL" secondAttribute="leading" constant="20" id="a53-tY-4O9"/>
                             <constraint firstItem="SEb-CS-k17" firstAttribute="top" secondItem="a6k-Ya-mYk" secondAttribute="bottom" constant="10" id="aCO-Uw-hSK"/>
-                            <constraint firstItem="a6k-Ya-mYk" firstAttribute="top" secondItem="r1a-0B-MUh" secondAttribute="top" constant="50" id="bbo-2E-Gxs"/>
+                            <constraint firstItem="a6k-Ya-mYk" firstAttribute="top" secondItem="r1a-0B-MUh" secondAttribute="top" constant="150" id="bbo-2E-Gxs"/>
                             <constraint firstItem="a6k-Ya-mYk" firstAttribute="leading" secondItem="r1a-0B-MUh" secondAttribute="leading" constant="20" id="f7c-zC-Ibu"/>
+                            <constraint firstItem="IAm-Om-GAc" firstAttribute="top" secondItem="r1a-0B-MUh" secondAttribute="top" constant="50" id="hC5-Tz-qqA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="r1a-0B-MUh"/>
                     </view>

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ywd-Pv-Ski">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ywd-Pv-Ski">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="eh3-0f-7YL" userLabel="FooterView">
-                                    <rect key="frame" x="0.0" y="131" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="159" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
@@ -31,20 +29,20 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z0c-qf-PbM" id="V9q-41-ZGk">
-                                            <rect key="frame" x="0.0" y="0.0" width="376" height="102.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="103"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" tag="2" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dot-2y-DE2">
-                                                    <rect key="frame" x="10" y="10" width="356" height="30"/>
+                                                    <rect key="frame" x="10" y="10" width="363" height="30"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlV-vt-ZpW">
-                                                            <rect key="frame" x="0.0" y="0.0" width="356" height="18"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="363" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXn-nW-57V">
-                                                            <rect key="frame" x="0.0" y="18" width="356" height="12"/>
+                                                            <rect key="frame" x="0.0" y="18" width="363" height="12"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -85,6 +83,7 @@
                         <segue destination="DlI-Oo-uf6" kind="show" identifier="AboutButton" id="ahy-My-HML"/>
                         <segue destination="NMn-lH-iwi" kind="show" identifier="AboutClass" id="CK6-Br-Nuc"/>
                         <segue destination="SzI-cr-8Kz" kind="show" identifier="AboutDatePicker" id="XIw-IB-rWi"/>
+                        <segue destination="ZPk-79-Umx" kind="show" identifier="AboutFunction" id="jZu-gM-y7A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uiy-kL-m7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -99,7 +98,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rge-Ke-OHk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-99" y="-113"/>
+            <point key="canvasLocation" x="-101" y="-100"/>
         </scene>
         <!--AboutClass-->
         <scene sceneID="Yi2-sB-4Gm">
@@ -109,7 +108,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uvY-hu-9Y4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-99" y="-59"/>
+            <point key="canvasLocation" x="-107" y="-56"/>
         </scene>
         <!--AboutDatePicker-->
         <scene sceneID="fmp-W3-8zO">
@@ -118,6 +117,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6k-LX-8Gz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-82" y="-14"/>
+        </scene>
+        <!--AboutFunction-->
+        <scene sceneID="i30-P6-ffC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AboutFunction" id="ZPk-79-Umx" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ape-p9-9yV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NHW-3k-Fph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93" y="27"/>
         </scene>
     </scenes>
 </document>

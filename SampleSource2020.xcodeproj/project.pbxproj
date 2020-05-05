@@ -22,6 +22,8 @@
 		1EB411AD245D4A1B003A13EF /* AboutButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB411AC245D4A1B003A13EF /* AboutButtonViewController.swift */; };
 		1EBA5CC72460242800C8FB5B /* AboutDatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EBA5CC62460242800C8FB5B /* AboutDatePicker.storyboard */; };
 		1EBA5CC92460243800C8FB5B /* AboutDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA5CC82460243800C8FB5B /* AboutDatePickerViewController.swift */; };
+		1EFD4F6F2461022E004ED092 /* AboutFunction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFD4F6E2461022E004ED092 /* AboutFunction.storyboard */; };
+		1EFD4F7124610240004ED092 /* AboutFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		1EB411AC245D4A1B003A13EF /* AboutButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutButtonViewController.swift; sourceTree = "<group>"; };
 		1EBA5CC62460242800C8FB5B /* AboutDatePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutDatePicker.storyboard; sourceTree = "<group>"; };
 		1EBA5CC82460243800C8FB5B /* AboutDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDatePickerViewController.swift; sourceTree = "<group>"; };
+		1EFD4F6E2461022E004ED092 /* AboutFunction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutFunction.storyboard; sourceTree = "<group>"; };
+		1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFunctionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,7 @@
 		1E999C20245D3FBD00E545E8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1EFD4F6D24608D02004ED092 /* AboutFunction */,
 				1EBA5CC52460240500C8FB5B /* AboutDatePicker */,
 				1E868D5F245E58BC001B183B /* AboutClass */,
 				1EB411A9245D49B7003A13EF /* AboutButton */,
@@ -187,6 +192,15 @@
 				1EBA5CC82460243800C8FB5B /* AboutDatePickerViewController.swift */,
 			);
 			path = AboutDatePicker;
+			sourceTree = "<group>";
+		};
+		1EFD4F6D24608D02004ED092 /* AboutFunction */ = {
+			isa = PBXGroup;
+			children = (
+				1EFD4F6E2461022E004ED092 /* AboutFunction.storyboard */,
+				1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */,
+			);
+			path = AboutFunction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EFD4F6F2461022E004ED092 /* AboutFunction.storyboard in Resources */,
 				1EBA5CC72460242800C8FB5B /* AboutDatePicker.storyboard in Resources */,
 				1EB411AB245D49DE003A13EF /* AboutButton.storyboard in Resources */,
 				1E868D67245E5C2E001B183B /* AboutClass.storyboard in Resources */,
@@ -329,6 +344,7 @@
 				1E91CCFC245BC2F500CBD37B /* AppDelegate.swift in Sources */,
 				1E999C23245D405C00E545E8 /* TopTableViewCell.swift in Sources */,
 				1E868D66245E5C2E001B183B /* AppClassViewController.swift in Sources */,
+				1EFD4F7124610240004ED092 /* AboutFunctionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
