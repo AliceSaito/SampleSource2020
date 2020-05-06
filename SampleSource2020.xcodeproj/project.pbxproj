@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E03080024624A8F007F0824 /* AboutFunction2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E0307FF24624A8F007F0824 /* AboutFunction2.storyboard */; };
+		1E03080224624A99007F0824 /* AboutFunction2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E03080124624A99007F0824 /* AboutFunction2ViewController.swift */; };
 		1E868D66245E5C2E001B183B /* AppClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E868D64245E5C2E001B183B /* AppClassViewController.swift */; };
 		1E868D67245E5C2E001B183B /* AboutClass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E868D65245E5C2E001B183B /* AboutClass.storyboard */; };
 		1E91CCFC245BC2F500CBD37B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91CCFB245BC2F500CBD37B /* AppDelegate.swift */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E0307FF24624A8F007F0824 /* AboutFunction2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutFunction2.storyboard; sourceTree = "<group>"; };
+		1E03080124624A99007F0824 /* AboutFunction2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFunction2ViewController.swift; sourceTree = "<group>"; };
 		1E868D64245E5C2E001B183B /* AppClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppClassViewController.swift; sourceTree = "<group>"; };
 		1E868D65245E5C2E001B183B /* AboutClass.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutClass.storyboard; sourceTree = "<group>"; };
 		1E91CCF8245BC2F500CBD37B /* SampleSource2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleSource2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +98,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E0307FE24624A7D007F0824 /* AboutFunction2 */ = {
+			isa = PBXGroup;
+			children = (
+				1E0307FF24624A8F007F0824 /* AboutFunction2.storyboard */,
+				1E03080124624A99007F0824 /* AboutFunction2ViewController.swift */,
+			);
+			path = AboutFunction2;
+			sourceTree = "<group>";
+		};
 		1E868D5F245E58BC001B183B /* AboutClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +170,7 @@
 		1E999C20245D3FBD00E545E8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1E0307FE24624A7D007F0824 /* AboutFunction2 */,
 				1EFD4F6D24608D02004ED092 /* AboutFunction */,
 				1EBA5CC52460240500C8FB5B /* AboutDatePicker */,
 				1E868D5F245E58BC001B183B /* AboutClass */,
@@ -314,6 +328,7 @@
 				1E91CD06245BC2F700CBD37B /* LaunchScreen.storyboard in Resources */,
 				1E91CD03245BC2F700CBD37B /* Assets.xcassets in Resources */,
 				1E91CD01245BC2F500CBD37B /* Main.storyboard in Resources */,
+				1E03080024624A8F007F0824 /* AboutFunction2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +356,7 @@
 				1EBA5CC92460243800C8FB5B /* AboutDatePickerViewController.swift in Sources */,
 				1EB411AD245D4A1B003A13EF /* AboutButtonViewController.swift in Sources */,
 				1E91CCFE245BC2F500CBD37B /* TopViewController.swift in Sources */,
+				1E03080224624A99007F0824 /* AboutFunction2ViewController.swift in Sources */,
 				1E91CCFC245BC2F500CBD37B /* AppDelegate.swift in Sources */,
 				1E999C23245D405C00E545E8 /* TopTableViewCell.swift in Sources */,
 				1E868D66245E5C2E001B183B /* AppClassViewController.swift in Sources */,
