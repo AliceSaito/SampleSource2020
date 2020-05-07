@@ -85,6 +85,7 @@
                         <segue destination="SzI-cr-8Kz" kind="show" identifier="AboutDatePicker" id="XIw-IB-rWi"/>
                         <segue destination="ZPk-79-Umx" kind="show" identifier="AboutFunction" id="jZu-gM-y7A"/>
                         <segue destination="B0R-1W-6nD" kind="show" identifier="AboutFunction2" id="c2U-9G-Cav"/>
+                        <segue destination="Vac-md-jfo" kind="show" identifier="AboutFunction3" id="m8f-cD-VLI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uiy-kL-m7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -138,6 +139,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cOD-ME-NE3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-89" y="67"/>
+        </scene>
+        <!--AboutFunction3-->
+        <scene sceneID="IkQ-UM-Rs2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AboutFunction3" id="Vac-md-jfo" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NkQ-np-HxW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZF3-Ci-KXV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-88" y="105"/>
         </scene>
     </scenes>
 </document>
