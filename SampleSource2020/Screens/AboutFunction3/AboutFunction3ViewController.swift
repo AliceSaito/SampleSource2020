@@ -16,6 +16,11 @@ class AboutFunction3ViewController: UIViewController {
     // ヒント：URL(string:)
     // viewDidLoadでpathに"www.yahoo.co.jp"を渡す
     
+    func createUrl(path: String) -> (String){
+        let url = "http:\(path)"
+        return url
+    }
+    
     
     // 問題12
     // 引数が「bigR: CGFloat, smallR: CGFloat」の関数を作成する
@@ -25,6 +30,10 @@ class AboutFunction3ViewController: UIViewController {
     // viewDidLoadで適当に呼んで結果をprintしてみる
     // なおbigRがsmallRより小さい場合は0を返すものとする
     
+    
+    func calcMenseki(bigR: CGFloat, smallR: CGFloat) -> CGFloat{
+        return self.calcMensekiOfCircle(r: bigR) - self.calcMensekiOfCircle(r: smallR)
+    }
     
     // 問題13
     // 引数が「title: String, backgroundColor: UIColor」の関数を作る
@@ -36,10 +45,27 @@ class AboutFunction3ViewController: UIViewController {
     // button.backgroundColor = .red
     
     
+    func createMyButton(title: String, backgroundColor: UIColor) -> UIButton{
+        let button: UIButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        button.setTitle(title, for: UIControl.State.normal)
+        button.backgroundColor = backgroundColor
+        return button
+    }
+    
     // 問題14
     // 引数が「fontSize: CGFloat, text: String, color: UIColor」の関数を作る
     // 関数名はcreateMyLabel
     // 関数はUILabelを作成して返す
+    
+    func createMyLabel(fontSize: CGFloat, text: String, color: UIColor) -> UILabel{
+        let label = UILabel()
+        label.frame = CGRect(x:150, y:200, width:160, height:30)
+        label.text = text
+        label.textColor = color
+        label.font = label.font.withSize(fontSize)
+        return label
+    }
+    
     
     /// 関数の仕様
     /// - Parameters:
@@ -56,7 +82,23 @@ class AboutFunction3ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }    
+        
+        let newAcount = createUrl(path:"mike.com")
+        print(newAcount)
+        
+        let en = calcMenseki(bigR: 100, smallR: 10)
+        print(en)
+        
+        let b = createMyButton(title: "SAVE", backgroundColor: .blue)
+        print(b)
+        self.view.addSubview(b)
+        
+        let la = createMyLabel(fontSize: 20, text: "ラベル", color: .red)
+        self.view.addSubview(la)
+        
+        
+        
+    }
 }
 
 
