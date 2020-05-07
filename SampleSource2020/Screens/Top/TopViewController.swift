@@ -17,7 +17,8 @@ class TopViewController: UIViewController {
             CellData(identifier: "AboutClass", title: "Classの基本について", subTitle: "途中"),
             CellData(identifier: "AboutDatePicker", title: "UIDatePickerの使い方1", subTitle: ""),
             CellData(identifier: "AboutFunction", title: "関数の問題集1", subTitle: ""),
-            CellData(identifier: "AboutFunction2", title: "関数の問題集2", subTitle: "")
+            CellData(identifier: "AboutFunction2", title: "関数の問題集2", subTitle: ""),
+            CellData(identifier: "AboutFunction3", title: "関数の問題集3", subTitle: "")
         ]
     }
     
@@ -91,6 +92,9 @@ extension TopViewController: UITableViewDataSource, UITableViewDelegate {
         }
         if cellData.identifier == "AboutFunction2" {
             self.performSegue(withIdentifier: "AboutFunction2", sender: nil)
+        }
+        if cellData.identifier == "AboutFunction3" {
+            self.performSegue(withIdentifier: "AboutFunction3", sender: nil)
         }
     }
     
