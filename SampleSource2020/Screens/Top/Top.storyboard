@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -87,6 +87,7 @@
                         <segue destination="B0R-1W-6nD" kind="show" identifier="AboutFunction2" id="c2U-9G-Cav"/>
                         <segue destination="Vac-md-jfo" kind="show" identifier="AboutFunction3" id="m8f-cD-VLI"/>
                         <segue destination="A3y-Do-f27" kind="show" identifier="Renshu1" id="VI9-vu-eMn"/>
+                        <segue destination="Bmf-RO-JMk" kind="show" identifier="Renshu2" id="ojp-zr-QTy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uiy-kL-m7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -160,6 +161,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BO7-gB-Uma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-120" y="156"/>
+        </scene>
+        <!--Renshu2-->
+        <scene sceneID="CTN-GE-9aG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Renshu2" id="Bmf-RO-JMk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ccv-Lr-1hs"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BNE-nl-Szo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-121" y="202"/>
         </scene>
     </scenes>
 </document>

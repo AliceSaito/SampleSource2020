@@ -19,7 +19,8 @@ class TopViewController: UIViewController {
             CellData(identifier: "AboutFunction", title: "関数の問題集1", subTitle: ""),
             CellData(identifier: "AboutFunction2", title: "関数の問題集2", subTitle: ""),
             CellData(identifier: "AboutFunction3", title: "関数の問題集3", subTitle: ""),
-            CellData(identifier: "Renshu1", title: "練習1", subTitle: "")
+            CellData(identifier: "Renshu1", title: "練習1", subTitle: ""),
+            CellData(identifier: "Renshu2", title: "練習2 多次元配列", subTitle: ""),
         ]
     }
     
@@ -99,6 +100,9 @@ extension TopViewController: UITableViewDataSource, UITableViewDelegate {
         }
         if cellData.identifier == "Renshu1" {
             self.performSegue(withIdentifier: "Renshu1", sender: nil)
+        }
+        if cellData.identifier == "Renshu2" {
+            self.performSegue(withIdentifier: "Renshu2", sender: nil)
         }
     }
     

@@ -13,6 +13,8 @@
 		1E1B9596246430D400EF6C5C /* Renshu1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B9595246430D400EF6C5C /* Renshu1ViewController.swift */; };
 		1E48E59C24637BDB005DA816 /* AboutFunction3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E48E59B24637BDB005DA816 /* AboutFunction3.storyboard */; };
 		1E48E59E24637BEE005DA816 /* AboutFunction3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E48E59D24637BEE005DA816 /* AboutFunction3ViewController.swift */; };
+		1E5242832467F8F1008A5B03 /* Renshu2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5242822467F8F1008A5B03 /* Renshu2.storyboard */; };
+		1E5242852467FAAB008A5B03 /* Renshu2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5242842467FAAB008A5B03 /* Renshu2ViewController.swift */; };
 		1E868D66245E5C2E001B183B /* AppClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E868D64245E5C2E001B183B /* AppClassViewController.swift */; };
 		1E868D67245E5C2E001B183B /* AboutClass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E868D65245E5C2E001B183B /* AboutClass.storyboard */; };
 		1E91CCFC245BC2F500CBD37B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E91CCFB245BC2F500CBD37B /* AppDelegate.swift */; };
@@ -56,6 +58,8 @@
 		1E1B9595246430D400EF6C5C /* Renshu1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renshu1ViewController.swift; sourceTree = "<group>"; };
 		1E48E59B24637BDB005DA816 /* AboutFunction3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutFunction3.storyboard; sourceTree = "<group>"; };
 		1E48E59D24637BEE005DA816 /* AboutFunction3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFunction3ViewController.swift; sourceTree = "<group>"; };
+		1E5242822467F8F1008A5B03 /* Renshu2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Renshu2.storyboard; sourceTree = "<group>"; };
+		1E5242842467FAAB008A5B03 /* Renshu2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renshu2ViewController.swift; sourceTree = "<group>"; };
 		1E868D64245E5C2E001B183B /* AppClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppClassViewController.swift; sourceTree = "<group>"; };
 		1E868D65245E5C2E001B183B /* AboutClass.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AboutClass.storyboard; sourceTree = "<group>"; };
 		1E91CCF8245BC2F500CBD37B /* SampleSource2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleSource2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +137,15 @@
 			path = AboutFunction3;
 			sourceTree = "<group>";
 		};
+		1E5242812467F8DD008A5B03 /* Renshu2 */ = {
+			isa = PBXGroup;
+			children = (
+				1E5242822467F8F1008A5B03 /* Renshu2.storyboard */,
+				1E5242842467FAAB008A5B03 /* Renshu2ViewController.swift */,
+			);
+			path = Renshu2;
+			sourceTree = "<group>";
+		};
 		1E868D5F245E58BC001B183B /* AboutClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +209,7 @@
 		1E999C20245D3FBD00E545E8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1E5242812467F8DD008A5B03 /* Renshu2 */,
 				1E1B9592246430AC00EF6C5C /* Renshu1 */,
 				1E48E59A24637BC9005DA816 /* AboutFunction3 */,
 				1E0307FE24624A7D007F0824 /* AboutFunction2 */,
@@ -348,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5242832467F8F1008A5B03 /* Renshu2.storyboard in Resources */,
 				1E48E59C24637BDB005DA816 /* AboutFunction3.storyboard in Resources */,
 				1EFD4F6F2461022E004ED092 /* AboutFunction.storyboard in Resources */,
 				1EBA5CC72460242800C8FB5B /* AboutDatePicker.storyboard in Resources */,
@@ -389,6 +404,7 @@
 				1E91CCFE245BC2F500CBD37B /* TopViewController.swift in Sources */,
 				1E03080224624A99007F0824 /* AboutFunction2ViewController.swift in Sources */,
 				1E91CCFC245BC2F500CBD37B /* AppDelegate.swift in Sources */,
+				1E5242852467FAAB008A5B03 /* Renshu2ViewController.swift in Sources */,
 				1E999C23245D405C00E545E8 /* TopTableViewCell.swift in Sources */,
 				1E1B9596246430D400EF6C5C /* Renshu1ViewController.swift in Sources */,
 				1E868D66245E5C2E001B183B /* AppClassViewController.swift in Sources */,
