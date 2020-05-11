@@ -11,6 +11,8 @@ import UIKit
 // 参考：SUUMOで「都道府県を選択する」を押すと似た画面が出てきます
 // 参考：下に都道府県有り
 
+// ※表示するデータを作成してから表示してください
+
 class AboutSection1ViewController: UIViewController {
 
     @IBOutlet weak var areaTableView: UITableView!
