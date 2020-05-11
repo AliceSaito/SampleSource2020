@@ -47,25 +47,38 @@ class Renshu2ViewController: UIViewController {
         let i2 = Item(id: 1, title: "たいとる2", price: 2000)
         let i3 = Item(id: 2, title: "たいとる3", price: 3000)
         
-        // 配列にItemを一つ入れる
+        // 配列にItemを一つ入れる時
         items.append(i1)
         
         // 練習5
-        // これ↓はエラーになる, なぜエラーになる？
+        // これ↓はエラーになる
         // itemsDoub.append(i1)
+        //正解
+         itemsDoub.append([i1])
+        //itemsDoubが空の時は下記の書き方はできない。空のものを取り出すことはできないから。
+        itemsDoub[0].append(i2)
         
+//      dump：配列の中身をprintする
+        dump(itemsDoub)
+        
+        
+        // 練習6
         // これは配列
         let itemList = [i1, i2, i3]
         
         // 二次元配列に、Itemの配列を一つ入れる
         itemsDoub.append(itemList)
         
-        // 練習6
-        // これ↓はエラーになる、なぜエラーになる？
+        // これ↓はエラーになる
         // itemsTri.append(itemList)
         
+        //正解
+        itemsTri.append([itemList])
+        
+        
+        
         // 練習7
-        // これ↓はエラーにならない、なぜエラーに成らない？
+        // これ↓は三次元[[]]になっているのでエラーにならない
         // itemsTri.append([[i1]])
         
         nextRenshu1()
@@ -77,9 +90,9 @@ class Renshu2ViewController: UIViewController {
         var items: [[Item]] = []
         
         // 10 x 10で二次元配列を作る
-        for i in 0...10 {
+        for i in 0...9 {
             var list: [Item] = []
-            for j in 0...10 {
+            for j in 0...9 {
                 let item = Item(id: i * 10 + j, title: "\(i) - \(j)", price: 0)
                 // 配列を作って
                 list.append(item)
@@ -91,6 +104,7 @@ class Renshu2ViewController: UIViewController {
         // 練習8　何が表示される？
         print(items[5][2].title)
         
+        
         // 練習9　何が表示される？
         print(items[5][2].id)
         
@@ -101,12 +115,29 @@ class Renshu2ViewController: UIViewController {
     func nextRenshu2() {
         // 練習11　（※難しいから、余裕あったら）
         // nextRenshu1を参考にして、ここに3次元配列を作る（5x5x5）
-        // idは 「i * 100 + j * 10 + k」
-        // titleは　「"\(i) - \(j) - \(k)"
-
+        // idは 「i * 100 + j * 10 + n」
+        // titleは　「"\(i) - \(j) - \(n)"」
+        
         
         // 以下が「2 - 3 - 4」になることを確認する
         // print(items[2][3][4].title)
+        
+        var items: [[[Item]]] = []
+        
+        // 5 x 5 x 5で3次元配列を作る
+        for i in 0...4 {
+            var list: [[Item]] = []
+            for j in 0...4 {
+                var note: [Item] = []
+                for n in 0...4 {
+                    let item = Item(id: i * 100 + j * 10 + n, title: "\(i) - \(j) - \(n)", price: 0)
+                    note.append(item)
+                }
+                list.append(note)
+            }
+            items.append(list)
+        }
+        print(items[2][3][4].title)
     }
     
 }
