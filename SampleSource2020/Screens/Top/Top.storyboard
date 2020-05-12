@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ywd-Pv-Ski">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ywd-Pv-Ski">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -89,6 +89,7 @@
                         <segue destination="A3y-Do-f27" kind="show" identifier="Renshu1" id="VI9-vu-eMn"/>
                         <segue destination="Bmf-RO-JMk" kind="show" identifier="Renshu2" id="ojp-zr-QTy"/>
                         <segue destination="exx-GY-PsJ" kind="show" identifier="AboutSection1" id="Wft-hP-3wp"/>
+                        <segue destination="wB1-GA-Bzi" kind="show" identifier="AboutSection2" id="pof-iK-dqQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uiy-kL-m7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -182,6 +183,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLf-VM-Yzj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-88" y="157"/>
+        </scene>
+        <!--AboutSection2-->
+        <scene sceneID="qhp-JA-doq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AboutSection2" id="wB1-GA-Bzi" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="run-Qz-170"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZOH-HG-hzA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66" y="201"/>
         </scene>
     </scenes>
 </document>
