@@ -9,14 +9,11 @@ import UIKit
 
 // 課題
 // struct Animalを定義する（image: String, name: String, point: Int）
-// dataからanimals: [Animal]を作成する
-//
-
-struct Animal {
-    var image: String
-    var name: String
-    var point: Int
-}
+// datasからanimals: [Animal]を作成する
+// Renshu3TableViewCellを作成して、中に画像、名前用ラベル、ポイント用ラベルを適当に配置する
+// datasをUITableViewで表示する（delegate, datasourceを忘れずに）
+// animalの中身をRenshu3TableViewCellに入れる
+// なお、imageはUIImage(named: imageName)で取得できる
 
 class Renshu3ViewController: UIViewController {
     
@@ -38,40 +35,10 @@ class Renshu3ViewController: UIViewController {
         ["image": "animal_mark01_buta", "name": "ぶた", "point": 600],
     ]
     
-    var animals: [Animal] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         title = "Animals"
-        
-        datas.forEach { (data) in
-            let animal = Animal(image: data["image"] as! String,
-                                name: data["name"] as! String,
-                                point: data["point"] as! Int)
-            animals.append(animal)
-        }
-        
-        tableView.reloadData()
-        
-        
     }
     
     
 }
-
-extension Renshu3ViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return animals.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Renshu3TableViewCell", for: indexPath) as! Renshu3TableViewCell
-        cell.setup(animal: animals[indexPath.row])
-        return cell
-    }
-    
-    
-}
-
