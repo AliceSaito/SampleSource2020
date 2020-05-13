@@ -32,6 +32,8 @@
 		1EBA5CC92460243800C8FB5B /* AboutDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA5CC82460243800C8FB5B /* AboutDatePickerViewController.swift */; };
 		1ED6024F2469483600E85CAB /* AboutSection1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED6024E2469483600E85CAB /* AboutSection1.storyboard */; };
 		1ED602512469484500E85CAB /* AboutSection1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED602502469484500E85CAB /* AboutSection1ViewController.swift */; };
+		1ED60254246B8CFD00E85CAB /* AboutDictionary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED60253246B8CFD00E85CAB /* AboutDictionary.storyboard */; };
+		1ED60256246B8D0500E85CAB /* AboutDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED60255246B8D0500E85CAB /* AboutDictionaryViewController.swift */; };
 		1EFD4F6F2461022E004ED092 /* AboutFunction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFD4F6E2461022E004ED092 /* AboutFunction.storyboard */; };
 		1EFD4F7124610240004ED092 /* AboutFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */; };
 		653E4DB8246AA30000F6D0AE /* AboutSection2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653E4DB7246AA30000F6D0AE /* AboutSection2ViewController.swift */; };
@@ -87,6 +89,8 @@
 		1EBA5CC82460243800C8FB5B /* AboutDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDatePickerViewController.swift; sourceTree = "<group>"; };
 		1ED6024E2469483600E85CAB /* AboutSection1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutSection1.storyboard; sourceTree = "<group>"; };
 		1ED602502469484500E85CAB /* AboutSection1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSection1ViewController.swift; sourceTree = "<group>"; };
+		1ED60253246B8CFD00E85CAB /* AboutDictionary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutDictionary.storyboard; sourceTree = "<group>"; };
+		1ED60255246B8D0500E85CAB /* AboutDictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDictionaryViewController.swift; sourceTree = "<group>"; };
 		1EFD4F6E2461022E004ED092 /* AboutFunction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutFunction.storyboard; sourceTree = "<group>"; };
 		1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFunctionViewController.swift; sourceTree = "<group>"; };
 		653E4DB7246AA30000F6D0AE /* AboutSection2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSection2ViewController.swift; sourceTree = "<group>"; };
@@ -217,6 +221,7 @@
 		1E999C20245D3FBD00E545E8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1ED60252246B8CC200E85CAB /* AboutDictionary */,
 				653E4DB6246AA2E100F6D0AE /* AboutSection2 */,
 				1ED6024D2469480200E85CAB /* AboutSection1 */,
 				1E5242812467F8DD008A5B03 /* Renshu2 */,
@@ -267,6 +272,15 @@
 				1ED602502469484500E85CAB /* AboutSection1ViewController.swift */,
 			);
 			path = AboutSection1;
+			sourceTree = "<group>";
+		};
+		1ED60252246B8CC200E85CAB /* AboutDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				1ED60253246B8CFD00E85CAB /* AboutDictionary.storyboard */,
+				1ED60255246B8D0500E85CAB /* AboutDictionaryViewController.swift */,
+			);
+			path = AboutDictionary;
 			sourceTree = "<group>";
 		};
 		1EFD4F6D24608D02004ED092 /* AboutFunction */ = {
@@ -397,6 +411,7 @@
 				1E1B9594246430C500EF6C5C /* Renshu1.storyboard in Resources */,
 				1EB411AB245D49DE003A13EF /* AboutButton.storyboard in Resources */,
 				1E868D67245E5C2E001B183B /* AboutClass.storyboard in Resources */,
+				1ED60254246B8CFD00E85CAB /* AboutDictionary.storyboard in Resources */,
 				1E999C25245D414700E545E8 /* Top.storyboard in Resources */,
 				1E91CD06245BC2F700CBD37B /* LaunchScreen.storyboard in Resources */,
 				653E4DBA246AA32300F6D0AE /* AboutSection2.storyboard in Resources */,
@@ -438,6 +453,7 @@
 				1E91CCFC245BC2F500CBD37B /* AppDelegate.swift in Sources */,
 				1E5242852467FAAB008A5B03 /* Renshu2ViewController.swift in Sources */,
 				1E999C23245D405C00E545E8 /* TopTableViewCell.swift in Sources */,
+				1ED60256246B8D0500E85CAB /* AboutDictionaryViewController.swift in Sources */,
 				1E1B9596246430D400EF6C5C /* Renshu1ViewController.swift in Sources */,
 				1E868D66245E5C2E001B183B /* AppClassViewController.swift in Sources */,
 				1EFD4F7124610240004ED092 /* AboutFunctionViewController.swift in Sources */,

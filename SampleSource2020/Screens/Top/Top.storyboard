@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ywd-Pv-Ski">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ywd-Pv-Ski">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -90,6 +90,7 @@
                         <segue destination="Bmf-RO-JMk" kind="show" identifier="Renshu2" id="ojp-zr-QTy"/>
                         <segue destination="exx-GY-PsJ" kind="show" identifier="AboutSection1" id="Wft-hP-3wp"/>
                         <segue destination="wB1-GA-Bzi" kind="show" identifier="AboutSection2" id="pof-iK-dqQ"/>
+                        <segue destination="37r-9n-w6A" kind="show" identifier="AboutDictionary" id="DGx-9n-omd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uiy-kL-m7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -104,7 +105,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rge-Ke-OHk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-94" y="-181"/>
+            <point key="canvasLocation" x="-90" y="-337"/>
         </scene>
         <!--AboutClass-->
         <scene sceneID="Yi2-sB-4Gm">
@@ -114,7 +115,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uvY-hu-9Y4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-100" y="-137"/>
+            <point key="canvasLocation" x="-96" y="-293"/>
         </scene>
         <!--AboutDatePicker-->
         <scene sceneID="fmp-W3-8zO">
@@ -122,7 +123,7 @@
                 <viewControllerPlaceholder storyboardName="AboutDatePicker" id="SzI-cr-8Kz" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6k-LX-8Gz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-76" y="-94"/>
+            <point key="canvasLocation" x="-72" y="-250"/>
         </scene>
         <!--AboutFunction-->
         <scene sceneID="i30-P6-ffC">
@@ -132,7 +133,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NHW-3k-Fph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-87" y="-54"/>
+            <point key="canvasLocation" x="-84" y="-210"/>
         </scene>
         <!--AboutFunction2-->
         <scene sceneID="iHJ-tm-zGh">
@@ -142,7 +143,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cOD-ME-NE3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-82" y="-13"/>
+            <point key="canvasLocation" x="-79" y="-169"/>
         </scene>
         <!--AboutFunction3-->
         <scene sceneID="IkQ-UM-Rs2">
@@ -152,7 +153,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZF3-Ci-KXV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-81" y="24"/>
+            <point key="canvasLocation" x="-77" y="-132"/>
         </scene>
         <!--Renshu1-->
         <scene sceneID="r89-V1-MGZ">
@@ -162,7 +163,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BO7-gB-Uma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113" y="75"/>
+            <point key="canvasLocation" x="-109" y="-80"/>
         </scene>
         <!--Renshu2-->
         <scene sceneID="CTN-GE-9aG">
@@ -172,7 +173,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNE-nl-Szo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-114" y="121"/>
+            <point key="canvasLocation" x="-111" y="-35"/>
         </scene>
         <!--AboutSection1-->
         <scene sceneID="5kG-X1-ejf">
@@ -182,7 +183,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLf-VM-Yzj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-88" y="157"/>
+            <point key="canvasLocation" x="-85" y="1"/>
         </scene>
         <!--AboutSection2-->
         <scene sceneID="qhp-JA-doq">
@@ -192,7 +193,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOH-HG-hzA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66" y="201"/>
+            <point key="canvasLocation" x="-63" y="46"/>
+        </scene>
+        <!--AboutDictionary-->
+        <scene sceneID="59x-S9-yz8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AboutDictionary" id="37r-9n-w6A" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XCJ-Pv-bzU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CZd-YJ-9tB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57" y="94"/>
         </scene>
     </scenes>
 </document>
