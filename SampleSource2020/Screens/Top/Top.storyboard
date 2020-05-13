@@ -91,6 +91,7 @@
                         <segue destination="exx-GY-PsJ" kind="show" identifier="AboutSection1" id="Wft-hP-3wp"/>
                         <segue destination="wB1-GA-Bzi" kind="show" identifier="AboutSection2" id="pof-iK-dqQ"/>
                         <segue destination="37r-9n-w6A" kind="show" identifier="AboutDictionary" id="DGx-9n-omd"/>
+                        <segue destination="f3m-TW-q1Z" kind="show" identifier="Renshu3" id="Gtd-fw-jnw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uiy-kL-m7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -163,7 +164,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BO7-gB-Uma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-109" y="-80"/>
+            <point key="canvasLocation" x="-110" y="-91"/>
         </scene>
         <!--Renshu2-->
         <scene sceneID="CTN-GE-9aG">
@@ -173,7 +174,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNE-nl-Szo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-111" y="-35"/>
+            <point key="canvasLocation" x="-112" y="-50"/>
         </scene>
         <!--AboutSection1-->
         <scene sceneID="5kG-X1-ejf">
@@ -183,7 +184,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLf-VM-Yzj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-85" y="1"/>
+            <point key="canvasLocation" x="-86" y="-10"/>
         </scene>
         <!--AboutSection2-->
         <scene sceneID="qhp-JA-doq">
@@ -193,7 +194,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOH-HG-hzA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-63" y="46"/>
+            <point key="canvasLocation" x="-80" y="28"/>
         </scene>
         <!--AboutDictionary-->
         <scene sceneID="59x-S9-yz8">
@@ -203,7 +204,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZd-YJ-9tB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57" y="94"/>
+            <point key="canvasLocation" x="-73" y="69"/>
+        </scene>
+        <!--Renshu3-->
+        <scene sceneID="0Us-aw-ui5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Renshu3" id="f3m-TW-q1Z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="e1f-v8-mG2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Np-m7-IPT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-108" y="113"/>
         </scene>
     </scenes>
 </document>

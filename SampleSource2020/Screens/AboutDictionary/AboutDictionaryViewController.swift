@@ -14,6 +14,8 @@ class AboutDictionaryViewController: UIViewController {
         super.viewDidLoad()
 
         renshuA()
+        renshuB()
+        renshuC()
     }
     
     func renshuA() {
@@ -69,5 +71,29 @@ class AboutDictionaryViewController: UIViewController {
         //練習10 美術委員は何人居るか、出力する
         
         //練習11 保健委員の最初の人（.first、又は[0]）を図書委員にも所属させて、出力する
+    }
+    
+    func renshuD() {
+        // これはDictionaryの配列です
+        let datas: [[String: Any]] = [
+            ["image": "animal_mark14_hitsuji", "name": "ひつじ", "point": 100],
+            ["image": "animal_mark13_penguin", "name": "ペンギン", "point": 50],
+            ["image": "animal_mark12_saru", "name": "さる", "point": 30],
+            ["image": "animal_mark10_usagi", "name": "うさぎ", "point": 10],
+            ["image": "animal_mark09_tora", "name": "トラ", "point": 200],
+            ["image": "animal_mark08_kaba", "name": "カバ", "point": 130],
+            ["image": "animal_mark07_lion", "name": "ライオン", "point": 120],
+            ["image": "animal_mark06_uma", "name": "うま", "point": 10],
+            ["image": "animal_mark05_zou", "name": "ゾウ", "point": 0],
+            ["image": "animal_mark04_neko", "name": "猫", "point": -100],
+            ["image": "animal_mark03_inu", "name": "いぬ", "point": -200],
+            ["image": "animal_mark02_kuma", "name": "クマ", "point": 500],
+            ["image": "animal_mark01_buta", "name": "ぶた", "point": 600],
+        ]
+        
+        //練習12
+        // image: String, name: String, point: Int を含むstructを作成する（名前はAnimal）
+        // datasから、配列animals: [Animal]を作成する
+        // animalsをdumpする
     }
 }
