@@ -102,7 +102,7 @@ class Renshu2ViewController: UIViewController {
         }
         
         // 練習8　何が表示される？
-        print(items[5][2].title)
+        print(items[5][2].title, "❤️")
         
         
         // 練習9　何が表示される？
