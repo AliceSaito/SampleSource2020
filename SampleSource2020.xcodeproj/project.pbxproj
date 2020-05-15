@@ -40,6 +40,7 @@
 		1EFD4F7124610240004ED092 /* AboutFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */; };
 		653E4DB8246AA30000F6D0AE /* AboutSection2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653E4DB7246AA30000F6D0AE /* AboutSection2ViewController.swift */; };
 		653E4DBA246AA32300F6D0AE /* AboutSection2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653E4DB9246AA32300F6D0AE /* AboutSection2.storyboard */; };
+		65CBA965246E9974009684AC /* Renshu3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA964246E9974009684AC /* Renshu3TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFunctionViewController.swift; sourceTree = "<group>"; };
 		653E4DB7246AA30000F6D0AE /* AboutSection2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSection2ViewController.swift; sourceTree = "<group>"; };
 		653E4DB9246AA32300F6D0AE /* AboutSection2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutSection2.storyboard; sourceTree = "<group>"; };
+		65CBA964246E9974009684AC /* Renshu3TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renshu3TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +295,7 @@
 			children = (
 				1ED60258246BD31200E85CAB /* Renshu3.storyboard */,
 				1ED6025A246BD33100E85CAB /* Renshu3ViewController.swift */,
+				65CBA964246E9974009684AC /* Renshu3TableViewCell.swift */,
 			);
 			path = Renshu3;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65CBA965246E9974009684AC /* Renshu3TableViewCell.swift in Sources */,
 				1EBA5CC92460243800C8FB5B /* AboutDatePickerViewController.swift in Sources */,
 				653E4DB8246AA30000F6D0AE /* AboutSection2ViewController.swift in Sources */,
 				1E48E59E24637BEE005DA816 /* AboutFunction3ViewController.swift in Sources */,

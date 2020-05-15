@@ -149,6 +149,7 @@ class AboutDictionaryViewController: UIViewController {
         // datasから、配列animals: [Animal]を作成する
         // animalsをdumpする
         
+        
         for dictionary in datas {
             print(dictionary)
             
@@ -159,6 +160,5 @@ class AboutDictionaryViewController: UIViewController {
         }
         
         dump(animals)
-        
     }
 }

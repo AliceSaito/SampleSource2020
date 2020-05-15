@@ -15,9 +15,15 @@ import UIKit
 // animalの中身をRenshu3TableViewCellに入れる
 // なお、imageはUIImage(named: imageName)で取得できる
 
+
+
+
 class Renshu3ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    
+    
         
     let datas: [[String: Any]] = [
         ["image": "animal_mark14_hitsuji", "name": "ひつじ", "point": 100],
@@ -35,10 +41,48 @@ class Renshu3ViewController: UIViewController {
         ["image": "animal_mark01_buta", "name": "ぶた", "point": 600],
     ]
     
+    struct Animal {
+        var image: String
+        var name: String
+        var point: Int
+    }
+    
+    var animals: [Animal] = []
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Animals"
+        
+        for dictionary in datas {
+            let animalData = Animal(image: dictionary["image"] as! String,
+                                    name: dictionary["name"] as! String,
+                                    point: dictionary["point"] as! Int)
+            animals.append(animalData)
+        }
+        
+        dump(animals)
+    }
+}
+
+extension Renshu3ViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return animals.count
     }
     
     
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Renshu3TableViewCell") as! Renshu3TableViewCell
+        
+        cell.nameLabel.text = animals[indexPath.row].name
+        cell.animalImage.image = UIImage(named: animals[indexPath.row].image)
+//        int型をStringにする方法
+        cell.pointLabel.text = "\(animals[indexPath.row].point)"
+        
+     
+        return cell
+    }
 }
