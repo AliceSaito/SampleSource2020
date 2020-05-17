@@ -21,10 +21,11 @@ class TopViewController: UIViewController {
             CellData(identifier: "AboutFunction3", title: "関数の問題集3", subTitle: ""),
             CellData(identifier: "Renshu1", title: "練習1", subTitle: ""),
             CellData(identifier: "Renshu2", title: "練習2 多次元配列", subTitle: ""),
-            CellData(identifier: "AboutSection1", title: "都道府県のTableViewを作成する（2020/05/11）", subTitle: ""),
-            CellData(identifier: "AboutSection2", title: "都道府県のTableViewを作成する（2020/05/12）", subTitle: ""),
-            CellData(identifier: "AboutDictionary", title: "Dictionaryについて（2020/05/13）", subTitle: ""),
-            CellData(identifier: "Renshu3", title: "Dcitionary+TableView（2020/05/13）", subTitle: ""),
+            CellData(identifier: "AboutSection1", title: "都道府県のTableViewを作成する", subTitle: "2020/05/11"),
+            CellData(identifier: "AboutSection2", title: "都道府県のTableViewを作成する", subTitle: "2020/05/12"),
+            CellData(identifier: "AboutDictionary", title: "Dictionaryについて", subTitle: "2020/05/13"),
+            CellData(identifier: "Renshu3", title: "Dcitionary+TableView", subTitle: "2020/05/13"),
+            CellData(identifier: "Magazines", title: "Dictionray+TableView 雑誌一覧", subTitle: "2020/05/18")
         ]
     }
     
@@ -119,6 +120,9 @@ extension TopViewController: UITableViewDataSource, UITableViewDelegate {
         }
         if cellData.identifier == "Renshu3" {
             self.performSegue(withIdentifier: "Renshu3", sender: nil)
+        }
+        if cellData.identifier == "Magazines" {
+            self.performSegue(withIdentifier: "Magazines", sender: nil)
         }
     }
     

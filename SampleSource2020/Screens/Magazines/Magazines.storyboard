@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GGb-sW-W01">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Magazines View Controller-->
+        <scene sceneID="zYn-Sq-HvM">
+            <objects>
+                <viewController id="GGb-sW-W01" customClass="MagazinesViewController" customModule="SampleSource2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9yU-qp-8gP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axf-Q5-rba">
+                                <rect key="frame" x="20" y="94" width="374" height="41"/>
+                                <string key="text">MagazinesViewController
+これ消す</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="V6Y-nn-lao" firstAttribute="trailing" secondItem="axf-Q5-rba" secondAttribute="trailing" constant="20" id="2oX-Ax-DYf"/>
+                            <constraint firstItem="axf-Q5-rba" firstAttribute="top" secondItem="V6Y-nn-lao" secondAttribute="top" constant="50" id="Ujg-Ua-nuO"/>
+                            <constraint firstItem="axf-Q5-rba" firstAttribute="leading" secondItem="V6Y-nn-lao" secondAttribute="leading" constant="20" id="a63-8d-oZF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V6Y-nn-lao"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Be-r3-vAZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="151"/>
+        </scene>
+    </scenes>
+</document>

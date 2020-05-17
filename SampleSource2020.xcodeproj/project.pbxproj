@@ -36,6 +36,8 @@
 		1ED60256246B8D0500E85CAB /* AboutDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED60255246B8D0500E85CAB /* AboutDictionaryViewController.swift */; };
 		1ED60259246BD31200E85CAB /* Renshu3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED60258246BD31200E85CAB /* Renshu3.storyboard */; };
 		1ED6025B246BD33100E85CAB /* Renshu3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED6025A246BD33100E85CAB /* Renshu3ViewController.swift */; };
+		1EDFC0AE2471683200D2E96B /* Magazines.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EDFC0AD2471683200D2E96B /* Magazines.storyboard */; };
+		1EDFC0B02471685700D2E96B /* MagazinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDFC0AF2471685700D2E96B /* MagazinesViewController.swift */; };
 		1EFD4F6F2461022E004ED092 /* AboutFunction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFD4F6E2461022E004ED092 /* AboutFunction.storyboard */; };
 		1EFD4F7124610240004ED092 /* AboutFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */; };
 		653E4DB8246AA30000F6D0AE /* AboutSection2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653E4DB7246AA30000F6D0AE /* AboutSection2ViewController.swift */; };
@@ -96,6 +98,8 @@
 		1ED60255246B8D0500E85CAB /* AboutDictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDictionaryViewController.swift; sourceTree = "<group>"; };
 		1ED60258246BD31200E85CAB /* Renshu3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Renshu3.storyboard; sourceTree = "<group>"; };
 		1ED6025A246BD33100E85CAB /* Renshu3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renshu3ViewController.swift; sourceTree = "<group>"; };
+		1EDFC0AD2471683200D2E96B /* Magazines.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Magazines.storyboard; sourceTree = "<group>"; };
+		1EDFC0AF2471685700D2E96B /* MagazinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazinesViewController.swift; sourceTree = "<group>"; };
 		1EFD4F6E2461022E004ED092 /* AboutFunction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutFunction.storyboard; sourceTree = "<group>"; };
 		1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFunctionViewController.swift; sourceTree = "<group>"; };
 		653E4DB7246AA30000F6D0AE /* AboutSection2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSection2ViewController.swift; sourceTree = "<group>"; };
@@ -227,6 +231,7 @@
 		1E999C20245D3FBD00E545E8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1EDFC0AC2471680000D2E96B /* Magazines */,
 				1ED60257246BD2F500E85CAB /* Renshu3 */,
 				1ED60252246B8CC200E85CAB /* AboutDictionary */,
 				653E4DB6246AA2E100F6D0AE /* AboutSection2 */,
@@ -298,6 +303,15 @@
 				65CBA964246E9974009684AC /* Renshu3TableViewCell.swift */,
 			);
 			path = Renshu3;
+			sourceTree = "<group>";
+		};
+		1EDFC0AC2471680000D2E96B /* Magazines */ = {
+			isa = PBXGroup;
+			children = (
+				1EDFC0AD2471683200D2E96B /* Magazines.storyboard */,
+				1EDFC0AF2471685700D2E96B /* MagazinesViewController.swift */,
+			);
+			path = Magazines;
 			sourceTree = "<group>";
 		};
 		1EFD4F6D24608D02004ED092 /* AboutFunction */ = {
@@ -437,6 +451,7 @@
 				1E91CD03245BC2F700CBD37B /* Assets.xcassets in Resources */,
 				1E91CD01245BC2F500CBD37B /* Main.storyboard in Resources */,
 				1E03080024624A8F007F0824 /* AboutFunction2.storyboard in Resources */,
+				1EDFC0AE2471683200D2E96B /* Magazines.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +490,7 @@
 				1E999C23245D405C00E545E8 /* TopTableViewCell.swift in Sources */,
 				1ED60256246B8D0500E85CAB /* AboutDictionaryViewController.swift in Sources */,
 				1E1B9596246430D400EF6C5C /* Renshu1ViewController.swift in Sources */,
+				1EDFC0B02471685700D2E96B /* MagazinesViewController.swift in Sources */,
 				1E868D66245E5C2E001B183B /* AppClassViewController.swift in Sources */,
 				1EFD4F7124610240004ED092 /* AboutFunctionViewController.swift in Sources */,
 			);

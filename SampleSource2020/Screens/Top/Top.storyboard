@@ -92,6 +92,7 @@
                         <segue destination="wB1-GA-Bzi" kind="show" identifier="AboutSection2" id="pof-iK-dqQ"/>
                         <segue destination="37r-9n-w6A" kind="show" identifier="AboutDictionary" id="DGx-9n-omd"/>
                         <segue destination="f3m-TW-q1Z" kind="show" identifier="Renshu3" id="Gtd-fw-jnw"/>
+                        <segue destination="mgA-Zk-64z" kind="show" identifier="Magazines" id="e8b-z8-Kdm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uiy-kL-m7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -215,6 +216,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Np-m7-IPT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-108" y="113"/>
+        </scene>
+        <!--Magazines-->
+        <scene sceneID="uD3-23-TjW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Magazines" id="mgA-Zk-64z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cLO-tP-Z5i"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYd-US-Fdm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="157"/>
         </scene>
     </scenes>
 </document>
