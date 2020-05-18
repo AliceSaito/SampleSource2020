@@ -7,6 +7,24 @@
 
 import UIKit
 
+// 課題 雑誌一覧を作成する
+
+// 手順と仕様
+//   struct Magazineを定義する（雑誌名、出版社、画像名、公式、号、発売日）
+//   Magazineの配列を二つ作る、女性誌と男性誌
+//   DictionaryArrayのデータからMagazine配列に変換する
+//   MagazineTableViewCellを作成する デザインは　https://www.figma.com/file/uHnA49aAOtyLaDEzQ6wVVj/Untitled?node-id=0%3A1
+//   section2つで、雑誌一覧をUITableViewで表示する
+//   section header viewを作る　デザインは　https://www.figma.com/file/uHnA49aAOtyLaDEzQ6wVVj/Untitled?node-id=0%3A1
+//   セルをタップすると、該当のURLが開くようにする
+
+// ヒント
+//   imageはUIImage(named: imageName)で取得できる
+//   URL型は、URL(string: )で作成できる
+//   セルをタップしたときにはSFSafariViewControllerを使う
+//       let vc = SFSafariViewController(url: url)
+//       present(vc, animated: true, completion: nil)
+
 class MagazinesViewController: UIViewController {
     
     /// 女性誌

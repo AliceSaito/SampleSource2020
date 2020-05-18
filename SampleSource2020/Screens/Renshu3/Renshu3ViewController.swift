@@ -22,8 +22,6 @@ class Renshu3ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    
-    
         
     let datas: [[String: Any]] = [
         ["image": "animal_mark14_hitsuji", "name": "ひつじ", "point": 100],
