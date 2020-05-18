@@ -43,6 +43,8 @@
 		653E4DB8246AA30000F6D0AE /* AboutSection2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653E4DB7246AA30000F6D0AE /* AboutSection2ViewController.swift */; };
 		653E4DBA246AA32300F6D0AE /* AboutSection2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653E4DB9246AA32300F6D0AE /* AboutSection2.storyboard */; };
 		65CBA965246E9974009684AC /* Renshu3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA964246E9974009684AC /* Renshu3TableViewCell.swift */; };
+		65CBA9672472434B009684AC /* MagazinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA9662472434B009684AC /* MagazinesTableViewCell.swift */; };
+		65CBA96924725931009684AC /* MagazineHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA96824725931009684AC /* MagazineHeaderTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +107,8 @@
 		653E4DB7246AA30000F6D0AE /* AboutSection2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSection2ViewController.swift; sourceTree = "<group>"; };
 		653E4DB9246AA32300F6D0AE /* AboutSection2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutSection2.storyboard; sourceTree = "<group>"; };
 		65CBA964246E9974009684AC /* Renshu3TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renshu3TableViewCell.swift; sourceTree = "<group>"; };
+		65CBA9662472434B009684AC /* MagazinesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazinesTableViewCell.swift; sourceTree = "<group>"; };
+		65CBA96824725931009684AC /* MagazineHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineHeaderTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,6 +314,8 @@
 			children = (
 				1EDFC0AD2471683200D2E96B /* Magazines.storyboard */,
 				1EDFC0AF2471685700D2E96B /* MagazinesViewController.swift */,
+				65CBA9662472434B009684AC /* MagazinesTableViewCell.swift */,
+				65CBA96824725931009684AC /* MagazineHeaderTableViewCell.swift */,
 			);
 			path = Magazines;
 			sourceTree = "<group>";
@@ -479,12 +485,14 @@
 				65CBA965246E9974009684AC /* Renshu3TableViewCell.swift in Sources */,
 				1EBA5CC92460243800C8FB5B /* AboutDatePickerViewController.swift in Sources */,
 				653E4DB8246AA30000F6D0AE /* AboutSection2ViewController.swift in Sources */,
+				65CBA9672472434B009684AC /* MagazinesTableViewCell.swift in Sources */,
 				1E48E59E24637BEE005DA816 /* AboutFunction3ViewController.swift in Sources */,
 				1EB411AD245D4A1B003A13EF /* AboutButtonViewController.swift in Sources */,
 				1E91CCFE245BC2F500CBD37B /* TopViewController.swift in Sources */,
 				1ED602512469484500E85CAB /* AboutSection1ViewController.swift in Sources */,
 				1ED6025B246BD33100E85CAB /* Renshu3ViewController.swift in Sources */,
 				1E03080224624A99007F0824 /* AboutFunction2ViewController.swift in Sources */,
+				65CBA96924725931009684AC /* MagazineHeaderTableViewCell.swift in Sources */,
 				1E91CCFC245BC2F500CBD37B /* AppDelegate.swift in Sources */,
 				1E5242852467FAAB008A5B03 /* Renshu2ViewController.swift in Sources */,
 				1E999C23245D405C00E545E8 /* TopTableViewCell.swift in Sources */,
