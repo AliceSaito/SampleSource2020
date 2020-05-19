@@ -9,7 +9,6 @@ import UIKit
 
 class MagazineHeaderTableViewCell: UITableViewCell {
 
-  
     @IBOutlet weak var sectionTitleLabel: UILabel!
     
 }
