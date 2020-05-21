@@ -56,7 +56,7 @@ class MagazinesViewController: UIViewController {
     let magazineForMenDatas: [[String: Any]] = [
         ["name": "FINEBOYS", "publisher": "日之出出版", "image": "519DzIk6ncL", "url": "http://fineboys-online.jp/", "number": "2020年06月号", "releaseDate": "2020/5/9"],
         ["name": "men's FUDGE", "publisher": "三栄書房", "image": "51p3rh6-x4L", "url": "https://mensfudge.jp/", "number": "2020年6月・7月合併号 Vol.123", "releaseDate": "2020/4/25"],
-        ["name": "MEN'S NON-NO", "publisher": "集英社", "image": "51nxS7zfyxL", "url": "https://www.mensnonno.jp/", "number": "2020年06月号", "releaseDate": "2020/5/9"],
+        ["name": "MEN'S NON-NO", "publisher": "集英社", "image": "71zrMHexE2L", "url": "https://www.mensnonno.jp/", "number": "2020年06月号", "releaseDate": "2020/5/9"],
         ["name": "SENSE", "publisher": "株式会社センス", "image": "41gjy2ft6iL", "url": "https://blacksense.jp/", "number": "2020年05月号", "releaseDate": "2020/4/9"],
         ["name": "UOMO", "publisher": "集英社", "image": "51UrcXU9evL", "url": "http://www.webuomo.jp/", "number": "2020年06・07月合併号", "releaseDate": "2020/4/25"],
         ["name": "smart", "publisher": "宝島社", "image": "61rk1YYSajL", "url": "https://smartmag.jp/", "number": "2020年6月号", "releaseDate": "2020/4/25"],
