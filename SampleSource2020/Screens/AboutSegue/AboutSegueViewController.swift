@@ -24,14 +24,14 @@ class AboutSegueViewController: UIViewController {
     /// ボタン1を押すと、「next」のsegueが発火する
     @IBAction func tappedButton1(_ sender: Any) {
         // ①
-        // こちらはsenderがnil
+        // こちらはsenderがnil。"next"はsegueのIdentifier
         performSegue(withIdentifier: "next", sender: nil)
     }
     
     /// ボタン2を押すと、「nextModaly」のsegueが発火する
     @IBAction func tappedButton2(_ sender: Any) {
         // ①
-        // こっちはsenderでデータを送ってみる
+        // こっちはsenderでデータを送ってみる。"nextModaly"はsegueのIdentifier
         performSegue(withIdentifier: "nextModaly", sender: CharacterType(image: UIImage(named: "gon")!, name: "ゴン"))
     }
     

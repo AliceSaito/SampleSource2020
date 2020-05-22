@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ywd-Pv-Ski">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ywd-Pv-Ski">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -95,6 +95,7 @@
                         <segue destination="mgA-Zk-64z" kind="show" identifier="Magazines" id="e8b-z8-Kdm"/>
                         <segue destination="7CD-Bm-sCG" kind="show" identifier="Magazines2" id="Rej-g3-sH1"/>
                         <segue destination="KpC-ks-vxs" kind="show" identifier="AboutSegue" id="G9G-sm-dg0"/>
+                        <segue destination="0e5-A1-hcW" kind="show" identifier="Ryodan" id="qIk-pb-64z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uiy-kL-m7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -238,6 +239,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hxy-ZR-Mui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-70" y="165"/>
+        </scene>
+        <!--Ryodan-->
+        <scene sceneID="Zsb-Gx-R2y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Ryodan" id="0e5-A1-hcW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="J7a-RM-InR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0zP-hM-QOs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197" y="194"/>
         </scene>
         <!--Magazines2-->
         <scene sceneID="5Vs-cA-eoB">

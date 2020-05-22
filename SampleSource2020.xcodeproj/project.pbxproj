@@ -53,6 +53,9 @@
 		65CBA9722473D9BD009684AC /* MagazinesHeaderTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA9712473D9BD009684AC /* MagazinesHeaderTableViewCell2.swift */; };
 		65CBA9742473D9FF009684AC /* Magazines2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CBA9732473D9FF009684AC /* Magazines2.storyboard */; };
 		65CBA97624768629009684AC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA97524768629009684AC /* WebViewController.swift */; };
+		65CBA9792477A8B1009684AC /* Ryodan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CBA9782477A8B1009684AC /* Ryodan.storyboard */; };
+		65CBA97B2477A8FB009684AC /* KumoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA97A2477A8FB009684AC /* KumoViewController.swift */; };
+		65CBA97D2477A91F009684AC /* DaninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA97C2477A91F009684AC /* DaninViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +128,9 @@
 		65CBA9712473D9BD009684AC /* MagazinesHeaderTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazinesHeaderTableViewCell2.swift; sourceTree = "<group>"; };
 		65CBA9732473D9FF009684AC /* Magazines2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Magazines2.storyboard; sourceTree = "<group>"; };
 		65CBA97524768629009684AC /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		65CBA9782477A8B1009684AC /* Ryodan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ryodan.storyboard; sourceTree = "<group>"; };
+		65CBA97A2477A8FB009684AC /* KumoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KumoViewController.swift; sourceTree = "<group>"; };
+		65CBA97C2477A91F009684AC /* DaninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaninViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +267,7 @@
 		1E999C20245D3FBD00E545E8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				65CBA97724779F7D009684AC /* AboutSegueRyodan */,
 				1E35A21E24778E3A00F26B2D /* AboutSegue */,
 				65CBA96C2473D8BE009684AC /* Magazines2 */,
 				1EDFC0AC2471680000D2E96B /* Magazines */,
@@ -376,6 +383,16 @@
 				65CBA97524768629009684AC /* WebViewController.swift */,
 			);
 			path = Magazines2;
+			sourceTree = "<group>";
+		};
+		65CBA97724779F7D009684AC /* AboutSegueRyodan */ = {
+			isa = PBXGroup;
+			children = (
+				65CBA9782477A8B1009684AC /* Ryodan.storyboard */,
+				65CBA97A2477A8FB009684AC /* KumoViewController.swift */,
+				65CBA97C2477A91F009684AC /* DaninViewController.swift */,
+			);
+			path = AboutSegueRyodan;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,6 +511,7 @@
 				1ED60254246B8CFD00E85CAB /* AboutDictionary.storyboard in Resources */,
 				1E999C25245D414700E545E8 /* Top.storyboard in Resources */,
 				1E91CD06245BC2F700CBD37B /* LaunchScreen.storyboard in Resources */,
+				65CBA9792477A8B1009684AC /* Ryodan.storyboard in Resources */,
 				653E4DBA246AA32300F6D0AE /* AboutSection2.storyboard in Resources */,
 				1ED6024F2469483600E85CAB /* AboutSection1.storyboard in Resources */,
 				1E91CD03245BC2F700CBD37B /* Assets.xcassets in Resources */,
@@ -528,6 +546,7 @@
 				1EBA5CC92460243800C8FB5B /* AboutDatePickerViewController.swift in Sources */,
 				653E4DB8246AA30000F6D0AE /* AboutSection2ViewController.swift in Sources */,
 				65CBA9672472434B009684AC /* MagazinesTableViewCell.swift in Sources */,
+				65CBA97D2477A91F009684AC /* DaninViewController.swift in Sources */,
 				1E48E59E24637BEE005DA816 /* AboutFunction3ViewController.swift in Sources */,
 				1E35A22424778FFF00F26B2D /* AboutSegueNextViewController.swift in Sources */,
 				1EB411AD245D4A1B003A13EF /* AboutButtonViewController.swift in Sources */,
@@ -546,6 +565,7 @@
 				1E999C23245D405C00E545E8 /* TopTableViewCell.swift in Sources */,
 				1ED60256246B8D0500E85CAB /* AboutDictionaryViewController.swift in Sources */,
 				1E1B9596246430D400EF6C5C /* Renshu1ViewController.swift in Sources */,
+				65CBA97B2477A8FB009684AC /* KumoViewController.swift in Sources */,
 				1EDFC0B02471685700D2E96B /* MagazinesViewController.swift in Sources */,
 				1E868D66245E5C2E001B183B /* AppClassViewController.swift in Sources */,
 				1EFD4F7124610240004ED092 /* AboutFunctionViewController.swift in Sources */,
