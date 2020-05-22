@@ -91,7 +91,7 @@ class MagazinesViewController2: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "webViewController" {
-            let vc = segue.destination as! WebViewController
+            let vc: WebViewController = segue.destination as! WebViewController
             let u = sender as! URL
             vc.selectedUrl = u
         }
@@ -136,8 +136,9 @@ extension MagazinesViewController2: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         if indexPath.section == 0 {
             if let url = URL(string: womenArr[indexPath.row].url) {
-                let vc = SFSafariViewController(url: url)
-                present(vc, animated: true, completion: nil)
+                
+                UIApplication.shared.openURL(url)
+                
             }
         }else {
             if let url = URL(string: menArr[indexPath.row].url) {
