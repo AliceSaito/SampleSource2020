@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jWk-SV-Ol8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About Segue View Controller-->
+        <scene sceneID="wh7-yi-Ofd">
+            <objects>
+                <viewController id="jWk-SV-Ol8" customClass="AboutSegueViewController" customModule="SampleSource2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hDd-6D-wck">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpq-eB-FJt">
+                                <rect key="frame" x="127" y="385" width="160" height="30"/>
+                                <state key="normal" title="画面遷移をするボタン1"/>
+                                <connections>
+                                    <action selector="tappedButton1:" destination="jWk-SV-Ol8" eventType="touchUpInside" id="Ivg-RQ-Qnc"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kilua" translatesAutoresizingMaskIntoConstraints="NO" id="PRX-gi-7Yi">
+                                <rect key="frame" x="132" y="144" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="gEt-tj-ZfR"/>
+                                    <constraint firstAttribute="height" constant="150" id="mry-x2-peV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="キルア" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgH-w6-HtN">
+                                <rect key="frame" x="181" y="324" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nst-es-eTz">
+                                <rect key="frame" x="126" y="435" width="162" height="30"/>
+                                <state key="normal" title="画面遷移をするボタン2"/>
+                                <connections>
+                                    <action selector="tappedButton2:" destination="jWk-SV-Ol8" eventType="touchUpInside" id="cgG-qB-qoc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cpq-eB-FJt" firstAttribute="centerX" secondItem="hDd-6D-wck" secondAttribute="centerX" id="49B-55-5Dk"/>
+                            <constraint firstItem="NgH-w6-HtN" firstAttribute="centerX" secondItem="hDd-6D-wck" secondAttribute="centerX" id="61a-rM-dtr"/>
+                            <constraint firstItem="cpq-eB-FJt" firstAttribute="top" secondItem="NgH-w6-HtN" secondAttribute="bottom" constant="40" id="9HB-Em-1Gt"/>
+                            <constraint firstItem="PRX-gi-7Yi" firstAttribute="top" secondItem="egD-d4-wLx" secondAttribute="top" constant="100" id="QEX-Lx-BCx"/>
+                            <constraint firstItem="NgH-w6-HtN" firstAttribute="top" secondItem="PRX-gi-7Yi" secondAttribute="bottom" constant="30" id="UwW-aT-lUQ"/>
+                            <constraint firstItem="Nst-es-eTz" firstAttribute="top" secondItem="cpq-eB-FJt" secondAttribute="bottom" constant="20" id="WiK-z4-jbd"/>
+                            <constraint firstItem="Nst-es-eTz" firstAttribute="centerX" secondItem="hDd-6D-wck" secondAttribute="centerX" id="ocY-qw-wlJ"/>
+                            <constraint firstItem="PRX-gi-7Yi" firstAttribute="centerX" secondItem="hDd-6D-wck" secondAttribute="centerX" id="rIe-1b-A3S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="egD-d4-wLx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SKc-rz-xf5"/>
+                    <connections>
+                        <outlet property="imageView" destination="PRX-gi-7Yi" id="hxl-p1-zYh"/>
+                        <outlet property="nameLabel" destination="NgH-w6-HtN" id="fPZ-Ho-8Mt"/>
+                        <segue destination="7vv-bV-uZL" kind="show" identifier="next" id="4M9-CA-rdL"/>
+                        <segue destination="7vv-bV-uZL" kind="showDetail" identifier="nextModaly" id="355-uT-COS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sxf-Lb-weE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="-214"/>
+        </scene>
+        <!--About Segue Next View Controller-->
+        <scene sceneID="LcK-hC-3mE">
+            <objects>
+                <viewController id="7vv-bV-uZL" customClass="AboutSegueNextViewController" customModule="SampleSource2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jRC-ke-aNd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wgE-SF-Q7h">
+                                <rect key="frame" x="100" y="100" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3m9-6c-cXX"/>
+                                    <constraint firstAttribute="width" constant="100" id="7y2-uZ-L6l"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???Label???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTa-6S-Kcn">
+                                <rect key="frame" x="240" y="100" width="91.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MTa-6S-Kcn" firstAttribute="top" secondItem="wgE-SF-Q7h" secondAttribute="top" id="5mD-z9-b8Y"/>
+                            <constraint firstItem="MTa-6S-Kcn" firstAttribute="leading" secondItem="wgE-SF-Q7h" secondAttribute="trailing" constant="40" id="XgO-WE-kuq"/>
+                            <constraint firstItem="wgE-SF-Q7h" firstAttribute="leading" secondItem="OtE-fc-Yhf" secondAttribute="leading" constant="100" id="kwE-rV-rxp"/>
+                            <constraint firstItem="wgE-SF-Q7h" firstAttribute="top" secondItem="OtE-fc-Yhf" secondAttribute="top" constant="100" id="zG6-ur-eS0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OtE-fc-Yhf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="A2C-ee-xRG"/>
+                    <connections>
+                        <outlet property="imageView" destination="wgE-SF-Q7h" id="eUD-9E-R0w"/>
+                        <outlet property="label" destination="MTa-6S-Kcn" id="f7S-8W-Y0d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QKR-ot-hBj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781" y="-281"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="4M9-CA-rdL"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="kilua" width="334" height="334"/>
+    </resources>
+</document>
