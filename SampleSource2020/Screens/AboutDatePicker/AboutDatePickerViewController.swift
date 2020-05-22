@@ -20,7 +20,7 @@ class AboutDatePickerViewController: UIViewController {
 
         // キーボードの代わりにUIDatePickerを表示する
         textField.inputView = datePicker
-        // IBActionが使えないからコードでvaueChangedを設定する
+        // IBActionが使えないからコードでvalueChangedを設定する
         datePicker.addTarget(self, action: #selector(self.valueChanged(sender:)), for: UIControl.Event.valueChanged)
 
         // inputViewの上にくっついてるバーのようなView
