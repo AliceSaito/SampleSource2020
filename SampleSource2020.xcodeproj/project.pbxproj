@@ -11,6 +11,9 @@
 		1E03080224624A99007F0824 /* AboutFunction2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E03080124624A99007F0824 /* AboutFunction2ViewController.swift */; };
 		1E1B9594246430C500EF6C5C /* Renshu1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1B9593246430C500EF6C5C /* Renshu1.storyboard */; };
 		1E1B9596246430D400EF6C5C /* Renshu1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B9595246430D400EF6C5C /* Renshu1ViewController.swift */; };
+		1E35A22024778E4B00F26B2D /* AboutSegue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E35A21F24778E4B00F26B2D /* AboutSegue.storyboard */; };
+		1E35A22224778E5600F26B2D /* AboutSegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35A22124778E5600F26B2D /* AboutSegueViewController.swift */; };
+		1E35A22424778FFF00F26B2D /* AboutSegueNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35A22324778FFF00F26B2D /* AboutSegueNextViewController.swift */; };
 		1E48E59C24637BDB005DA816 /* AboutFunction3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E48E59B24637BDB005DA816 /* AboutFunction3.storyboard */; };
 		1E48E59E24637BEE005DA816 /* AboutFunction3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E48E59D24637BEE005DA816 /* AboutFunction3ViewController.swift */; };
 		1E5242832467F8F1008A5B03 /* Renshu2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5242822467F8F1008A5B03 /* Renshu2.storyboard */; };
@@ -74,6 +77,9 @@
 		1E03080124624A99007F0824 /* AboutFunction2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFunction2ViewController.swift; sourceTree = "<group>"; };
 		1E1B9593246430C500EF6C5C /* Renshu1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Renshu1.storyboard; sourceTree = "<group>"; };
 		1E1B9595246430D400EF6C5C /* Renshu1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renshu1ViewController.swift; sourceTree = "<group>"; };
+		1E35A21F24778E4B00F26B2D /* AboutSegue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutSegue.storyboard; sourceTree = "<group>"; };
+		1E35A22124778E5600F26B2D /* AboutSegueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSegueViewController.swift; sourceTree = "<group>"; };
+		1E35A22324778FFF00F26B2D /* AboutSegueNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSegueNextViewController.swift; sourceTree = "<group>"; };
 		1E48E59B24637BDB005DA816 /* AboutFunction3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutFunction3.storyboard; sourceTree = "<group>"; };
 		1E48E59D24637BEE005DA816 /* AboutFunction3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFunction3ViewController.swift; sourceTree = "<group>"; };
 		1E5242822467F8F1008A5B03 /* Renshu2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Renshu2.storyboard; sourceTree = "<group>"; };
@@ -164,6 +170,16 @@
 			path = Renshu1;
 			sourceTree = "<group>";
 		};
+		1E35A21E24778E3A00F26B2D /* AboutSegue */ = {
+			isa = PBXGroup;
+			children = (
+				1E35A21F24778E4B00F26B2D /* AboutSegue.storyboard */,
+				1E35A22124778E5600F26B2D /* AboutSegueViewController.swift */,
+				1E35A22324778FFF00F26B2D /* AboutSegueNextViewController.swift */,
+			);
+			path = AboutSegue;
+			sourceTree = "<group>";
+		};
 		1E48E59A24637BC9005DA816 /* AboutFunction3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +261,7 @@
 		1E999C20245D3FBD00E545E8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1E35A21E24778E3A00F26B2D /* AboutSegue */,
 				65CBA96C2473D8BE009684AC /* Magazines2 */,
 				1EDFC0AC2471680000D2E96B /* Magazines */,
 				1ED60257246BD2F500E85CAB /* Renshu3 */,
@@ -466,6 +483,7 @@
 			files = (
 				1E5242832467F8F1008A5B03 /* Renshu2.storyboard in Resources */,
 				1ED60259246BD31200E85CAB /* Renshu3.storyboard in Resources */,
+				1E35A22024778E4B00F26B2D /* AboutSegue.storyboard in Resources */,
 				1E48E59C24637BDB005DA816 /* AboutFunction3.storyboard in Resources */,
 				1EFD4F6F2461022E004ED092 /* AboutFunction.storyboard in Resources */,
 				65CBA9742473D9FF009684AC /* Magazines2.storyboard in Resources */,
@@ -511,6 +529,7 @@
 				653E4DB8246AA30000F6D0AE /* AboutSection2ViewController.swift in Sources */,
 				65CBA9672472434B009684AC /* MagazinesTableViewCell.swift in Sources */,
 				1E48E59E24637BEE005DA816 /* AboutFunction3ViewController.swift in Sources */,
+				1E35A22424778FFF00F26B2D /* AboutSegueNextViewController.swift in Sources */,
 				1EB411AD245D4A1B003A13EF /* AboutButtonViewController.swift in Sources */,
 				65CBA96E2473D92E009684AC /* MagazinesViewController2.swift in Sources */,
 				1E91CCFE245BC2F500CBD37B /* TopViewController.swift in Sources */,
@@ -518,6 +537,7 @@
 				1ED602512469484500E85CAB /* AboutSection1ViewController.swift in Sources */,
 				1ED6025B246BD33100E85CAB /* Renshu3ViewController.swift in Sources */,
 				1E03080224624A99007F0824 /* AboutFunction2ViewController.swift in Sources */,
+				1E35A22224778E5600F26B2D /* AboutSegueViewController.swift in Sources */,
 				65CBA96924725931009684AC /* MagazineHeaderTableViewCell.swift in Sources */,
 				65CBA9702473D984009684AC /* MagazinesTableViewCell2.swift in Sources */,
 				65CBA97624768629009684AC /* WebViewController.swift in Sources */,
