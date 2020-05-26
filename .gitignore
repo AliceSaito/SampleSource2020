@@ -64,3 +64,6 @@ fastlane/test_output
 *DS_Store
 
 *xcbkptlist
+
+Podfile.lock
+
