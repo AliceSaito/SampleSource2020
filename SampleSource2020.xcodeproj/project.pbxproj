@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,6 +33,8 @@
 		1EB411AD245D4A1B003A13EF /* AboutButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB411AC245D4A1B003A13EF /* AboutButtonViewController.swift */; };
 		1EBA5CC72460242800C8FB5B /* AboutDatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EBA5CC62460242800C8FB5B /* AboutDatePicker.storyboard */; };
 		1EBA5CC92460243800C8FB5B /* AboutDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBA5CC82460243800C8FB5B /* AboutDatePickerViewController.swift */; };
+		1EC70730247BC5870035C68C /* RenshuAPI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC7072F247BC5870035C68C /* RenshuAPI.storyboard */; };
+		1EC70732247BC5960035C68C /* RenshuAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC70731247BC5960035C68C /* RenshuAPIViewController.swift */; };
 		1ED6024F2469483600E85CAB /* AboutSection1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED6024E2469483600E85CAB /* AboutSection1.storyboard */; };
 		1ED602512469484500E85CAB /* AboutSection1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED602502469484500E85CAB /* AboutSection1ViewController.swift */; };
 		1ED60254246B8CFD00E85CAB /* AboutDictionary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED60253246B8CFD00E85CAB /* AboutDictionary.storyboard */; };
@@ -56,6 +58,7 @@
 		65CBA9792477A8B1009684AC /* Ryodan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65CBA9782477A8B1009684AC /* Ryodan.storyboard */; };
 		65CBA97B2477A8FB009684AC /* KumoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA97A2477A8FB009684AC /* KumoViewController.swift */; };
 		65CBA97D2477A91F009684AC /* DaninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA97C2477A91F009684AC /* DaninViewController.swift */; };
+		FB3EE6B1029B9F6CBAFCC5DC /* Pods_SampleSource2020.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AC15C5B2016EAEE23EDCE6 /* Pods_SampleSource2020.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +111,8 @@
 		1EB411AC245D4A1B003A13EF /* AboutButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutButtonViewController.swift; sourceTree = "<group>"; };
 		1EBA5CC62460242800C8FB5B /* AboutDatePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutDatePicker.storyboard; sourceTree = "<group>"; };
 		1EBA5CC82460243800C8FB5B /* AboutDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDatePickerViewController.swift; sourceTree = "<group>"; };
+		1EC7072F247BC5870035C68C /* RenshuAPI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RenshuAPI.storyboard; sourceTree = "<group>"; };
+		1EC70731247BC5960035C68C /* RenshuAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenshuAPIViewController.swift; sourceTree = "<group>"; };
 		1ED6024E2469483600E85CAB /* AboutSection1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutSection1.storyboard; sourceTree = "<group>"; };
 		1ED602502469484500E85CAB /* AboutSection1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSection1ViewController.swift; sourceTree = "<group>"; };
 		1ED60253246B8CFD00E85CAB /* AboutDictionary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutDictionary.storyboard; sourceTree = "<group>"; };
@@ -131,6 +136,9 @@
 		65CBA9782477A8B1009684AC /* Ryodan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ryodan.storyboard; sourceTree = "<group>"; };
 		65CBA97A2477A8FB009684AC /* KumoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KumoViewController.swift; sourceTree = "<group>"; };
 		65CBA97C2477A91F009684AC /* DaninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaninViewController.swift; sourceTree = "<group>"; };
+		77E960FA67C08AE49AE04CCB /* Pods-SampleSource2020.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleSource2020.release.xcconfig"; path = "Target Support Files/Pods-SampleSource2020/Pods-SampleSource2020.release.xcconfig"; sourceTree = "<group>"; };
+		79AC15C5B2016EAEE23EDCE6 /* Pods_SampleSource2020.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleSource2020.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847D33FA11A0A7570AEB8858 /* Pods-SampleSource2020.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleSource2020.debug.xcconfig"; path = "Target Support Files/Pods-SampleSource2020/Pods-SampleSource2020.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3EE6B1029B9F6CBAFCC5DC /* Pods_SampleSource2020.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +167,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045F39B9C29772793ED90765 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79AC15C5B2016EAEE23EDCE6 /* Pods_SampleSource2020.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1E0307FE24624A7D007F0824 /* AboutFunction2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +237,8 @@
 				1E91CD0F245BC2F700CBD37B /* SampleSource2020Tests */,
 				1E91CD1A245BC2F700CBD37B /* SampleSource2020UITests */,
 				1E91CCF9245BC2F500CBD37B /* Products */,
+				D3B11F676A1B1EFF186EF645 /* Pods */,
+				045F39B9C29772793ED90765 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -267,6 +286,7 @@
 		1E999C20245D3FBD00E545E8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1EC7072E247BC57C0035C68C /* RenshuAPI */,
 				65CBA97724779F7D009684AC /* AboutSegueRyodan */,
 				1E35A21E24778E3A00F26B2D /* AboutSegue */,
 				65CBA96C2473D8BE009684AC /* Magazines2 */,
@@ -313,6 +333,15 @@
 				1EBA5CC82460243800C8FB5B /* AboutDatePickerViewController.swift */,
 			);
 			path = AboutDatePicker;
+			sourceTree = "<group>";
+		};
+		1EC7072E247BC57C0035C68C /* RenshuAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1EC7072F247BC5870035C68C /* RenshuAPI.storyboard */,
+				1EC70731247BC5960035C68C /* RenshuAPIViewController.swift */,
+			);
+			path = RenshuAPI;
 			sourceTree = "<group>";
 		};
 		1ED6024D2469480200E85CAB /* AboutSection1 */ = {
@@ -395,6 +424,15 @@
 			path = AboutSegueRyodan;
 			sourceTree = "<group>";
 		};
+		D3B11F676A1B1EFF186EF645 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				847D33FA11A0A7570AEB8858 /* Pods-SampleSource2020.debug.xcconfig */,
+				77E960FA67C08AE49AE04CCB /* Pods-SampleSource2020.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -402,9 +440,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E91CD20245BC2F700CBD37B /* Build configuration list for PBXNativeTarget "SampleSource2020" */;
 			buildPhases = (
+				C6CB9EDA5573A64C735061B4 /* [CP] Check Pods Manifest.lock */,
 				1E91CCF4245BC2F500CBD37B /* Sources */,
 				1E91CCF5245BC2F500CBD37B /* Frameworks */,
 				1E91CCF6245BC2F500CBD37B /* Resources */,
+				35E85083E30133ABE4B4BAE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -500,6 +540,7 @@
 			files = (
 				1E5242832467F8F1008A5B03 /* Renshu2.storyboard in Resources */,
 				1ED60259246BD31200E85CAB /* Renshu3.storyboard in Resources */,
+				1EC70730247BC5870035C68C /* RenshuAPI.storyboard in Resources */,
 				1E35A22024778E4B00F26B2D /* AboutSegue.storyboard in Resources */,
 				1E48E59C24637BDB005DA816 /* AboutFunction3.storyboard in Resources */,
 				1EFD4F6F2461022E004ED092 /* AboutFunction.storyboard in Resources */,
@@ -537,6 +578,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35E85083E30133ABE4B4BAE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleSource2020/Pods-SampleSource2020-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleSource2020/Pods-SampleSource2020-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleSource2020/Pods-SampleSource2020-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6CB9EDA5573A64C735061B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleSource2020-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1E91CCF4245BC2F500CBD37B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -564,6 +647,7 @@
 				1E5242852467FAAB008A5B03 /* Renshu2ViewController.swift in Sources */,
 				1E999C23245D405C00E545E8 /* TopTableViewCell.swift in Sources */,
 				1ED60256246B8D0500E85CAB /* AboutDictionaryViewController.swift in Sources */,
+				1EC70732247BC5960035C68C /* RenshuAPIViewController.swift in Sources */,
 				1E1B9596246430D400EF6C5C /* Renshu1ViewController.swift in Sources */,
 				65CBA97B2477A8FB009684AC /* KumoViewController.swift in Sources */,
 				1EDFC0B02471685700D2E96B /* MagazinesViewController.swift in Sources */,
@@ -741,6 +825,7 @@
 		};
 		1E91CD21245BC2F700CBD37B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 847D33FA11A0A7570AEB8858 /* Pods-SampleSource2020.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -761,6 +846,7 @@
 		};
 		1E91CD22245BC2F700CBD37B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77E960FA67C08AE49AE04CCB /* Pods-SampleSource2020.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
