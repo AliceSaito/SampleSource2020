@@ -130,8 +130,7 @@ class RenshuEnumViewController: UIViewController {
                      Clothes(title: "MGV", category: .pants, size: .small, color: .blue),
                      Clothes(title: "楊柳シフォンスカート", category: .skirt, size: .large, color: .white),
                      Clothes(title: "ABITOKYO", category: .skirt, size: .large, color: .black)]
-                     
-        
+                      
         
         array.forEach {
             if $0.color == Color.red {
@@ -153,7 +152,21 @@ class RenshuEnumViewController: UIViewController {
         }
         
         
-        
+
     }
     
 }
+
+
+
+
+//課題4 PriceRange というenumを作成する
+//     caseは4つ、1円〜1000円の商品が該当するもの
+//               1001円〜5000円の商品が該当するもの
+//               5001円〜20000円の商品が該当するもの
+//               20001円以上の商品が該当するもの
+
+//課題5 RenshuEnumViewController内に、「値段を渡すとPriceRangeが返ってくる」関数を作成する
+
+//課題6 PriceRangeの中に、「最低金額を返す」関数を作成する
+//     ヒント：switch self { を使う
