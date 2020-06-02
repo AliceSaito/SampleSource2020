@@ -85,7 +85,7 @@ class RenshuEnumViewController: UIViewController {
             // todo
         }
         
-        // ③カテゴリーのように、String型にして、rawValueを設定しないと、自動的にcaseの名前がrawValueとなる
+        // ③カテゴリーのように、String型にして、rawValue(= "tops"の部分のこと)を設定しないと、自動的にcaseの名前がrawValueとなる
         // 以下は③カテゴリーと等価
 //        enum Category: String {
 //            case tops = "tops"
@@ -97,10 +97,29 @@ class RenshuEnumViewController: UIViewController {
         
         
         //課題1 Categoryのcaseをすべて作成して、配列に詰めて、すべてprintする
-        //     ヒント　Category.tops
+        let c = Category.tops
+        print(c)
+        
+        let all:[Category] = [.tops, .outer, .pants, .skirt, .onePiece]
+        for ca in all {
+           print(ca)
+        }
+        
         
         //課題2 Categoryのcaseをすべて文字列から作成して、配列に詰めて、すべてprintする
-        //     ヒント　Category(rawValue: "tops")
+        let t = Category(rawValue: "tops")!
+        print(t)
+        
+        let allStr:[Category] = [Category(rawValue: "tops")!,
+                                 Category(rawValue: "outer")!,
+                                 Category(rawValue: "pants")!,
+                                 Category(rawValue: "skirt")!,
+                                 Category(rawValue: "onePiece")!]
+        
+        allStr.forEach {
+            print($0)
+        }
+        
         
         //課題3 今、ある服の情報が以下のように与えられている
         //     これらのうち、色がredであるもののタイトルをすべてprintする
@@ -110,12 +129,31 @@ class RenshuEnumViewController: UIViewController {
                      Clothes(title: "ブッチャープリント 2Bジャケット", category: .outer, size: .xl, color: .red),
                      Clothes(title: "MGV", category: .pants, size: .small, color: .blue),
                      Clothes(title: "楊柳シフォンスカート", category: .skirt, size: .large, color: .white),
-                     Clothes(title: "ABITOKYO", category: .skirt, size: .large, color: .black)
-        ]
+                     Clothes(title: "ABITOKYO", category: .skirt, size: .large, color: .black)]
                      
         
         
+        array.forEach {
+            if $0.color == Color.red {
+                print($0.title)
+            }
+        }
+        
+        //別解
+        for cl in array {
+            if cl.color == Color.red {
+                print(cl.title)
+            }
+        }
+        //別解
+        array.forEach { (cl) in
+            if cl.color == Color.red {
+                print(cl.title)
+            }
+        }
+        
+        
+        
     }
-    
     
 }

@@ -63,13 +63,11 @@ enum NenType: String, Codable {
 // ここでAPIの練習
 class RenshuAPI2ViewController: UIViewController {
     
-        
 
     @IBOutlet weak var tableView: UITableView!
     
     
     var daninInfo: [DaninStruct] = []
-    
     
     
     override func viewDidLoad() {
@@ -101,7 +99,6 @@ class RenshuAPI2ViewController: UIViewController {
             self.tableView.reloadData()
 
            
-            
         }
         
     }
