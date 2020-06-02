@@ -16,6 +16,8 @@
 		1E35A22424778FFF00F26B2D /* AboutSegueNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35A22324778FFF00F26B2D /* AboutSegueNextViewController.swift */; };
 		1E48E59C24637BDB005DA816 /* AboutFunction3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E48E59B24637BDB005DA816 /* AboutFunction3.storyboard */; };
 		1E48E59E24637BEE005DA816 /* AboutFunction3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E48E59D24637BEE005DA816 /* AboutFunction3ViewController.swift */; };
+		1E4DCA7924860AB4004939CF /* RenshuEnumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4DCA7824860AB4004939CF /* RenshuEnumViewController.swift */; };
+		1E4DCA7B24860AD6004939CF /* RenshuEnum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E4DCA7A24860AD6004939CF /* RenshuEnum.storyboard */; };
 		1E5242832467F8F1008A5B03 /* Renshu2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5242822467F8F1008A5B03 /* Renshu2.storyboard */; };
 		1E5242852467FAAB008A5B03 /* Renshu2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5242842467FAAB008A5B03 /* Renshu2ViewController.swift */; };
 		1E868D66245E5C2E001B183B /* AppClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E868D64245E5C2E001B183B /* AppClassViewController.swift */; };
@@ -89,6 +91,8 @@
 		1E35A22324778FFF00F26B2D /* AboutSegueNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSegueNextViewController.swift; sourceTree = "<group>"; };
 		1E48E59B24637BDB005DA816 /* AboutFunction3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutFunction3.storyboard; sourceTree = "<group>"; };
 		1E48E59D24637BEE005DA816 /* AboutFunction3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFunction3ViewController.swift; sourceTree = "<group>"; };
+		1E4DCA7824860AB4004939CF /* RenshuEnumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenshuEnumViewController.swift; sourceTree = "<group>"; };
+		1E4DCA7A24860AD6004939CF /* RenshuEnum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RenshuEnum.storyboard; sourceTree = "<group>"; };
 		1E5242822467F8F1008A5B03 /* Renshu2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Renshu2.storyboard; sourceTree = "<group>"; };
 		1E5242842467FAAB008A5B03 /* Renshu2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renshu2ViewController.swift; sourceTree = "<group>"; };
 		1E868D64245E5C2E001B183B /* AppClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppClassViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +218,15 @@
 			path = AboutFunction3;
 			sourceTree = "<group>";
 		};
+		1E4DCA7724860A64004939CF /* RenshuEnum */ = {
+			isa = PBXGroup;
+			children = (
+				1E4DCA7824860AB4004939CF /* RenshuEnumViewController.swift */,
+				1E4DCA7A24860AD6004939CF /* RenshuEnum.storyboard */,
+			);
+			path = RenshuEnum;
+			sourceTree = "<group>";
+		};
 		1E5242812467F8DD008A5B03 /* Renshu2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +301,7 @@
 		1E999C20245D3FBD00E545E8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1E4DCA7724860A64004939CF /* RenshuEnum */,
 				1EC7072E247BC57C0035C68C /* RenshuAPI */,
 				65CBA97724779F7D009684AC /* AboutSegueRyodan */,
 				1E35A21E24778E3A00F26B2D /* AboutSegue */,
@@ -553,6 +567,7 @@
 				1EB411AB245D49DE003A13EF /* AboutButton.storyboard in Resources */,
 				1E868D67245E5C2E001B183B /* AboutClass.storyboard in Resources */,
 				1ED60254246B8CFD00E85CAB /* AboutDictionary.storyboard in Resources */,
+				1E4DCA7B24860AD6004939CF /* RenshuEnum.storyboard in Resources */,
 				1E999C25245D414700E545E8 /* Top.storyboard in Resources */,
 				1E91CD06245BC2F700CBD37B /* LaunchScreen.storyboard in Resources */,
 				65CBA9792477A8B1009684AC /* Ryodan.storyboard in Resources */,
@@ -648,6 +663,7 @@
 				65CBA9702473D984009684AC /* MagazinesTableViewCell2.swift in Sources */,
 				65CBA97624768629009684AC /* WebViewController.swift in Sources */,
 				1E91CCFC245BC2F500CBD37B /* AppDelegate.swift in Sources */,
+				1E4DCA7924860AB4004939CF /* RenshuEnumViewController.swift in Sources */,
 				1E5242852467FAAB008A5B03 /* Renshu2ViewController.swift in Sources */,
 				1E999C23245D405C00E545E8 /* TopTableViewCell.swift in Sources */,
 				1ED60256246B8D0500E85CAB /* AboutDictionaryViewController.swift in Sources */,
