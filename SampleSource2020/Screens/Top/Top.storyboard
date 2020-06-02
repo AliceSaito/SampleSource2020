@@ -97,7 +97,8 @@
                         <segue destination="KpC-ks-vxs" kind="show" identifier="AboutSegue" id="G9G-sm-dg0"/>
                         <segue destination="0e5-A1-hcW" kind="show" identifier="Ryodan" id="qIk-pb-64z"/>
                         <segue destination="usR-NU-1rT" kind="show" identifier="RenshuAPI" id="duW-fv-rmn"/>
-                        <segue destination="rnu-fV-d6B" kind="show" identifier="RenshuEnum" id="Ic6-vU-Igx"/>
+                        <segue destination="gvW-Xy-nq7" kind="show" identifier="RenshuAPI2" id="5Y7-en-Mii"/>
+                        <segue destination="99Q-o6-v3o" kind="show" identifier="RenshuEnum" id="e4j-QZ-Y9N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uiy-kL-m7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -260,17 +261,27 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fml-MV-l1U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-283" y="226"/>
+            <point key="canvasLocation" x="-199" y="279"/>
         </scene>
         <!--RenshuEnum-->
-        <scene sceneID="TwY-K8-nvv">
+        <scene sceneID="rLR-tw-ZBh">
             <objects>
-                <viewControllerPlaceholder storyboardName="RenshuEnum" id="rnu-fV-d6B" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="2vG-td-D6o"/>
+                <viewControllerPlaceholder storyboardName="RenshuEnum" id="99Q-o6-v3o" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vGk-Ap-LqY"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HLl-PH-0bG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9FE-zZ-Aqt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-522" y="329"/>
+            <point key="canvasLocation" x="-201" y="382"/>
+        </scene>
+        <!--RenshuAPI2-->
+        <scene sceneID="e7a-FJ-ahT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RenshuAPI2" id="gvW-Xy-nq7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ebC-4h-DIv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UJs-23-I73" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199" y="334"/>
         </scene>
         <!--Magazines2-->
         <scene sceneID="5Vs-cA-eoB">
