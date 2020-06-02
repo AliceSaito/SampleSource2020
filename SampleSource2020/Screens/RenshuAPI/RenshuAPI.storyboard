@@ -102,8 +102,8 @@
                         <viewLayoutGuide key="safeArea" id="L0u-8W-VIH"/>
                     </view>
                     <connections>
-                        <outlet property="indicator" destination="spz-q3-3eG" id="5Sb-h6-wfy"/>
-                        <outlet property="tableView" destination="1bl-zg-5Uw" id="jZ4-Vj-r4n"/>
+                        <outlet property="indicator" destination="spz-q3-3eG" id="pW3-b1-FM5"/>
+                        <outlet property="tableView" destination="1bl-zg-5Uw" id="N6W-gk-QDj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OWS-xT-Dr7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

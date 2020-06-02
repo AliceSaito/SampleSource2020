@@ -29,7 +29,8 @@ class TopViewController: UIViewController {
             CellData(identifier: "Magazines2", title: "Dictionray+TableView 雑誌一覧その２", subTitle: "2020/05/19"),
             CellData(identifier: "AboutSegue", title: "画面遷移について1", subTitle: "2020/05/22"),
             CellData(identifier: "Ryodan", title: "幻影旅団メンバー情報", subTitle: "2020/05/22"),
-            CellData(identifier: "RenshuAPI", title: "APIの練習（幻影旅団）", subTitle: "2020/05/25")
+            CellData(identifier: "RenshuAPI", title: "APIの練習（幻影旅団）", subTitle: "2020/05/25"),
+            CellData(identifier: "RenshuAPI2", title: "APIの練習2", subTitle: "2020/06/01")
         ]
     }
     
@@ -140,6 +141,9 @@ extension TopViewController: UITableViewDataSource, UITableViewDelegate {
         if cellData.identifier == "RenshuAPI" {
             self.performSegue(withIdentifier: "RenshuAPI", sender: nil)
         }
+        if cellData.identifier == "RenshuAPI2" {
+                   self.performSegue(withIdentifier: "RenshuAPI2", sender: nil)
+               }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
