@@ -53,6 +53,8 @@ class RenshuEnumViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+         
+        
         // Enumは列挙型、有限集合を一つのグループにして名前をつけたもの
 
         // ①カラーのように、何も型がなくても作ることが出来る
@@ -151,22 +153,117 @@ class RenshuEnumViewController: UIViewController {
             }
         }
         
+        //下は構文として覚える。arrayの中身を一つずつcに詰めて処理を実行する
+        array.forEach { (c) in
+            //処理
+        }
         
-
+        let getPrice = getPriceRange(price: 3000)
+        print(getPrice)
+        
+        
+        let getMiniPrice = getMinimumPrice(priceRange: .One)
+        print(getMiniPrice)
+               
+        
+        let getMini = PriceRange.One
+        print(getMini.getMinimumPrice())
     }
     
+    
+    
+    
+    //課題4 PriceRange というenumを作成する
+    //     caseは4つ、1円〜1000円の商品が該当するもの
+    //               1001円〜5000円の商品が該当するもの
+    //               5001円〜20000円の商品が該当するもの
+    //               20001円以上の商品が該当するもの
+    
+    //課題5 RenshuEnumViewController内に、「値段を渡すとPriceRangeが返ってくる」関数を作成する
+    
+    //課題6 RenshuEnumViewControllerの中に、「最低金額を返す」関数を作成する
+    //     ヒント：switch を使う
+    
+    
+    enum PriceRange: Int {
+        case One
+        case Two
+        case Tree
+        case More
+        
+        func getMinimumPrice() -> Int {
+            switch self {
+            case .One:
+                return 1
+            case .Two:
+                return 1001
+            case .Tree:
+                return 5001
+            case .More:
+                return 20001
+            }
+        }
+    }
+    
+    
+    // 課題5
+    func getPriceRange(price: Int) -> PriceRange {
+        if price >= 1 && 1000 >= price {
+            return .One
+        }
+        if price >= 1001 && 5000 >= price {
+            return .Two
+        }
+        if price >= 5001 && 20000 >= price {
+            return .Tree
+        }
+        return .More
+    }
+    
+    
+    // 課題6
+    func getMinimumPrice(priceRange: PriceRange) -> Int {
+//        if priceRange == .One {
+//            return 1
+//        }
+//        else if priceRange == .Two {
+//            return 1001
+//        }
+//        else if priceRange == .Tree {
+//            return 5001
+//        }
+//        else {
+//            return 20001
+//        }
+        
+        switch priceRange {
+        case .One:
+            return 1
+        case .Two:
+            return 1001
+        case .Tree:
+            return 5001
+        case .More:
+            return 20001
+        }
+    }
+
+            
+    //        var i: Int = 0
+    //        switch i {
+    //        case 1:
+    //            // 何かする
+    //            print("")
+    //　　　　　　↑　printを書けばbreakを省略できる
+    //        case 2:
+    //            break
+    //        case 3:
+    //            break
+    //        }
+
 }
+ 
 
 
 
 
-//課題4 PriceRange というenumを作成する
-//     caseは4つ、1円〜1000円の商品が該当するもの
-//               1001円〜5000円の商品が該当するもの
-//               5001円〜20000円の商品が該当するもの
-//               20001円以上の商品が該当するもの
-
-//課題5 RenshuEnumViewController内に、「値段を渡すとPriceRangeが返ってくる」関数を作成する
-
-//課題6 PriceRangeの中に、「最低金額を返す」関数を作成する
-//     ヒント：switch self { を使う

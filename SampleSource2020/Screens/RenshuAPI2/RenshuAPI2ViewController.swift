@@ -46,6 +46,9 @@ enum NenType: String, Codable {
     }
 }
 
+//var hoge: NenType = .Enhancer
+//hoge.getDisplayName()
+
 
 
 //struct Isonoke {
