@@ -16,6 +16,7 @@ struct Danin: Codable {
     let type: String
     let techniques: [String]
     let image_url: String
+    
 }
 
 // ここでAPIの練習

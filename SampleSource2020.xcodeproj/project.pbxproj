@@ -52,6 +52,7 @@
 		652FA69D2484C62F000616E2 /* RenshuAPI2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652FA69C2484C62F000616E2 /* RenshuAPI2TableViewCell.swift */; };
 		653E4DB8246AA30000F6D0AE /* AboutSection2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653E4DB7246AA30000F6D0AE /* AboutSection2ViewController.swift */; };
 		653E4DBA246AA32300F6D0AE /* AboutSection2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653E4DB9246AA32300F6D0AE /* AboutSection2.storyboard */; };
+		65AD321F2487800800A28D6F /* enumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AD321E2487800800A28D6F /* enumViewController.swift */; };
 		65CBA965246E9974009684AC /* Renshu3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA964246E9974009684AC /* Renshu3TableViewCell.swift */; };
 		65CBA9672472434B009684AC /* MagazinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA9662472434B009684AC /* MagazinesTableViewCell.swift */; };
 		65CBA96924725931009684AC /* MagazineHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA96824725931009684AC /* MagazineHeaderTableViewCell.swift */; };
@@ -136,6 +137,7 @@
 		652FA69C2484C62F000616E2 /* RenshuAPI2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenshuAPI2TableViewCell.swift; sourceTree = "<group>"; };
 		653E4DB7246AA30000F6D0AE /* AboutSection2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSection2ViewController.swift; sourceTree = "<group>"; };
 		653E4DB9246AA32300F6D0AE /* AboutSection2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutSection2.storyboard; sourceTree = "<group>"; };
+		65AD321E2487800800A28D6F /* enumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enumViewController.swift; sourceTree = "<group>"; };
 		65CBA964246E9974009684AC /* Renshu3TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renshu3TableViewCell.swift; sourceTree = "<group>"; };
 		65CBA9662472434B009684AC /* MagazinesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazinesTableViewCell.swift; sourceTree = "<group>"; };
 		65CBA96824725931009684AC /* MagazineHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineHeaderTableViewCell.swift; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 			children = (
 				1EC7072F247BC5870035C68C /* RenshuAPI.storyboard */,
 				1EC70731247BC5960035C68C /* RenshuAPIViewController.swift */,
+				65AD321E2487800800A28D6F /* enumViewController.swift */,
 				65F3D053247CEE0B00BC51FE /* RenshuAPITableViewCell.swift */,
 			);
 			path = RenshuAPI;
@@ -667,6 +670,7 @@
 				653E4DB8246AA30000F6D0AE /* AboutSection2ViewController.swift in Sources */,
 				65CBA9672472434B009684AC /* MagazinesTableViewCell.swift in Sources */,
 				65CBA97D2477A91F009684AC /* DaninViewController.swift in Sources */,
+				65AD321F2487800800A28D6F /* enumViewController.swift in Sources */,
 				1E48E59E24637BEE005DA816 /* AboutFunction3ViewController.swift in Sources */,
 				1E35A22424778FFF00F26B2D /* AboutSegueNextViewController.swift in Sources */,
 				65F3D054247CEE0B00BC51FE /* RenshuAPITableViewCell.swift in Sources */,
