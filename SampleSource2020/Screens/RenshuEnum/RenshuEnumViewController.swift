@@ -131,3 +131,80 @@ class RenshuEnumViewController: UIViewController {
 
 //課題6 PriceRangeの中に、「最低金額を返す」関数を作成する
 //     ヒント：switch self { を使う
+
+
+
+
+
+// 豆知識 SwitchとEnumの関係
+//
+
+class Mametishiki01 {
+    func a() {
+
+        
+        // 通常のSwitch
+        // このようにすると、switch内はすべてのcaseを満たさなければならないからdefaultが必要になる
+        var i: Int = 0
+        
+        switch i {
+        case 1:
+            print("1")
+        case 2:
+            print("2")
+        default:
+            print("それ以外")
+        }
+        
+        // Enumの場合
+        // switch内はEnumのすべてのcaseを満たせばいいのでdefaultは不要
+        enum PriceRange {
+            case pattern1
+            case pattern2
+            case pattern3
+        }
+        var p: PriceRange = .pattern1
+        switch p {
+        case .pattern1:
+            print("1")
+        case .pattern2:
+            print("2")
+        case .pattern3:
+            print("3")    // defaultは不要
+        }
+        
+        
+        // 関数を作るとき
+        // enum + ifでやるとき
+        func aaaaaa(p: PriceRange) -> String {
+            if p == .pattern1 {
+                return "トップス"
+            }
+            if p == .pattern2 {
+                return "ジャケット"
+            }
+            if p == .pattern3 {
+                return "パンツ"
+            }
+            
+            //if でやると、Stringを必ず返さないといけない
+            return "わからない"
+        }
+        
+        // enumの場合、必ずどれかに入る
+        // enum + switchでやるとき
+        func bbbbb(p: PriceRange) -> String {
+            switch p {
+            case .pattern1:
+                return "トップス"
+            case .pattern2:
+                return "ジャケット"
+            case .pattern3:
+                return "パンツ"
+            }
+            
+            // ここにreturnがいらない（うれしい）
+        }
+
+    }
+}
