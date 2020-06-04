@@ -57,6 +57,7 @@
 		65571F132488C4520090F8CB /* RyodanCV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65571F122488C4520090F8CB /* RyodanCV.storyboard */; };
 		65571F152488C5D40090F8CB /* RyodanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65571F142488C5D40090F8CB /* RyodanViewController.swift */; };
 		65571F172488C6040090F8CB /* DaninCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65571F162488C6040090F8CB /* DaninCollectionViewCell.swift */; };
+		65A10CFC24890790003D89B3 /* ShokkenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A10CFB24890790003D89B3 /* ShokkenTableViewCell.swift */; };
 		65AD321F2487800800A28D6F /* enumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AD321E2487800800A28D6F /* enumViewController.swift */; };
 		65CBA965246E9974009684AC /* Renshu3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA964246E9974009684AC /* Renshu3TableViewCell.swift */; };
 		65CBA9672472434B009684AC /* MagazinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA9662472434B009684AC /* MagazinesTableViewCell.swift */; };
@@ -147,6 +148,7 @@
 		65571F122488C4520090F8CB /* RyodanCV.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RyodanCV.storyboard; sourceTree = "<group>"; };
 		65571F142488C5D40090F8CB /* RyodanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyodanViewController.swift; sourceTree = "<group>"; };
 		65571F162488C6040090F8CB /* DaninCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaninCollectionViewCell.swift; sourceTree = "<group>"; };
+		65A10CFB24890790003D89B3 /* ShokkenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShokkenTableViewCell.swift; sourceTree = "<group>"; };
 		65AD321E2487800800A28D6F /* enumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enumViewController.swift; sourceTree = "<group>"; };
 		65CBA964246E9974009684AC /* Renshu3TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renshu3TableViewCell.swift; sourceTree = "<group>"; };
 		65CBA9662472434B009684AC /* MagazinesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazinesTableViewCell.swift; sourceTree = "<group>"; };
@@ -428,6 +430,7 @@
 			children = (
 				1EF9721A24889C5B00E47A13 /* Syokken.storyboard */,
 				1EF9721C24889C6900E47A13 /* ShokkenViewController.swift */,
+				65A10CFB24890790003D89B3 /* ShokkenTableViewCell.swift */,
 			);
 			path = Syokken;
 			sourceTree = "<group>";
@@ -705,6 +708,7 @@
 				65CBA9672472434B009684AC /* MagazinesTableViewCell.swift in Sources */,
 				65CBA97D2477A91F009684AC /* DaninViewController.swift in Sources */,
 				65AD321F2487800800A28D6F /* enumViewController.swift in Sources */,
+				65A10CFC24890790003D89B3 /* ShokkenTableViewCell.swift in Sources */,
 				1E48E59E24637BEE005DA816 /* AboutFunction3ViewController.swift in Sources */,
 				1EF9721D24889C6900E47A13 /* ShokkenViewController.swift in Sources */,
 				1E35A22424778FFF00F26B2D /* AboutSegueNextViewController.swift in Sources */,
