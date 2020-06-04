@@ -32,6 +32,7 @@ class TopViewController: UIViewController {
             CellData(identifier: "RenshuAPI", title: "APIの練習（幻影旅団）", subTitle: "2020/05/25"),
             CellData(identifier: "RenshuAPI2", title: "APIの練習2", subTitle: "2020/06/01"),
             CellData(identifier: "RenshuEnum", title: "Enumの練習", subTitle: "2020/05/25"),
+            CellData(identifier: "Syokken", title: "練習：食券", subTitle: "2020/06/04"),
         ]
     }
     
@@ -147,6 +148,9 @@ extension TopViewController: UITableViewDataSource, UITableViewDelegate {
         }
         if cellData.identifier == "RenshuEnum" {
             self.performSegue(withIdentifier: "RenshuEnum", sender: nil)
+        }
+        if cellData.identifier == "Syokken" {
+            self.performSegue(withIdentifier: "Syokken", sender: nil)
         }
 
     }

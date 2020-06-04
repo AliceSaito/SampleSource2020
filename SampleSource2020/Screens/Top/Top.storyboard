@@ -99,6 +99,7 @@
                         <segue destination="usR-NU-1rT" kind="show" identifier="RenshuAPI" id="duW-fv-rmn"/>
                         <segue destination="gvW-Xy-nq7" kind="show" identifier="RenshuAPI2" id="5Y7-en-Mii"/>
                         <segue destination="99Q-o6-v3o" kind="show" identifier="RenshuEnum" id="e4j-QZ-Y9N"/>
+                        <segue destination="XFv-FC-IyO" kind="show" identifier="Syokken" id="ycc-rr-mJf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uiy-kL-m7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -272,6 +273,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9FE-zZ-Aqt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-201" y="382"/>
+        </scene>
+        <!--Syokken-->
+        <scene sceneID="MZe-ih-IZ8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Syokken" id="XFv-FC-IyO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6Nf-Kl-4lJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KiW-lo-XKI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-200" y="439"/>
         </scene>
         <!--RenshuAPI2-->
         <scene sceneID="e7a-FJ-ahT">

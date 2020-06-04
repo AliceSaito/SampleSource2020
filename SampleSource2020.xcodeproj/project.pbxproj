@@ -45,6 +45,8 @@
 		1ED6025B246BD33100E85CAB /* Renshu3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED6025A246BD33100E85CAB /* Renshu3ViewController.swift */; };
 		1EDFC0AE2471683200D2E96B /* Magazines.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EDFC0AD2471683200D2E96B /* Magazines.storyboard */; };
 		1EDFC0B02471685700D2E96B /* MagazinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDFC0AF2471685700D2E96B /* MagazinesViewController.swift */; };
+		1EF9721B24889C5B00E47A13 /* Syokken.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EF9721A24889C5B00E47A13 /* Syokken.storyboard */; };
+		1EF9721D24889C6900E47A13 /* ShokkenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF9721C24889C6900E47A13 /* ShokkenViewController.swift */; };
 		1EFD4F6F2461022E004ED092 /* AboutFunction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFD4F6E2461022E004ED092 /* AboutFunction.storyboard */; };
 		1EFD4F7124610240004ED092 /* AboutFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */; };
 		652FA6992484BFE6000616E2 /* RenshuAPI2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652FA6982484BFE6000616E2 /* RenshuAPI2.storyboard */; };
@@ -130,6 +132,8 @@
 		1ED6025A246BD33100E85CAB /* Renshu3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renshu3ViewController.swift; sourceTree = "<group>"; };
 		1EDFC0AD2471683200D2E96B /* Magazines.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Magazines.storyboard; sourceTree = "<group>"; };
 		1EDFC0AF2471685700D2E96B /* MagazinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazinesViewController.swift; sourceTree = "<group>"; };
+		1EF9721A24889C5B00E47A13 /* Syokken.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Syokken.storyboard; sourceTree = "<group>"; };
+		1EF9721C24889C6900E47A13 /* ShokkenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShokkenViewController.swift; sourceTree = "<group>"; };
 		1EFD4F6E2461022E004ED092 /* AboutFunction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutFunction.storyboard; sourceTree = "<group>"; };
 		1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFunctionViewController.swift; sourceTree = "<group>"; };
 		652FA6982484BFE6000616E2 /* RenshuAPI2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RenshuAPI2.storyboard; sourceTree = "<group>"; };
@@ -309,6 +313,7 @@
 		1E999C20245D3FBD00E545E8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1EF9721924889C0200E47A13 /* Syokken */,
 				1E4DCA7724860A64004939CF /* RenshuEnum */,
 				652FA6972484BFAF000616E2 /* RenshuAPI2 */,
 				1EC7072E247BC57C0035C68C /* RenshuAPI */,
@@ -409,6 +414,15 @@
 				653E4DB6246AA2E100F6D0AE /* AboutSection2 */,
 			);
 			path = Magazines;
+			sourceTree = "<group>";
+		};
+		1EF9721924889C0200E47A13 /* Syokken */ = {
+			isa = PBXGroup;
+			children = (
+				1EF9721A24889C5B00E47A13 /* Syokken.storyboard */,
+				1EF9721C24889C6900E47A13 /* ShokkenViewController.swift */,
+			);
+			path = Syokken;
 			sourceTree = "<group>";
 		};
 		1EFD4F6D24608D02004ED092 /* AboutFunction */ = {
@@ -588,6 +602,7 @@
 				1EB411AB245D49DE003A13EF /* AboutButton.storyboard in Resources */,
 				1E868D67245E5C2E001B183B /* AboutClass.storyboard in Resources */,
 				1ED60254246B8CFD00E85CAB /* AboutDictionary.storyboard in Resources */,
+				1EF9721B24889C5B00E47A13 /* Syokken.storyboard in Resources */,
 				1E4DCA7B24860AD6004939CF /* RenshuEnum.storyboard in Resources */,
 				1E999C25245D414700E545E8 /* Top.storyboard in Resources */,
 				1E91CD06245BC2F700CBD37B /* LaunchScreen.storyboard in Resources */,
@@ -672,6 +687,7 @@
 				65CBA97D2477A91F009684AC /* DaninViewController.swift in Sources */,
 				65AD321F2487800800A28D6F /* enumViewController.swift in Sources */,
 				1E48E59E24637BEE005DA816 /* AboutFunction3ViewController.swift in Sources */,
+				1EF9721D24889C6900E47A13 /* ShokkenViewController.swift in Sources */,
 				1E35A22424778FFF00F26B2D /* AboutSegueNextViewController.swift in Sources */,
 				65F3D054247CEE0B00BC51FE /* RenshuAPITableViewCell.swift in Sources */,
 				1EB411AD245D4A1B003A13EF /* AboutButtonViewController.swift in Sources */,
