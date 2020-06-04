@@ -54,6 +54,9 @@
 		652FA69D2484C62F000616E2 /* RenshuAPI2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652FA69C2484C62F000616E2 /* RenshuAPI2TableViewCell.swift */; };
 		653E4DB8246AA30000F6D0AE /* AboutSection2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653E4DB7246AA30000F6D0AE /* AboutSection2ViewController.swift */; };
 		653E4DBA246AA32300F6D0AE /* AboutSection2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653E4DB9246AA32300F6D0AE /* AboutSection2.storyboard */; };
+		65571F132488C4520090F8CB /* RyodanCV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65571F122488C4520090F8CB /* RyodanCV.storyboard */; };
+		65571F152488C5D40090F8CB /* RyodanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65571F142488C5D40090F8CB /* RyodanViewController.swift */; };
+		65571F172488C6040090F8CB /* DaninCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65571F162488C6040090F8CB /* DaninCollectionViewCell.swift */; };
 		65AD321F2487800800A28D6F /* enumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AD321E2487800800A28D6F /* enumViewController.swift */; };
 		65CBA965246E9974009684AC /* Renshu3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA964246E9974009684AC /* Renshu3TableViewCell.swift */; };
 		65CBA9672472434B009684AC /* MagazinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CBA9662472434B009684AC /* MagazinesTableViewCell.swift */; };
@@ -141,6 +144,9 @@
 		652FA69C2484C62F000616E2 /* RenshuAPI2TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenshuAPI2TableViewCell.swift; sourceTree = "<group>"; };
 		653E4DB7246AA30000F6D0AE /* AboutSection2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSection2ViewController.swift; sourceTree = "<group>"; };
 		653E4DB9246AA32300F6D0AE /* AboutSection2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutSection2.storyboard; sourceTree = "<group>"; };
+		65571F122488C4520090F8CB /* RyodanCV.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RyodanCV.storyboard; sourceTree = "<group>"; };
+		65571F142488C5D40090F8CB /* RyodanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyodanViewController.swift; sourceTree = "<group>"; };
+		65571F162488C6040090F8CB /* DaninCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaninCollectionViewCell.swift; sourceTree = "<group>"; };
 		65AD321E2487800800A28D6F /* enumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enumViewController.swift; sourceTree = "<group>"; };
 		65CBA964246E9974009684AC /* Renshu3TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renshu3TableViewCell.swift; sourceTree = "<group>"; };
 		65CBA9662472434B009684AC /* MagazinesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazinesTableViewCell.swift; sourceTree = "<group>"; };
@@ -313,6 +319,7 @@
 		1E999C20245D3FBD00E545E8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				65571F112488C3A20090F8CB /* RyodanCollectionView */,
 				1EF9721924889C0200E47A13 /* Syokken */,
 				1E4DCA7724860A64004939CF /* RenshuEnum */,
 				652FA6972484BFAF000616E2 /* RenshuAPI2 */,
@@ -453,6 +460,16 @@
 			path = AboutSection2;
 			sourceTree = "<group>";
 		};
+		65571F112488C3A20090F8CB /* RyodanCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				65571F122488C4520090F8CB /* RyodanCV.storyboard */,
+				65571F142488C5D40090F8CB /* RyodanViewController.swift */,
+				65571F162488C6040090F8CB /* DaninCollectionViewCell.swift */,
+			);
+			path = RyodanCollectionView;
+			sourceTree = "<group>";
+		};
 		65CBA96C2473D8BE009684AC /* Magazines2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,6 +607,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E5242832467F8F1008A5B03 /* Renshu2.storyboard in Resources */,
+				65571F132488C4520090F8CB /* RyodanCV.storyboard in Resources */,
 				1ED60259246BD31200E85CAB /* Renshu3.storyboard in Resources */,
 				1EC70730247BC5870035C68C /* RenshuAPI.storyboard in Resources */,
 				652FA6992484BFE6000616E2 /* RenshuAPI2.storyboard in Resources */,
@@ -680,6 +698,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				652FA69D2484C62F000616E2 /* RenshuAPI2TableViewCell.swift in Sources */,
+				65571F172488C6040090F8CB /* DaninCollectionViewCell.swift in Sources */,
 				65CBA965246E9974009684AC /* Renshu3TableViewCell.swift in Sources */,
 				1EBA5CC92460243800C8FB5B /* AboutDatePickerViewController.swift in Sources */,
 				653E4DB8246AA30000F6D0AE /* AboutSection2ViewController.swift in Sources */,
@@ -698,6 +717,7 @@
 				1ED6025B246BD33100E85CAB /* Renshu3ViewController.swift in Sources */,
 				1E03080224624A99007F0824 /* AboutFunction2ViewController.swift in Sources */,
 				652FA69B2484C60D000616E2 /* RenshuAPI2ViewController.swift in Sources */,
+				65571F152488C5D40090F8CB /* RyodanViewController.swift in Sources */,
 				1E35A22224778E5600F26B2D /* AboutSegueViewController.swift in Sources */,
 				65CBA96924725931009684AC /* MagazineHeaderTableViewCell.swift in Sources */,
 				65CBA9702473D984009684AC /* MagazinesTableViewCell2.swift in Sources */,

@@ -25,7 +25,7 @@ class RenshuAPIViewController: UIViewController {
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     @IBOutlet weak var tableView: UITableView!
-    
+    //団員メンバーが複数だから[Danin] 。一人だったらDanin。
     var daninInfo: [Danin] = []
     
     

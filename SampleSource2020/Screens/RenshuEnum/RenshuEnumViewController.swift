@@ -53,7 +53,8 @@ class RenshuEnumViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         
+        var ah = Mametishiki01()
+        ah.a()
         
         // Enumは列挙型、有限集合を一つのグループにして名前をつけたもの
 
@@ -178,13 +179,7 @@ class RenshuEnumViewController: UIViewController {
     //               1001円〜5000円の商品が該当するもの
     //               5001円〜20000円の商品が該当するもの
     //               20001円以上の商品が該当するもの
-    
-    //課題5 RenshuEnumViewController内に、「値段を渡すとPriceRangeが返ってくる」関数を作成する
-    
-    //課題6 RenshuEnumViewControllerの中に、「最低金額を返す」関数を作成する
-    //     ヒント：switch を使う
-    
-    
+   
     enum PriceRange: Int {
         case One
         case Two
@@ -207,6 +202,7 @@ class RenshuEnumViewController: UIViewController {
     
     
     // 課題5
+    //RenshuEnumViewController内に、「値段を渡すとPriceRangeが返ってくる」関数を作成する
     func getPriceRange(price: Int) -> PriceRange {
         if price >= 1 && 1000 >= price {
             return .One
@@ -221,7 +217,8 @@ class RenshuEnumViewController: UIViewController {
     }
     
     
-    // 課題6
+    //課題6 PriceRangeの中に、「最低金額を返す」関数を作成する
+    //     ヒント：switchを使う
     func getMinimumPrice(priceRange: PriceRange) -> Int {
 //        if priceRange == .One {
 //            return 1
@@ -262,9 +259,6 @@ class RenshuEnumViewController: UIViewController {
     //        }
 
 }
- 
-//課題6 PriceRangeの中に、「最低金額を返す」関数を作成する
-//     ヒント：switch self { を使う
 
 
 
@@ -273,7 +267,6 @@ class RenshuEnumViewController: UIViewController {
 // 豆知識 SwitchとEnumの関係
 class Mametishiki01 {
     func a() {
-
         
         // 通常のSwitch
         // このようにすると、switch内はすべてのcaseを満たさなければならないからdefaultが必要になる
@@ -288,14 +281,14 @@ class Mametishiki01 {
             print("それ以外")
         }
         
-        // Enumの場合
-        // switch内はEnumのすべてのcaseを満たせばいいのでdefaultは不要
+        // enumの場合
+        // switch内はenumのすべてのcaseを満たせばいいのでdefaultは不要
         enum PriceRange {
             case pattern1
             case pattern2
             case pattern3
         }
-        var p: PriceRange = .pattern1
+        let p: PriceRange = .pattern1
         switch p {
         case .pattern1:
             print("1")
@@ -304,18 +297,18 @@ class Mametishiki01 {
         case .pattern3:
             print("3")    // defaultは不要
         }
-        
+    
         
         // 関数を作るとき
         // enum + ifでやるとき
-        func aaaaaa(p: PriceRange) -> String {
-            if p == .pattern1 {
+        func aaaaaa(po: PriceRange) -> String {
+            if po == .pattern1 {
                 return "トップス"
             }
-            if p == .pattern2 {
+            if po == .pattern2 {
                 return "ジャケット"
             }
-            if p == .pattern3 {
+            if po == .pattern3 {
                 return "パンツ"
             }
             
@@ -325,8 +318,8 @@ class Mametishiki01 {
         
         // enumの場合、必ずどれかに入る
         // enum + switchでやるとき
-        func bbbbb(p: PriceRange) -> String {
-            switch p {
+        func bbbbb(pa: PriceRange) -> String {
+            switch pa {
             case .pattern1:
                 return "トップス"
             case .pattern2:
@@ -338,5 +331,11 @@ class Mametishiki01 {
             // ここにreturnがいらない（うれしい）
         }
 
+        
+        let result1 = aaaaaa(po: .pattern1)
+        print(result1)
+        
+        let result2 = bbbbb(pa: .pattern2)
+        print(result2)
     }
 }
