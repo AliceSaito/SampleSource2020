@@ -47,6 +47,8 @@
 		1EDFC0B02471685700D2E96B /* MagazinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDFC0AF2471685700D2E96B /* MagazinesViewController.swift */; };
 		1EF9721B24889C5B00E47A13 /* Syokken.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EF9721A24889C5B00E47A13 /* Syokken.storyboard */; };
 		1EF9721D24889C6900E47A13 /* ShokkenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF9721C24889C6900E47A13 /* ShokkenViewController.swift */; };
+		1EF972222489EE4200E47A13 /* DrillFunction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EF972212489EE4200E47A13 /* DrillFunction.storyboard */; };
+		1EF972242489F10E00E47A13 /* DrillFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF972232489F10E00E47A13 /* DrillFunctionViewController.swift */; };
 		1EFD4F6F2461022E004ED092 /* AboutFunction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFD4F6E2461022E004ED092 /* AboutFunction.storyboard */; };
 		1EFD4F7124610240004ED092 /* AboutFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */; };
 		652FA6992484BFE6000616E2 /* RenshuAPI2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652FA6982484BFE6000616E2 /* RenshuAPI2.storyboard */; };
@@ -138,6 +140,8 @@
 		1EDFC0AF2471685700D2E96B /* MagazinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazinesViewController.swift; sourceTree = "<group>"; };
 		1EF9721A24889C5B00E47A13 /* Syokken.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Syokken.storyboard; sourceTree = "<group>"; };
 		1EF9721C24889C6900E47A13 /* ShokkenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShokkenViewController.swift; sourceTree = "<group>"; };
+		1EF972212489EE4200E47A13 /* DrillFunction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DrillFunction.storyboard; sourceTree = "<group>"; };
+		1EF972232489F10E00E47A13 /* DrillFunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillFunctionViewController.swift; sourceTree = "<group>"; };
 		1EFD4F6E2461022E004ED092 /* AboutFunction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutFunction.storyboard; sourceTree = "<group>"; };
 		1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFunctionViewController.swift; sourceTree = "<group>"; };
 		652FA6982484BFE6000616E2 /* RenshuAPI2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RenshuAPI2.storyboard; sourceTree = "<group>"; };
@@ -321,6 +325,7 @@
 		1E999C20245D3FBD00E545E8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1EF972202489ED5B00E47A13 /* DrillFunction */,
 				65571F112488C3A20090F8CB /* RyodanCollectionView */,
 				1EF9721924889C0200E47A13 /* Syokken */,
 				1E4DCA7724860A64004939CF /* RenshuEnum */,
@@ -433,6 +438,15 @@
 				65A10CFB24890790003D89B3 /* ShokkenTableViewCell.swift */,
 			);
 			path = Syokken;
+			sourceTree = "<group>";
+		};
+		1EF972202489ED5B00E47A13 /* DrillFunction */ = {
+			isa = PBXGroup;
+			children = (
+				1EF972212489EE4200E47A13 /* DrillFunction.storyboard */,
+				1EF972232489F10E00E47A13 /* DrillFunctionViewController.swift */,
+			);
+			path = DrillFunction;
 			sourceTree = "<group>";
 		};
 		1EFD4F6D24608D02004ED092 /* AboutFunction */ = {
@@ -609,6 +623,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF972222489EE4200E47A13 /* DrillFunction.storyboard in Resources */,
 				1E5242832467F8F1008A5B03 /* Renshu2.storyboard in Resources */,
 				65571F132488C4520090F8CB /* RyodanCV.storyboard in Resources */,
 				1ED60259246BD31200E85CAB /* Renshu3.storyboard in Resources */,
@@ -710,6 +725,7 @@
 				65AD321F2487800800A28D6F /* enumViewController.swift in Sources */,
 				65A10CFC24890790003D89B3 /* ShokkenTableViewCell.swift in Sources */,
 				1E48E59E24637BEE005DA816 /* AboutFunction3ViewController.swift in Sources */,
+				1EF972242489F10E00E47A13 /* DrillFunctionViewController.swift in Sources */,
 				1EF9721D24889C6900E47A13 /* ShokkenViewController.swift in Sources */,
 				1E35A22424778FFF00F26B2D /* AboutSegueNextViewController.swift in Sources */,
 				65F3D054247CEE0B00BC51FE /* RenshuAPITableViewCell.swift in Sources */,
