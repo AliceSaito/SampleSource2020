@@ -13,7 +13,12 @@ class DrillFunctionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        var a = DrillFunctionViewController答え()
+        a.precognition(value: 10)
+        a.precognition(value: 1)
+        a.precognition(value: -10)
+        a.precognition(value: 100)
+        a.precognition(value: 1000)
     }
     
     // ドリル1
@@ -124,6 +129,77 @@ class DrillFunctionViewController: UIViewController {
     // ドリル18
     // MyColorの配列を渡すと、全てprintする関数を作成する
     // 入力: colors: [MyColor]
+    
+    
+    
+    
+    
+    
+    // 2020/06/07追記
+    
+    // ドリル19
+    // この問題は関数を2つ作ります
+    // 1. 与えられた整数が3の倍数だけtrueを返す関数を作成する
+    //    入力: Int
+    //    出力: Bool
+    // 2. 1で作った関数を使い、1〜100の値が3の倍数ならprintする関数を作る
+    //    入力: なし
+    //    出力: なし
+    
+    // ドリル20
+    // この問題は関数を2つ作ります
+    // 1. 与えられた整数が3の倍数だけtrueを返す関数を作成する（19と同じもの）
+    //    入力: Int
+    //    出力: Bool
+    // 2. 1で作った関数を使い、1〜100の値のうち3の倍数だけ足した数を求め、printする関数を作る
+    //    入力: なし
+    //    出力: なし
+    
+    // ドリル21
+    // ドリル20.2で作った関数を改造する
+    // 整数の入力を2つ与えて、value1〜value2の値のうち3の倍数だけ足した数を求め、printする関数を作る
+    // 入力: Int
+    // 出力: なし
+    
+    // ドリル22
+    // この問題は関数を3つ作ります
+    // 1.「成功しました」と表示するだけの関数を作る
+    // 2.「失敗しました」と表示するだけの関数を作る
+    // 3.入力がresult:Boolで、resultがtrueのときには関数1を呼び出し、resultがfalseのときには関数2を呼び出す関数を作る
+    // ちなみに、こういうのはAPIレスポンスの部分でよくやる
+    
+    enum APIResponse {
+        case success
+        case failure
+    }
+    
+    // ドリル23
+    // APIResponseを与えて、successの場合は「成功しました」と表示し、failureの場合は「失敗しました」と表示する関数を作る
+    // ヒント:switchを使う
+    
+    // ドリル24
+    // 以下を関数にして確認する
+    // ヒソカ「この中から1つ好きな数を選んで、頭に思い浮かべて♥
+    //       思い浮かべたら、その数に4を足して、更に倍にする♥
+    //       そこから6を引き、2で割った後　最初に思った数を引くと、いくらになるかな？
+    //       答えは・・・1だろ？」
+    // 入力: Int
+    // 出力: なし
+    
+    // ドリル25
+    // この問題は関数を2つ作ります
+    // 1. 整数の入力に対して
+    //    マイナスなら「不正な入力です」とprintしてfalseを返す
+    //    18未満なら「18歳未満は本サービスを利用できません」とprintしてfalseを返す
+    //    80以上なら「いたずらの可能性あり」とprintしてtrueを返す
+    //    それ以外ならtrueを返す関数を作る
+    // 入力: Int
+    // 出力: Bool
+    // 2. 整数の入力を1の関数に渡して、trueの場合は「次の画面に進む」とprintする
+    //    falseの場合は「エラーダイアログを出す」とprintする関数を作る
+    // 入力: Int
+    // 出力: なし
+    
 }
 
 
@@ -278,4 +354,107 @@ class DrillFunctionViewController答え: UIViewController {
             print(c)
         }
     }
+    
+    // ドリル19
+    func isMultipleOf3(value: Int) -> Bool {
+        return value % 3 == 0
+    }
+    func checkMultipleOf3() {
+        for i in 1...100 {
+            if isMultipleOf3(value: i) {
+                print(i)
+            }
+        }
+    }
+    
+    // ドリル20
+    func sumMultipleOf3() {
+        var result: Int = 0
+        for i in 1...100 {
+            if isMultipleOf3(value: i) {
+                result += i
+            }
+        }
+        print(result)       // -> 1683
+    }
+    
+    // ドリル21
+    func sumMultipleOf3(value1: Int, value2: Int) {
+        var result: Int = 0
+        for i in value1...value2 {
+            if isMultipleOf3(value: i) {
+                result += i
+            }
+        }
+        print(result)
+    }
+    
+    // ドリル22
+    func succeeded() {
+        print("成功しました")
+    }
+    func failed() {
+        print("失敗しました")
+    }
+    func responsedAPI(success: Bool) {
+        if success {
+            succeeded()
+        }
+        else {
+            failed()
+        }
+    }
+    
+    enum APIResponse {
+        case success
+        case failure
+    }
+    
+    // ドリル23
+    func checkResult(response: APIResponse) {
+        switch response {
+        case .success:
+            print("成功しました")
+        case .failure:
+            print("失敗しました")
+        }
+    }
+    
+    // ドリル24
+    func precognition(value: Int) {
+        let a = value + 4
+        let b = a * 2
+        let c = b - 6
+        let d = c / 2
+        let e = d - value
+        print(e)
+    }
+    
+    // ドリル25
+    func checkAge1(age: Int) -> Bool {
+        if age < 0 {
+            print("不正な入力です")
+            return false
+        }
+        else if age < 18 {
+            print("18歳未満は本サービスを利用できません")
+            return false
+        }
+        else if age >= 80 {
+            print("いたずらの可能性あり")
+            return true
+        }
+        else {
+            return true
+        }
+    }
+    func checkAge2(age: Int) {
+        if checkAge1(age: age) {
+            print("次の画面に進む")
+        }
+        else {
+            print("エラーダイアログを出す")
+        }
+    }
 }
+
