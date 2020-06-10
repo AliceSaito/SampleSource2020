@@ -12,6 +12,9 @@ class DrillFunctionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        var a = DrillFunctionViewControllerAnswer()
+        a.callMyself(n: 5)
         
         //printの時
         sum(one:2, two:3)
@@ -381,6 +384,110 @@ class DrillFunctionViewController: UIViewController {
     // 入力: Int
     // return: なし
     
+    
+    // 2020/06/10 追加
+    
+    // ドリル26
+    // CGRectを与えると、その中のサイズだけを返す関数を作る
+    // 入力: CGRect
+    // 出力: CGSize
+    // ヒント: CGRectはCGPointのoriginと、CGSizeのsizeから構成されるstructである
+    
+    // ドリル27
+    // CGRectを与えると、右下の位置を返す関数を作る
+    // 入力: CGRect
+    // 出力: CGPoint
+    // ヒント: CGRectのoriginは左上、iPhoneにおいてx軸とy軸は右方向、下方向に伸びている
+    
+    // ドリル28
+    // 文字列の配列を与えると、すべての文字の長さを足して返す関数を作る
+    // 入力: [String]
+    // 出力: Int
+    
+    // ドリル29
+    // Int型の値を3つ与えると、小さい順に配列にして返す関数を作る
+    // 入力: Int 3つ
+    // 出力: なし
+    // ヒント: if文で作ってみよう
+    
+    // ドリル30
+    // ["result" : ["1", "2", "3"]] を返すだけの関数を作る
+    
+    // ドリル31
+    // 整数numを与えると、1〜numの整数を入れた整数型の配列を返す
+    // 入力: num
+    // 出力: 整数型の配列
+    
+    // ドリル32
+    // 文字列の配列と、整数を与えると、文字列の配列を整数回分繰り返した配列を返す関数を作る
+    // 入力: [String] と Int
+    // 出力: [String]
+    // ヒント: 配列は足せる
+    
+    // ドリル33
+    // 1〜1000の整数の中で、奇数だけをすべて足した値をprintする関数を作成する
+    // 入力: なし
+    // return: なし
+    // 答え: 250000
+    
+    // ドリル34
+    // TeamColor（以下に定義）の配列を渡すと、全てのdisplayTitleをprintする関数を作成する
+    
+    enum TeamColor {
+        case happy
+        case funny
+        case sad
+        case crazy
+        
+        func getDisplayTitle() -> String {
+            switch self {
+            case .happy:
+                return "嬉しさを感じる色"
+            case .funny:
+                return "楽しさを感じる色"
+            case .sad:
+                return "悲しさを感じる色"
+            case .crazy:
+                return "狂気を感じる色"
+            }
+        }
+    }
+    
+    // ドリル35
+    // 整数nを与えると、"今は\(n)!!"　とprintして、自分自身を再度呼び出す関数を作る
+    // ただし、nが11以上だと自分自身を呼び出さず、"\(n)なので終了!!"とprintする
+    // また、自分自身を呼び出すときはn+1を渡す
+    
+
+
+    // --- 以下は難しいので後回し😇 ---
+
+
+    // ドリル36
+    // 階乗をfor文を使わずに計算する関数を作る
+    // 入力: n: Int
+    // 出力: Int
+    // ヒント: 階乗 「10の階乗」は10*9*8*7*6*5*4*3*2*1の値
+    
+    
+    
+    // ドリル***
+    // 2つのCGRectの積（重複する部分）を求める関数intersectionを作る
+    // 入力: CGRect 2つ
+    // 出力: CGRect
+    // メモ: メモフォルダの中の「rect_and_intersection.png」で図示しています
+    // メモ: 実はintersectionは公式に存在する
+    //      ただし、1つのCGRectのメソッドとして提供されている
+    //      例: frame.intersection(otherRect)
+
+    // ドリル***
+    // 2つのCGRectの和（両Rectを囲む最小の四角形）を求める関数getUnionを作る
+    // 入力: CGRect 2つ
+    // 出力: CGRect
+    // メモ: メモフォルダの中の「rect_and_intersection.png」で図示しています
+    // メモ: 実はunionも公式に存在する
+    //      ただし、1つのCGRectのメソッドとして提供されている
+    //      例: frame.union(otherRect)
 }
 
 
@@ -638,5 +745,142 @@ class DrillFunctionViewControllerAnswer: UIViewController {
             print("エラーダイアログを出す")
         }
     }
+    
+    // ドリル26
+    func getSize(rect: CGRect) -> CGSize {
+        return rect.size
+    }
+    
+    // ドリル27
+    func getBottomRight(rect: CGRect) -> CGPoint {
+        return CGPoint(x: rect.origin.x + rect.size.width, y: rect.origin.y + rect.size.height)
+    }
+ 
+    // ドリル28
+    func countStringLen(strings: [String]) -> Int {
+        var result: Int = 0
+        strings.forEach { (s) in
+            result += s.count
+        }
+        return result
+    }
+    
+    // ドリル29
+    func getSortedArray(a: Int, b: Int, c: Int) -> [Int] {
+        var result: [Int] = []
+        
+        // aが最小の場合
+        if a < b && a < c {
+            result.append(a)
+            if b < c {
+                result.append(b)
+                result.append(c)
+            }
+            else {
+                result.append(c)
+                result.append(b)
+            }
+        }
+        // bが最小の場合
+        else if b < a && b < c {
+            result.append(b)
+            if a < c {
+                result.append(a)
+                result.append(c)
+            }
+            else {
+                result.append(c)
+                result.append(a)
+            }
+        }
+        // cが最小の場合
+        else {
+            result.append(c)
+            if a < b {
+                result.append(a)
+                result.append(b)
+            }
+            else {
+                result.append(b)
+                result.append(a)
+            }
+        }
+        return result
+    }
+    
+    // ドリル30
+    func somethingDictionary() -> [String: [String]] {
+        return ["result" : ["1", "2", "3"]]
+    }
+    
+    // ドリル31
+    func getNumArray(num: Int) -> [Int] {
+        var result: [Int] = []
+        for i in 1...num {
+            result.append(i)
+        }
+        return result
+    }
+    
+    // ドリル32
+    func repeatArray(array: [String], num: Int) -> [String] {
+        var result: [String] = []
+        for _ in 1...num {
+            result = result + array
+        }
+        return result
+    }
+    
+    // ドリル33
+    func addOdd(){
+        var addNumber = 0
+        for i in 1...1000 {
+            if i % 2 == 1 {
+                addNumber += i
+            }
+        }
+        print(addNumber)
+    }
+    
+    // ドリル34
+    // TeamColor（以下に定義）の配列を渡すと、全てのdisplayTitleをprintする関数を作成する
+    
+    enum TeamColor {
+        case happy
+        case funny
+        case sad
+        case crazy
+        
+        func getDisplayTitle() -> String {
+            switch self {
+            case .happy:
+                return "嬉しさを感じる色"
+            case .funny:
+                return "楽しさを感じる色"
+            case .sad:
+                return "悲しさを感じる色"
+            case .crazy:
+                return "狂気を感じる色"
+            }
+        }
+    }
+    
+    // ドリル34
+    func displayTeamColors(colors: [TeamColor]) {
+        colors.forEach { (c) in
+            print(c.getDisplayTitle())
+        }
+    }
+    
+    // ドリル35
+    func callMyself(n: Int) {
+        if n <= 10 {
+            print("今は\(n)!!")
+            callMyself(n: n+1)
+        }
+        else {
+            print("\(n)なので終了!!")
+        }
+    }
+    
 }
-
