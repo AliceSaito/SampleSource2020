@@ -12,6 +12,9 @@ class DrillFunctionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var a = DrillFunctionViewControllerAnswer()
+        a.showIcons(pizza: 10, coffee: 10, cake: 10)
 
         //printの時
         sum(one:2, two:3)
@@ -450,7 +453,7 @@ class DrillFunctionViewController: UIViewController {
         }
     }
     
-    // ドリル35
+    // ドリル35（難しかったら飛ばして）
     // 整数nを与えると、"今は\(n)!!"　とprintして、自分自身を再度呼び出す関数を作る
     // ただし、nが11以上だと自分自身を呼び出さず、"\(n)なので終了!!"とprintする
     // また、自分自身を呼び出すときはn+1を渡す
@@ -470,12 +473,88 @@ class DrillFunctionViewController: UIViewController {
     // 備考: filterは使わないでfor文を使ってみて
     
     
+    // ドリル38
+    // 簡単な関数を4つ作ります
+    // 1. 関数1は、関数2に整数を渡して、返り値をprintする
+    // 2. 関数2は、関数3に整数を渡して、返り値をそのまま返す
+    // 3. 関数3は、関数4に整数を渡して、返り値をそのまま返す
+    // 4. 関数4は、与えられた整数をそのまま返す
+    // メモ: 関数1で与えた整数がそのままprintされるだけになる
+
+    
+    // ドリル39
+    // OptionalのInt型を与えたとき、それがnilなら0を返し、nilでなければInt型にして返す関数を作る
+    // parameters: Int?
+    // return: Int
+    // メモ: if letを使う
     
     
+    // ドリル40
+    // OptionalのString型を与えたとき、それがnilなら空文字を返し、nilでなければString型にして返す関数を作る
+    // parameters: String?
+    // return: String
+    // メモ: 1行で書いてみる
+    
+    
+    // ドリル41
+    // 整数型でpizza, coffee, cakeを与えると、与えた回数分それぞれ🍕、☕、🍰をprintする関数を作る
+    // ただし最大個数は5個になるようにする
+    // parameters: pizza: Int, coffe: Int, cake: Int
+    // ヒント: for文とbreakを使うとやりやすいと思う
+    // ヒント: 改行しないprintって、print("なにか", terminator: "") って書くらしい！ 使わなくてもいいけど
+    
+    
+    // ドリル42
+    // ドリル41のpizza, coffee, cakeのパラメータを、cake, coffee, pizzaの順にしても
+    // 関数の中身は変わらないことを確認する
+    
+    
+    // ドリル43
+    // key: Int, value: String を与えると、Dictionaryにして返す関数を作る
+    // parameters: key: Int, value: String
+    // return: 秘密
+    
+    // ドリル44
+    // key: String, value: Int を与えると、Dictionaryにして返す関数を作る
+    // parameters: key: String, value: Int
+    // return: 秘密
+    // ヒント: 関数名は42と同名でも大丈夫
+    
+    // ドリル45
+    // key: String, value: [Double] を与えると、Dictionaryにして返す関数を作る
+    // parameters: key: String, value: [Double]
+    // return: 秘密
+    // ヒント: 関数名は42と同名でも大丈夫
+    
+    // ドリル46
+    // red: Int, green: Int, blue: Int を与えたとき、UIColorを返す関数を作る
+    // ただしこれらの値は0〜255の256段階で表示するものとする（意味分からなかったら聞いて）
+    // alphaは1固定とする
+    // ヒント: UIColor(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
+    //        ここで各値は0〜1.0で表現されている
+    
+    // ドリル47
+    // red: Int, green: Int, blue: Int を与えたとき、redとblueを差し替えたUIColorを返す関数を作る
+    // メモ: viewDidLoadで、view.backgroundColorに指定すると確認しやすい
+    
+    // ドリル48
+    // UIColorを与えると、redとblueを差し替えたUIColorを返す
+    // なお、UIColorから(red, green, blue)の値（0〜1）を抽出するには以下の関数を用いる
+    func convertToRGB(color: UIColor) -> (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+        let components = color.cgColor.components!
+        return (red: components[0], green: components[1], blue: components[2], alpha: components[3])
+    }
+    
+    // ドリル49
+    // 整数2つを入力して、足したものをprintする関数を作成する
+    // ここで、パラメーターの前に_を付けて作成してみてくだしあ
+    // func hoge(_ a: Int,_ b: Int) -> Int
+    // 呼び出す際にa,bの記載が不要になります（コード補完を見てみて）
     
     
     
 
+    
 
     // --- 以下は難しいので後回し😇 ---
 
@@ -900,4 +979,136 @@ class DrillFunctionViewControllerAnswer: UIViewController {
         }
     }
     
+    // ドリル36
+    func filterStrings1(strings: [String]) -> [String] {
+        var result: [String] = []
+        for string in strings {
+            if string.count <= 5 {
+                result.append(string)
+            }
+        }
+        return result
+    }
+    
+    // ドリル37
+    func filterStrings2(strings: [String]) -> [String] {
+        var result: [String] = []
+        for string in strings {
+            // if string.count < 5 { でもいいいよ！
+            if !(string.count >= 5) {
+                result.append(string)
+            }
+        }
+        return result
+    }
+    
+    // ドリル38
+    func kaesudakeCheck() {
+        print(kaesudake1(value: 10))
+    }
+    func kaesudake1(value: Int) -> Int {
+        return kaesudake2(value: value)
+    }
+    func kaesudake2(value: Int) -> Int {
+        return kaesudake3(value: value)
+    }
+    func kaesudake3(value: Int) -> Int {
+        return value
+    }
+
+    // ドリル39
+    func safeInt(value: Int?) -> Int {
+        if let nonOptionalValue = value {
+            return nonOptionalValue
+        }
+        return 0
+    }
+    
+    // ドリル40
+    func safeString(value: String?) -> String {
+        return value ?? ""
+    }
+    
+    // ドリル41
+    func showIcons(pizza: Int, coffee: Int, cake: Int) {
+        for i in 0..<pizza {
+            print("🍕", terminator: "")
+            if i == 4 {
+                break
+            }
+        }
+        
+        for i in 0..<coffee {
+            print("☕", terminator: "")
+            if i == 4 {
+                break
+            }
+        }
+        
+        for i in 0..<cake {
+            print("🍰", terminator: "")
+            if i == 4 {
+                break
+            }
+        }
+    }
+    
+    // ドリル42
+    func showIcons(cake: Int, coffee: Int, pizza: Int) {
+        for i in 0..<pizza {
+            print("🍕", terminator: "")
+            if i == 4 {
+                break
+            }
+        }
+        
+        for i in 0..<coffee {
+            print("☕", terminator: "")
+            if i == 4 {
+                break
+            }
+        }
+        
+        for i in 0..<cake {
+            print("🍰", terminator: "")
+            if i == 4 {
+                break
+            }
+        }
+    }
+    
+    // ドリル43
+    func createDictionary(key: Int, value: String) -> [Int: String] {
+        return [key: value]
+    }
+    
+    // ドリル44
+    func createDictionary(key: String, value: Int) -> [String: Int] {
+        return [key: value]
+    }
+    
+    // ドリル45
+    func createDictionary(key: String, value: [Double]) -> [String: [Double]] {
+        return [key: value]
+    }
+    
+    // ドリル46
+    func createColor(red: Int, green: Int, blue: Int) -> UIColor {
+        return UIColor(red: CGFloat(red/255), green: CGFloat(green/255), blue: CGFloat(blue/255), alpha: 1)
+    }
+    
+    // ドリル47
+    func createColorChangeColor(red: Int, green: Int, blue: Int) -> UIColor {
+        return UIColor(red: CGFloat(blue/255), green: CGFloat(green/255), blue: CGFloat(red/255), alpha: 1)
+    }
+    
+    // ドリル48
+    func changeColor(color: UIColor) -> UIColor {
+        let rgb = convertToRGB(color: color)
+        return UIColor(red: rgb.blue, green: rgb.green, blue: rgb.red, alpha: 1)
+    }
+    func convertToRGB(color: UIColor) -> (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+        let components = color.cgColor.components!
+        return (red: components[0], green: components[1], blue: components[2], alpha: components[3])
+    }
 }
