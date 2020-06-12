@@ -13,9 +13,7 @@ class DrillFunctionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let a = DrillFunctionViewControllerAnswer()
-        a.callMyself(n: 5)
-        
+
         //printの時
         sum(one:2, two:3)
         
@@ -136,7 +134,7 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル4
     // 整数を2つ（aとb）与えると、a-bの値をprintする関数を作成する
-    // 入力: 整数2つ（aとb）
+    // parameter: 整数2つ（aとb）
     // やること: a - bをprint
     // return: なし
     
@@ -146,7 +144,7 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル5
     // Int型の値を1つ与えると、それをString型にして返す関数を作成する
-    // 入力: Int型1つ
+    // parameter: Int型1つ
     // やること: Int型をString型に変換して返す
     // return: String型、変換したもの
     
@@ -156,7 +154,7 @@ class DrillFunctionViewController: UIViewController {
 
     // ドリル6
     // Int型の値を3つ与えると、全て足したものを返す関数を作成する
-    // 入力: Int型3つ
+    // parameter: Int型3つ
     // やること: 足す
     // return: Int型
     
@@ -166,7 +164,7 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル7
     // 四角形の面積を返す関数を作成する. 引数と戻り値はCGFloat型とする
-    // 入力: widthとheight, CGFloat型
+    // parameter: widthとheight, CGFloat型
     // やること: 面積を計算して返す
     // return: CGFloat型
     
@@ -186,7 +184,7 @@ class DrillFunctionViewController: UIViewController {
       
     // ドリル9★
     // String型からInt型に変換する関数を作成する. （入力は必ずIntに変換できる想定）
-    // 入力: String型
+    // parameter: String型
     // やること: 入力値をInt型に変換する
     // return: Int型（整数）
     
@@ -196,7 +194,7 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル10
     // 2つの文字列を連結して返す関数を作成する
-    // 入力: String型2つ
+    // parameter: String型2つ
     // やること: 文字列連結
     // return: String型
     
@@ -206,7 +204,7 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル11★
     // String型の配列を渡すと、全て1つずつprintする関数を作成する
-    // 入力: [String]型
+    // parameter: [String]型
     // やること: 1個ずつprintする
     // return: なし
     
@@ -218,7 +216,7 @@ class DrillFunctionViewController: UIViewController {
 
     // ドリル12★
     // 整数を3つ与えると、それらを配列にして返す関数を作成する
-    // 入力: 整数3つ
+    // parameter: 整数3つ
     // やること: 全部まとめて配列にする
     // return: 整数の配列型
     
@@ -228,7 +226,7 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル13★★
     // 整数startから整数endを与えると、start〜endの整数を入れた整数型の配列を返す
-    // 入力: startからend
+    // parameter: startからend
     // やること: 整数型の配列を用意して、startからendまでfor文で詰めていって返す
     // return: 整数の配列型
     
@@ -242,7 +240,7 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル14★
     // 文字列を1つ与えると、その文字列3つを配列にして返す関数を作成する
-    // 入力: String
+    // parameter: String
     // return: [String]
     
     func sumStrArr(one:String) -> [String]{
@@ -251,7 +249,7 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル15★★
     // 文字列strと整数numを与えると、そのstrをnum個の配列にして返す関数を作成する
-    // 入力: String
+    // parameter: String
     // return: [String]
     
     func numStrArr(one:String, num:Int) -> [String]{
@@ -264,7 +262,7 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル16
     // 整数を与えると、偶数ならtrue、奇数ならfalseを返す関数を作成する
-    // 入力: Int
+    // parameter: Int
     // return: Bool
     
     func boolenArr(one:Int) -> Bool {
@@ -282,7 +280,7 @@ class DrillFunctionViewController: UIViewController {
 
     // ドリル17★★
     // 1〜100の整数の中で、偶数だけをすべて足した値をprintする関数を作成する
-    // 入力: なし
+    // parameter: なし
     // return: なし
     
     func evenAdd(){
@@ -317,10 +315,10 @@ class DrillFunctionViewController: UIViewController {
     // ドリル19★★
     // この問題は関数を2つ作ります
     // 1. 与えられた整数が3の倍数だけtrueを返す関数を作成する
-    //    入力: Int
+    //    parameter: Int
     //    return: Bool
     // 2. 1で作った関数を使い、1〜100の値が3の倍数ならprintする関数を作る
-    //    入力: なし
+    //    parameter: なし
     //    return: なし
     
     func threeMultiple(value: Int) -> Bool{
@@ -337,10 +335,10 @@ class DrillFunctionViewController: UIViewController {
     // ドリル20★★
     // この問題は関数を2つ作ります
     // 1. 与えられた整数が3の倍数だけtrueを返す関数を作成する（19と同じもの）
-    //    入力: Int
+    //    parameter: Int
     //    return: Bool
     // 2. 1で作った関数を使い、1〜100の値のうち3の倍数だけ足した数を求め、printする関数を作る
-    //    入力: なし
+    //    parameter: なし
     //    return: なし
     
     
@@ -358,7 +356,7 @@ class DrillFunctionViewController: UIViewController {
     // ドリル21★★
     // ドリル20.2で作った関数を改造する
     // 整数の入力を2つ与えて、value1〜value2の値のうち3の倍数だけ足した数を求め、printする関数を作る
-    // 入力: Int
+    // parameter: Int
     // return: なし
     
     
@@ -421,7 +419,7 @@ class DrillFunctionViewController: UIViewController {
     //       思い浮かべたら、その数に4を足して、更に倍にする♥
     //       そこから6を引き、2で割った後　最初に思った数を引くと、いくらになるかな？
     //       答えは・・・1だろ？」
-    // 入力: Int
+    // parameter: Int
     // return: なし
     
     func magic(result: Int){
@@ -441,11 +439,11 @@ class DrillFunctionViewController: UIViewController {
     //    18未満なら「18歳未満は本サービスを利用できません」とprintしてfalseを返す
     //    80以上なら「いたずらの可能性あり」とprintしてtrueを返す
     //    それ以外ならtrueを返す関数を作る
-    // 入力: Int
+    // parameter: Int
     // return: Bool
     // 2. 整数の入力を1の関数に渡して、trueの場合は「次の画面に進む」とprintする
     //    falseの場合は「エラーダイアログを出す」とprintする関数を作る
-    // 入力: Int
+    // parameter: Int
     // return: なし
     
     func checkNumber(number: Int) -> Bool {
@@ -482,8 +480,8 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル26★★★
     // CGRectを与えると、その中のサイズだけを返す関数を作る
-    // 入力: CGRect
-    // 出力: CGSize
+    // parameter: CGRect
+    // return: CGSize
     // ヒント: CGRectはCGPointのoriginと、CGSizeのsizeから構成されるstructである
     
     func getSize(one:CGRect) -> CGSize{
@@ -492,8 +490,8 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル27★★★
     // CGRectを与えると、右下の位置を返す関数を作る
-    // 入力: CGRect
-    // 出力: CGPoint
+    // parameter: CGRect
+    // return: CGPoint
     // ヒント: CGRectのoriginは左上、iPhoneにおいてx軸とy軸は右方向、下方向に伸びている
     
     func getRightPosition(one:CGRect) -> CGPoint{
@@ -510,8 +508,8 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル28★★
     // 文字列の配列を与えると、すべての文字の長さを足して返す関数を作る
-    // 入力: [String]
-    // 出力: Int
+    // parameter: [String]
+    // return: Int
     
     func lengthStr(one:[String]) -> Int{
         var result: Int = 0
@@ -544,8 +542,8 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル29★★
     // Int型の値を3つ与えると、小さい順に配列にして返す関数を作る
-    // 入力: Int 3つ
-    // 出力:  [Int]
+    // parameter: Int 3つ
+    // return: なし
     // ヒント: if文で作ってみよう
     
     func rearranges(one:Int, two:Int, three: Int)-> [Int] {
@@ -598,8 +596,8 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル31
     // 整数numを与えると、1〜numの整数を入れた整数型の配列を返す
-    // 入力: num
-    // 出力: 整数型の配列
+    // parameter: num
+    // return: 整数型の配列
     
      func oneStrArr(num:Int) -> [Int]{
            var result:[Int] = []
@@ -612,8 +610,8 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル32
     // 文字列の配列と、整数を与えると、文字列の配列を整数回分繰り返した配列を返す関数を作る
-    // 入力: [String] と Int
-    // 出力: [String]
+    // parameter: [String] と Int
+    // return: [String]
     // ヒント: 配列は足せる
     
     func repeatArr(arr:[String], int:Int) -> [String]{
@@ -634,7 +632,7 @@ class DrillFunctionViewController: UIViewController {
     
     // ドリル33
     // 1〜1000の整数の中で、奇数だけをすべて足した値をprintする関数を作成する
-    // 入力: なし
+    // parameter: なし
     // return: なし
     // 答え: 250000
     
@@ -666,6 +664,26 @@ class DrillFunctionViewController: UIViewController {
     // 整数nを与えると、"今は\(n)!!"　とprintして、自分自身を再度呼び出す関数を作る
     // ただし、nが11以上だと自分自身を呼び出さず、"\(n)なので終了!!"とprintする
     // また、自分自身を呼び出すときはn+1を渡す
+    
+    
+    // ドリル36
+    // 文字列の配列を与えると、5文字以下の文字列だけをフィルターして返す関数を作る
+    // parameters: [String]
+    // return: [String]
+    // 備考: filterは使わないでfor文を使ってみて
+    
+    
+    // ドリル37
+    // 文字列の配列を与えると、5文字以上の文字列を除外して返す関数を作る
+    // parameters: [String]
+    // return: [String]
+    // 備考: filterは使わないでfor文を使ってみて
+    
+    
+    
+    
+    
+    
     
 
 
