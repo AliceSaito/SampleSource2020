@@ -13,10 +13,6 @@ class DrillFunctionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var a = DrillFunctionViewControllerAnswer()
-        a.showIcons(pizza: 10, coffee: 10, cake: 10)
-
-
         //printの時
         sum(one:2, two:3)
         
