@@ -16,6 +16,7 @@ class DrillFunctionViewController: UIViewController {
         var a = DrillFunctionViewControllerAnswer()
         a.showIcons(pizza: 10, coffee: 10, cake: 10)
 
+
         //printの時
         sum(one:2, two:3)
         
@@ -66,6 +67,7 @@ class DrillFunctionViewController: UIViewController {
         
         evenAdd()
         
+         // ドリル18
         decideColor(colors: [MyColor.happy, MyColor.funny, MyColor.sad, MyColor.crazy])
         
         let q = threeMultiple(value: 9)
@@ -74,6 +76,33 @@ class DrillFunctionViewController: UIViewController {
         hundred()
         
         hundredTree()
+        
+        getAPIResponse(response: APIResponse.success)
+        
+        magic(result: 9)
+        
+        checkNumber(number: 16)
+        nextPage(age: 16)
+        
+        // ドリル26
+        let yu = getSize(one: CGRect(x: 100, y: 150, width: 200, height: 200))
+        print(yu)
+        //面積ではなく幅と高さが出力される
+        let nu = getRightPosition(one: CGRect(x: 100, y: 150, width: 200, height: 200))
+        print(nu)
+        
+        let lengthStrArray = ["もも","で","るるる","ぷ","れ","すすすすす"]
+        let ht = lengthStr(one:lengthStrArray)
+        print(ht)
+        
+        let pop = rearranges(one:5, two:8, three:3)
+        print(pop)
+        
+        let bm = oneStrArr(num:10)
+        print(bm)
+        
+        let mm = repeatArr(arr:["モデル"], int:5)
+        print(mm)
     }
     
     // ドリル1
@@ -327,7 +356,7 @@ class DrillFunctionViewController: UIViewController {
     }
     
     
-    // ドリル21
+    // ドリル21★★
     // ドリル20.2で作った関数を改造する
     // 整数の入力を2つ与えて、value1〜value2の値のうち3の倍数だけ足した数を求め、printする関数を作る
     // parameter: Int
@@ -344,24 +373,50 @@ class DrillFunctionViewController: UIViewController {
         print(result)
     }
     
-    
-    // ドリル22
+    // ドリル22★★
     // この問題は関数を3つ作ります
     // 1.「成功しました」と表示するだけの関数を作る
     // 2.「失敗しました」と表示するだけの関数を作る
     // 3.入力がresult:Boolで、resultがtrueのときには関数1を呼び出し、resultがfalseのときには関数2を呼び出す関数を作る
     // ちなみに、こういうのはAPIレスポンスの部分でよくやる
     
+    func success(){
+        print("成功しました")
+    }
+    
+    func failure(){
+        print("失敗しました")
+    }
+    
+    func challenge(result:Bool){
+        if result {
+            success()
+        }else {
+            failure()
+        }
+    }
+    
+    
+    // ドリル23★★
+    // APIResponseを与えて、successの場合は「成功しました」と表示し、failureの場合は「失敗しました」と表示する関数を作る
+    // ヒント:switchを使う
+    
     enum APIResponse {
         case success
         case failure
     }
     
-    // ドリル23
-    // APIResponseを与えて、successの場合は「成功しました」と表示し、failureの場合は「失敗しました」と表示する関数を作る
-    // ヒント:switchを使う
+    func getAPIResponse(response: APIResponse) {
+        switch response {
+        case APIResponse.success:
+            print("成功しました")
+        case APIResponse.failure:
+            print("失敗しました")
+        }
+    }
     
-    // ドリル24
+    
+    // ドリル24★★
     // 以下を関数にして確認する
     // ヒソカ「この中から1つ好きな数を選んで、頭に思い浮かべて♥
     //       思い浮かべたら、その数に4を足して、更に倍にする♥
@@ -370,7 +425,17 @@ class DrillFunctionViewController: UIViewController {
     // parameter: Int
     // return: なし
     
-    // ドリル25
+    func magic(result: Int){
+        let a = result + 4
+        let b = a * 2
+        let c = b - 6
+        let d = c / 2
+        let e = d - result
+        print(e)
+    }
+    
+    
+    // ドリル25★★
     // この問題は関数を2つ作ります
     // 1. 整数の入力に対して
     //    マイナスなら「不正な入力です」とprintしてfalseを返す
@@ -384,45 +449,189 @@ class DrillFunctionViewController: UIViewController {
     // parameter: Int
     // return: なし
     
+    func checkNumber(number: Int) -> Bool {
+        if number < 0 {
+            print("不正な入力です")
+            return false
+        } else if number < 18 {
+            print("18歳未満は本サービスを利用できません")
+            return false
+        } else if number > 80 {
+            print("いたずらの可能性あり")
+            return false
+        } else {
+            return true
+        }
+    }
     
-    // 2020/06/10 追加
+    func nextPage(age: Int){
+        //checkNumberがtrueだったら...という意味
+        if checkNumber(number: age){
+            print("次の画面に進む")
+        } else {
+            print("エラーダイアログを出す")
+        }
+    }
     
-    // ドリル26
+//※returnの後にprintは書けない
+//    func hoge() {
+//        return
+//        print("わーい")   // ←これは無視される
+//    }
+    
+
+    
+    // ドリル26★★★
     // CGRectを与えると、その中のサイズだけを返す関数を作る
     // parameter: CGRect
     // return: CGSize
     // ヒント: CGRectはCGPointのoriginと、CGSizeのsizeから構成されるstructである
     
-    // ドリル27
+    func getSize(one:CGRect) -> CGSize{
+        return one.size
+    }
+    
+    // ドリル27★★★
     // CGRectを与えると、右下の位置を返す関数を作る
     // parameter: CGRect
     // return: CGPoint
     // ヒント: CGRectのoriginは左上、iPhoneにおいてx軸とy軸は右方向、下方向に伸びている
     
-    // ドリル28
+    func getRightPosition(one:CGRect) -> CGPoint{
+           return CGPoint(x: one.origin.x + one.size.width, y: one.origin.y + one.size.height)
+       }
+    
+    
+//    ※CGSizeもstructである。
+//    struct CGSize {
+//       var width: CGFloat
+//       var height: CGFloat
+//    }
+    
+    
+    // ドリル28★★
     // 文字列の配列を与えると、すべての文字の長さを足して返す関数を作る
     // parameter: [String]
     // return: Int
     
-    // ドリル29
+    func lengthStr(one:[String]) -> Int{
+        var result: Int = 0
+        one.forEach { (s) in
+            result += s.count
+        }
+        return result
+    }
+    
+
+//配列の要素数は、array.count
+//文字列の長さは、str.count
+
+
+//forEachの使い方
+//その１
+//[配列].forEach { (s) in
+//      sに配列の値が一個ずつ入ってくる
+//}
+//その２
+//[配列].forEach { s in
+//      sに配列の値が一個ずつ入ってくる
+//}
+//その３
+//[配列].forEach { $0
+//      $0に配列の値が一個ずつ入ってくる
+//}
+
+
+    
+    // ドリル29★★
     // Int型の値を3つ与えると、小さい順に配列にして返す関数を作る
     // parameter: Int 3つ
     // return: なし
     // ヒント: if文で作ってみよう
     
+    func rearranges(one:Int, two:Int, three: Int)-> [Int] {
+        var result: [Int] = []
+        
+        if one < two && one < three {
+            result.append(one)
+            if two < three {
+                result.append(two)
+                result.append(three)
+            }
+            else {
+                result.append(three)
+                result.append(two)
+            }
+        } else if  two < one && two < three {
+            result.append(two)
+            if one < three {
+                result.append(one)
+                result.append(three)
+            }
+            else {
+                result.append(three)
+                result.append(one)
+            }
+        } else {
+            result.append(three)
+            if one < two {
+                result.append(one)
+                result.append(two)
+            }
+            else {
+                result.append(two)
+                result.append(one)
+            }
+        }
+        return result
+    }
+    
+    
     // ドリル30
     // ["result" : ["1", "2", "3"]] を返すだけの関数を作る
+    // 入力: なし
+    // 出力:[String: [String]]
+    
+    func insatsu() -> [String: [String]]{
+        return  ["result" : ["1", "2", "3"]]
+    }
+    
     
     // ドリル31
     // 整数numを与えると、1〜numの整数を入れた整数型の配列を返す
     // parameter: num
     // return: 整数型の配列
     
+     func oneStrArr(num:Int) -> [Int]{
+           var result:[Int] = []
+        for k in 1...num {
+               result.append(k)
+           }
+           return result
+       }
+       
+    
     // ドリル32
     // 文字列の配列と、整数を与えると、文字列の配列を整数回分繰り返した配列を返す関数を作る
     // parameter: [String] と Int
     // return: [String]
     // ヒント: 配列は足せる
+    
+    func repeatArr(arr:[String], int:Int) -> [String]{
+        var result:[String] = []
+        for _ in 1...int {
+            result = result + arr
+        }
+        return result
+    }
+    
+//    配列に、配列を結合する方法
+//    array.append(contentsOf: otherArray)
+//    もしくは
+//    array = array + otherArray
+    
+    
+
     
     // ドリル33
     // 1〜1000の整数の中で、奇数だけをすべて足した値をprintする関数を作成する
@@ -452,6 +661,7 @@ class DrillFunctionViewController: UIViewController {
             }
         }
     }
+}
     
     // ドリル35（難しかったら飛ばして）
     // 整数nを与えると、"今は\(n)!!"　とprintして、自分自身を再度呼び出す関数を作る
@@ -584,7 +794,7 @@ class DrillFunctionViewController: UIViewController {
     // メモ: 実はunionも公式に存在する
     //      ただし、1つのCGRectのメソッドとして提供されている
     //      例: frame.union(otherRect)
-}
+
 
 
 
@@ -816,16 +1026,16 @@ class DrillFunctionViewControllerAnswer: UIViewController {
     }
     
     // ドリル25
-    func checkAge1(age: Int) -> Bool {
-        if age < 0 {
+    func checkAge1(age1: Int) -> Bool {
+        if age1 < 0 {
             print("不正な入力です")
             return false
         }
-        else if age < 18 {
+        else if age1 < 18 {
             print("18歳未満は本サービスを利用できません")
             return false
         }
-        else if age >= 80 {
+        else if age1 >= 80 {
             print("いたずらの可能性あり")
             return true
         }
@@ -833,8 +1043,8 @@ class DrillFunctionViewControllerAnswer: UIViewController {
             return true
         }
     }
-    func checkAge2(age: Int) {
-        if checkAge1(age: age) {
+    func checkAge2(age2: Int) {
+        if checkAge1(age1: age2) {
             print("次の画面に進む")
         }
         else {
