@@ -23,7 +23,7 @@ extension HogeHogeHoge {
 }
 
 // 例2
-// Stringをextensionで拡張する
+// Stringをextensionで拡張する。全てのファイルに適応される。
 extension String {
     func doublePrint() {
         print(self)
@@ -34,7 +34,7 @@ extension String {
 // 例3
 // enumのCarTypeを拡張する
 enum CarType: String {
-    case セダン
+    case セダン = "セダン"
     case ワゴン
     case オープンカー
     case ミニバン
@@ -50,7 +50,7 @@ extension CarType {
 // 　でも、var + returnの形では定義できる
 
 extension String {
-//    var firstCharacter: String    // これはできない
+//    var firstCharacter111: String    // これはできない
     
     var firstCharacter: String {
         return String(self.prefix(1) )     // これはできる
@@ -113,7 +113,20 @@ class AboutExtensionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // 例2
+        let str: String = "iPhone"
+        str.doublePrint()
+        
+        // 例3
+        let cartype:CarType = CarType.セダン
+        print(cartype.rawValue)
+        print(cartype.getRawName())
+        print(CarType.セダン)
+        
+        
     }
+    
     
     func getSize() -> CGSize {
         return self.view.bounds.size
