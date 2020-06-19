@@ -34,7 +34,9 @@ class TopViewController: UIViewController {
             CellData(identifier: "RenshuEnum", title: "Enumの練習", subTitle: "2020/05/25"),
             CellData(identifier: "Syokken", title: "練習：食券", subTitle: "2020/06/04"),
             CellData(identifier: "RyodanCV", title: "コレクションビュー", subTitle: "2020/06/04"),
-            CellData(identifier: "DrillFunction", title: "感謝の正拳突き（function1）", subTitle: "2020/06/05")
+            CellData(identifier: "DrillFunction", title: "感謝の正拳突き（function1）", subTitle: "2020/06/05"),
+            CellData(identifier: "AboutExtension", title: "Extensionについて", subTitle: "2020/06/19"),
+            CellData(identifier: "AboutDidSet", title: "willSet, didSetについて", subTitle: "2020/06/19"),
             
         ]
     }
@@ -160,6 +162,12 @@ extension TopViewController: UITableViewDataSource, UITableViewDelegate {
         }
         if cellData.identifier == "DrillFunction" {
             self.performSegue(withIdentifier: "DrillFunction", sender: nil)
+        }
+        if cellData.identifier == "AboutExtension" {
+            self.performSegue(withIdentifier: "AboutExtension", sender: nil)
+        }
+        if cellData.identifier == "AboutDidSet" {
+            self.performSegue(withIdentifier: "AboutDidSet", sender: nil)
         }
 
     }

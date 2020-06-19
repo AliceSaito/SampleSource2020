@@ -102,11 +102,13 @@
                         <segue destination="XFv-FC-IyO" kind="show" identifier="Syokken" id="ycc-rr-mJf"/>
                         <segue destination="ROM-6J-wRJ" kind="show" identifier="RyodanCV" id="WYd-uL-upr"/>
                         <segue destination="U6L-YF-CYT" kind="show" identifier="DrillFunction" id="Nug-Ls-UI5"/>
+                        <segue destination="2jZ-HL-w7b" kind="show" identifier="AboutExtension" id="kDl-TS-zKP"/>
+                        <segue destination="zri-Kb-4Zm" kind="show" identifier="AboutDidSet" id="eES-Ts-EJe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uiy-kL-m7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-817.39130434782612" y="-76.339285714285708"/>
+            <point key="canvasLocation" x="-1570" y="-98"/>
         </scene>
         <!--AboutButton-->
         <scene sceneID="aTF-Nh-Ecr">
@@ -284,7 +286,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iBK-dj-cqw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-616" y="421"/>
+            <point key="canvasLocation" x="-196" y="548"/>
+        </scene>
+        <!--AboutExtension-->
+        <scene sceneID="HGa-ia-sGY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AboutExtension" id="2jZ-HL-w7b" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="psa-IB-PSb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cPw-BC-FQa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178" y="601"/>
         </scene>
         <!--Syokken-->
         <scene sceneID="MZe-ih-IZ8">
@@ -305,6 +317,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W3s-L3-X2E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-174" y="492"/>
+        </scene>
+        <!--AboutDidSet-->
+        <scene sceneID="cyT-Gw-KgL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AboutDidSet" id="zri-Kb-4Zm" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eB7-sT-fcS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dVF-Pt-qsU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178" y="652"/>
         </scene>
         <!--RenshuAPI2-->
         <scene sceneID="e7a-FJ-ahT">

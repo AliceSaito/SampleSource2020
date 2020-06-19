@@ -11,6 +11,10 @@
 		1E03080224624A99007F0824 /* AboutFunction2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E03080124624A99007F0824 /* AboutFunction2ViewController.swift */; };
 		1E1B9594246430C500EF6C5C /* Renshu1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1B9593246430C500EF6C5C /* Renshu1.storyboard */; };
 		1E1B9596246430D400EF6C5C /* Renshu1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1B9595246430D400EF6C5C /* Renshu1ViewController.swift */; };
+		1E20C163249C6FA600405889 /* AboutExtension.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E20C162249C6FA600405889 /* AboutExtension.storyboard */; };
+		1E20C165249C6FB200405889 /* AboutExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E20C164249C6FB200405889 /* AboutExtensionViewController.swift */; };
+		1E20C168249C7B1300405889 /* AboutDidSet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E20C167249C7B1300405889 /* AboutDidSet.storyboard */; };
+		1E20C16A249C7B1F00405889 /* AboutDidSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E20C169249C7B1F00405889 /* AboutDidSetViewController.swift */; };
 		1E35A22024778E4B00F26B2D /* AboutSegue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E35A21F24778E4B00F26B2D /* AboutSegue.storyboard */; };
 		1E35A22224778E5600F26B2D /* AboutSegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35A22124778E5600F26B2D /* AboutSegueViewController.swift */; };
 		1E35A22424778FFF00F26B2D /* AboutSegueNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35A22324778FFF00F26B2D /* AboutSegueNextViewController.swift */; };
@@ -98,6 +102,10 @@
 		1E03080124624A99007F0824 /* AboutFunction2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFunction2ViewController.swift; sourceTree = "<group>"; };
 		1E1B9593246430C500EF6C5C /* Renshu1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Renshu1.storyboard; sourceTree = "<group>"; };
 		1E1B9595246430D400EF6C5C /* Renshu1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renshu1ViewController.swift; sourceTree = "<group>"; };
+		1E20C162249C6FA600405889 /* AboutExtension.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutExtension.storyboard; sourceTree = "<group>"; };
+		1E20C164249C6FB200405889 /* AboutExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutExtensionViewController.swift; sourceTree = "<group>"; };
+		1E20C167249C7B1300405889 /* AboutDidSet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutDidSet.storyboard; sourceTree = "<group>"; };
+		1E20C169249C7B1F00405889 /* AboutDidSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDidSetViewController.swift; sourceTree = "<group>"; };
 		1E35A21F24778E4B00F26B2D /* AboutSegue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutSegue.storyboard; sourceTree = "<group>"; };
 		1E35A22124778E5600F26B2D /* AboutSegueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSegueViewController.swift; sourceTree = "<group>"; };
 		1E35A22324778FFF00F26B2D /* AboutSegueNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSegueNextViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +231,24 @@
 			path = Renshu1;
 			sourceTree = "<group>";
 		};
+		1E20C161249C6F9200405889 /* AboutExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1E20C162249C6FA600405889 /* AboutExtension.storyboard */,
+				1E20C164249C6FB200405889 /* AboutExtensionViewController.swift */,
+			);
+			path = AboutExtension;
+			sourceTree = "<group>";
+		};
+		1E20C166249C7B0400405889 /* AboutDidSet */ = {
+			isa = PBXGroup;
+			children = (
+				1E20C167249C7B1300405889 /* AboutDidSet.storyboard */,
+				1E20C169249C7B1F00405889 /* AboutDidSetViewController.swift */,
+			);
+			path = AboutDidSet;
+			sourceTree = "<group>";
+		};
 		1E35A21E24778E3A00F26B2D /* AboutSegue */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +351,8 @@
 		1E999C20245D3FBD00E545E8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1E20C166249C7B0400405889 /* AboutDidSet */,
+				1E20C161249C6F9200405889 /* AboutExtension */,
 				1EF972202489ED5B00E47A13 /* DrillFunction */,
 				65571F112488C3A20090F8CB /* RyodanCollectionView */,
 				1EF9721924889C0200E47A13 /* Syokken */,
@@ -631,6 +659,8 @@
 				652FA6992484BFE6000616E2 /* RenshuAPI2.storyboard in Resources */,
 				1E35A22024778E4B00F26B2D /* AboutSegue.storyboard in Resources */,
 				1E48E59C24637BDB005DA816 /* AboutFunction3.storyboard in Resources */,
+				1E20C163249C6FA600405889 /* AboutExtension.storyboard in Resources */,
+				1E20C168249C7B1300405889 /* AboutDidSet.storyboard in Resources */,
 				1EFD4F6F2461022E004ED092 /* AboutFunction.storyboard in Resources */,
 				65CBA9742473D9FF009684AC /* Magazines2.storyboard in Resources */,
 				1EBA5CC72460242800C8FB5B /* AboutDatePicker.storyboard in Resources */,
@@ -743,10 +773,12 @@
 				65CBA9702473D984009684AC /* MagazinesTableViewCell2.swift in Sources */,
 				65CBA97624768629009684AC /* WebViewController.swift in Sources */,
 				1E91CCFC245BC2F500CBD37B /* AppDelegate.swift in Sources */,
+				1E20C165249C6FB200405889 /* AboutExtensionViewController.swift in Sources */,
 				1E4DCA7924860AB4004939CF /* RenshuEnumViewController.swift in Sources */,
 				1E5242852467FAAB008A5B03 /* Renshu2ViewController.swift in Sources */,
 				1E999C23245D405C00E545E8 /* TopTableViewCell.swift in Sources */,
 				1ED60256246B8D0500E85CAB /* AboutDictionaryViewController.swift in Sources */,
+				1E20C16A249C7B1F00405889 /* AboutDidSetViewController.swift in Sources */,
 				1EC70732247BC5960035C68C /* RenshuAPIViewController.swift in Sources */,
 				1E1B9596246430D400EF6C5C /* Renshu1ViewController.swift in Sources */,
 				65CBA97B2477A8FB009684AC /* KumoViewController.swift in Sources */,
