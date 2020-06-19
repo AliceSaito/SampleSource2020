@@ -14,7 +14,14 @@ import UIKit
 // 例1
 class HogeHogeHoge {
     var title: String = "abc"
+    
+    
+//    // 例1
+//           var title: String = "abc"
+//           title.showTitle()
+    
 }
+
 extension HogeHogeHoge {
     // HogeHogeHogeにshowTitle()メソッドを追加した
     func showTitle() {
@@ -101,11 +108,13 @@ extension String {      // ←ここ 一番左
 class AboutExtensionViewController: UIViewController {
     
     var identifier: String = "AboutExtension😀"
-
+    let million: Int = 137495730360
      
     //呼び出し
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
         
         // 例2
         let str: String = "iPhone"
@@ -123,7 +132,14 @@ class AboutExtensionViewController: UIViewController {
         
         // 課題2.
         identifier.lastLetter()
-
+        
+        // 課題3.
+        showSize()
+        
+        // 課題4.
+        million.makeMoney()
+        
+        // 課題5.
         
     }
     
@@ -154,10 +170,29 @@ extension String {
 
 // 課題3. AboutExtensionViewControllerに関数showSize()を作る、この中でgetSize()を使って、sizeをprintする
 
+extension AboutExtensionViewController {
+    func showSize() {
+        print(getSize())
+    }
+}
 
 
 // 課題4. Intを拡張して、「12345」を「¥ 12,345」の文字列にする関数を作る（ちょっと難しいので、下の方に答えを載せておく）
+extension Int {
+    func makeMoney() ->String {
+        return changeToYen()
+    }
+    
+    func changeToYen() ->String {
+        let f = NumberFormatter()
+        // 先頭に通貨記号が付与される。ロケールが日本なら¥記号
+        f.numberStyle = .currency
+        f.groupingSeparator = ","
+        f.groupingSize = 3
 
+        return f.string(from: NSNumber(value: self))!
+    }
+}
 
 
 // 課題5. viewを楕円形にする関数（ellipse）を作成する
