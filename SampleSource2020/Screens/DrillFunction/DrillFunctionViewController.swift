@@ -145,7 +145,17 @@ class DrillFunctionViewController: UIViewController {
         let ddo = createColor2(red: 200, green: 2, blue: 48)
         print(ddo)
         
+        // ドリル48
+        let ddoo = createColor3(all: UIColor(red: 1, green: 1, blue: 0.5, alpha: 1))
+        print(ddoo)
+        // 下記の呼び出し方もできる
+        let c = createColor3(all: UIColor.red)
+        print(c)
+        //viewの背景にセットすることもできる
+        view.backgroundColor = c
         
+        // ドリル49
+        hoge(1, 2)
         
         
         
@@ -951,28 +961,28 @@ class DrillFunctionViewController: UIViewController {
     // ドリル48★★★
     // UIColorを与えると、redとblueを差し替えたUIColorを返す
     // なお、UIColorから(red, green, blue)の値（0〜1）を抽出するには以下の関数を用いる
+    //豆知識：カラーとアルファ値を取り出す cgColor.components
     
     func convertToRGB(color: UIColor) -> (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
         let components = color.cgColor.components!
         return (red: components[0], green: components[1], blue: components[2], alpha: components[3])
     }
     
-    func createColor3(all: UIColor) -> UIColor{
+    func createColor3(all: UIColor) -> UIColor {
         let result = convertToRGB(color: all)
         return UIColor(red: result.blue, green: result.green, blue: result.red, alpha: 1)
     }
-    
-
-
 
     
     // ドリル49
     // 整数2つを入力して、足したものをprintする関数を作成する
-    // ここで、パラメーターの前に_を付けて作成してみてくだしあ
-    // func hoge(_ a: Int,_ b: Int) -> Int
+    // ここで、パラメーターの前に_を付けて作成してみてください
+    // func hoge(_ a: Int,_ b: Int)
     // 呼び出す際にa,bの記載が不要になります（コード補完を見てみて）
     
-    
+    func hoge(_ a: Int,_ b: Int) {
+        print(a + b)
+    }
     
 }
     
@@ -980,7 +990,7 @@ class DrillFunctionViewController: UIViewController {
     // --- 以下は難しいので後回し😇 ---
 
 
-    // ドリル36
+    // ドリル***
     // 階乗をfor文を使わずに計算する関数を作る
     // 入力: n: Int
     // 出力: Int
@@ -1538,5 +1548,9 @@ class DrillFunctionViewControllerAnswer: UIViewController {
     func convertToRGB(color: UIColor) -> (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
         let components = color.cgColor.components!
         return (red: components[0], green: components[1], blue: components[2], alpha: components[3])
+    }
+    // ドリル49
+    func hoge(_ a: Int,_ b: Int) {
+        print(a + b)
     }
 }
