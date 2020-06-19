@@ -109,6 +109,8 @@ class AboutExtensionViewController: UIViewController {
     // 課題3. AboutExtensionViewControllerに関数showSize()を作る、この中でgetSize()を使って、sizeをprintする
     
     // 課題4. Intを拡張して、「12345」を「¥ 12,345」の文字列にする関数を作る（ちょっと難しいので、下の方に答えを載せておく）
+    
+    // 課題5. viewを楕円形にする関数（ellipse）を作成する
      
     
     override func viewDidLoad() {
@@ -169,3 +171,134 @@ class AboutExtensionViewController: UIViewController {
 //    }
 //}
 //
+
+
+
+// 長内が前に作ったExtension例
+
+extension String {
+    
+    /// 3文字毎にカンマを付ける
+    func addComma() -> String {
+        let num = Int(self)
+        let formatter = NumberFormatter()
+        formatter.numberStyle = NumberFormatter.Style.decimal
+        formatter.groupingSeparator = ","
+        formatter.groupingSize = 3
+        return formatter.string(from: NSNumber(value:num!))!
+    }
+    
+    /// emptyの時にemptyTextを代入するinit
+    init(string:String?, emptyText:String) {
+        if let string = string {
+            if string.isEmpty {
+                self = emptyText
+            }
+            else {
+                self = string
+            }
+        }
+        else {
+            self = emptyText
+        }
+    }
+    
+    /// emptyだったらtextを返す
+    func emptyText(text:String) -> String{
+        if (self.isEmpty) {
+            return text
+        }
+        else {
+            return self
+        }
+    }
+    
+    /// emptyかどうか
+    static func isEmpty(string:String?) -> Bool {
+        guard let string = string else {
+            return true
+        }
+        return string.isEmpty
+    }
+    
+    /// emptyではない
+    var isNotEmpty: Bool {
+        return !isEmpty
+    }
+ 
+}
+
+/// height
+extension String {
+    /// Stringの高さを求める
+    func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [ .font: font], context: nil)
+        
+        return ceil(boundingBox.height)
+    }
+    
+    /// Stringの幅を求める
+    func width(withConstrainedHeight height: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
+        
+        return ceil(boundingBox.width)
+    }
+}
+
+/// StringのOptional
+extension Optional where Wrapped == String {
+    
+    func emptyText(text:String) -> String {
+        if let s = self {
+            return s.emptyText(text: text)
+        }
+        else {
+            return text
+        }
+    }
+    
+}
+
+extension UIView {
+    /// 角丸を設定する
+    func corner(radius:CGFloat) {
+        self.layer.cornerRadius = radius
+        self.clipsToBounds = true
+    }
+}
+
+extension UIView {
+    
+    /// viewを楕円にする
+    func ellipse_(borderColor: UIColor = .clear, borderWidth: CGFloat = 0) {
+        self.layer.borderColor = borderColor.cgColor
+        self.layer.borderWidth = borderWidth
+        
+        
+        self.layer.cornerRadius = (self.frame.width > self.frame.height) ? self.frame.height/2.0 : self.frame.width/2.0
+        self.clipsToBounds = true
+    }
+    
+    /// viewにborderを設定する
+    func border(borderColor:UIColor, borderWidth:CGFloat) {
+        self.layer.borderColor = borderColor.cgColor
+        self.layer.borderWidth = borderWidth
+    }
+}
+
+extension Array where Element: Equatable {
+    
+    /// Arrayの中の重複したものを取り除く
+    mutating func removeDuplicates() {
+        var result = [Element]()
+        for value in self {
+            if !result.contains(value) {
+                result.append(value)
+            }
+        }
+        self = result
+    }
+}
+
