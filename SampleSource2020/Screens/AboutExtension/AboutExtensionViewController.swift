@@ -101,18 +101,9 @@ extension String {      // ←ここ 一番左
 class AboutExtensionViewController: UIViewController {
     
     var identifier: String = "AboutExtension😀"
-    
-    // 課題1. AboutExtensionViewControllerを拡張して、identifierをprintする関数を作り実行する
-    
-    // 課題2. Stringを拡張して、自分自身の最後の１字をprintする関数を作り、identifierに対して実行する
-    
-    // 課題3. AboutExtensionViewControllerに関数showSize()を作る、この中でgetSize()を使って、sizeをprintする
-    
-    // 課題4. Intを拡張して、「12345」を「¥ 12,345」の文字列にする関数を作る（ちょっと難しいので、下の方に答えを載せておく）
-    
-    // 課題5. viewを楕円形にする関数（ellipse）を作成する
+
      
-    
+    //呼び出し
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -127,6 +118,13 @@ class AboutExtensionViewController: UIViewController {
         print(CarType.セダン)
         
         
+        // 課題1.
+        showIdentifier()
+        
+        // 課題2.
+        identifier.lastLetter()
+
+        
     }
     
     
@@ -137,13 +135,32 @@ class AboutExtensionViewController: UIViewController {
 }
 
 
+// 課題1. AboutExtensionViewControllerを拡張して、identifierをprintする関数を作り実行する
+
+extension AboutExtensionViewController {
+    
+    func showIdentifier() {
+        print(identifier)
+    }
+}
+
+// 課題2. Stringを拡張して、自分自身の最後の１字をprintする関数を作り、identifierに対して実行する
+
+extension String {
+    func lastLetter() {
+        print(self.suffix(1))
+    }
+}
+
+// 課題3. AboutExtensionViewControllerに関数showSize()を作る、この中でgetSize()を使って、sizeをprintする
 
 
 
+// 課題4. Intを拡張して、「12345」を「¥ 12,345」の文字列にする関数を作る（ちょっと難しいので、下の方に答えを載せておく）
 
 
 
-
+// 課題5. viewを楕円形にする関数（ellipse）を作成する
 
 
 

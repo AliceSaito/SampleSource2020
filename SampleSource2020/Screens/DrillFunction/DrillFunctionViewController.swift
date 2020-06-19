@@ -383,6 +383,7 @@ class DrillFunctionViewController: UIViewController {
     func threeMultiple(value: Int) -> Bool{
         return value % 3 == 0
     }
+    
     func hundred(){
         for i in 1...100{
             if threeMultiple(value: i){

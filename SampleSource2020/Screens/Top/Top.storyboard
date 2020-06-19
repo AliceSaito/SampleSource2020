@@ -104,6 +104,7 @@
                         <segue destination="U6L-YF-CYT" kind="show" identifier="DrillFunction" id="Nug-Ls-UI5"/>
                         <segue destination="2jZ-HL-w7b" kind="show" identifier="AboutExtension" id="kDl-TS-zKP"/>
                         <segue destination="zri-Kb-4Zm" kind="show" identifier="AboutDidSet" id="eES-Ts-EJe"/>
+                        <segue destination="1UW-gi-bYN" kind="show" identifier="DrillPractice" id="ncL-nL-rmz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uiy-kL-m7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -277,6 +278,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9FE-zZ-Aqt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-201" y="382"/>
+        </scene>
+        <!--DrillPractice-->
+        <scene sceneID="sRN-FS-Trn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DrillPractice" id="1UW-gi-bYN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hxq-kn-xVG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gQ-QK-0Y3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1570" y="492"/>
         </scene>
         <!--RyodanCV-->
         <scene sceneID="OdY-WZ-ZGj">
