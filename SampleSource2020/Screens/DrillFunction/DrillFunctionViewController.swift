@@ -99,6 +99,56 @@ class DrillFunctionViewController: UIViewController {
         
         let mm = repeatArr(arr:["モデル"], int:5)
         print(mm)
+        
+        // ドリル33
+        oddNumber()
+        
+        showTeamColor(color:[.happy, .funny, .sad, .crazy])
+        
+        callMyself(n:2)
+        
+        let pp = filterUnderFive(one: ["mmmmmmm","ddd","lllll","pres"])
+        print(pp)
+        
+        let vv = filterFiveStr(one: ["mmmmmmm","ddd","lllll","pres"])
+        print(vv)
+        
+        // ドリル38
+        one(i:10)
+        
+        let ni = nilCheck(one:10)
+        print(ni)
+        
+        let nii = nilCheckStr(one:"modelpress")
+        print(nii)
+        
+        foodMenu(pizza: 6, coffee: 1, cake: 0)
+        // print("")をつけないと、次の呼び出しも改行なしになってしまう。
+        print("")
+        
+        //呼び出すときはパラメーターの順番通りじゃないと呼べない
+        foodMenu2(cake: 1,coffee: 6,pizza: 0)
+        
+        // ドリル43
+        let ui = makeDictionary(key: 5, value: "model")
+        print(ui)
+        //同じ名前でも、パラメーターが違うと、別々の関数として認識される
+        let uii = makeDictionary(key: "press", value: 2)
+        print(uii)
+        
+        let uiii = makeDictionary(key: "press", value: [2.1, 2.2, 2.3, 2.4, 2.5])
+        print(uiii)
+        
+        let dd = createColor(red: 200, green: 2, blue: 48)
+        print(dd)
+        
+        let ddo = createColor2(red: 200, green: 2, blue: 48)
+        print(ddo)
+        
+        
+        
+        
+        
     }
     
     // ドリル1
@@ -583,7 +633,7 @@ class DrillFunctionViewController: UIViewController {
     }
     
     
-    // ドリル30
+    // ドリル30★
     // ["result" : ["1", "2", "3"]] を返すだけの関数を作る
     // 入力: なし
     // 出力:[String: [String]]
@@ -593,7 +643,7 @@ class DrillFunctionViewController: UIViewController {
     }
     
     
-    // ドリル31
+    // ドリル31★
     // 整数numを与えると、1〜numの整数を入れた整数型の配列を返す
     // parameter: num
     // return: 整数型の配列
@@ -607,7 +657,7 @@ class DrillFunctionViewController: UIViewController {
        }
        
     
-    // ドリル32
+    // ドリル32★
     // 文字列の配列と、整数を与えると、文字列の配列を整数回分繰り返した配列を返す関数を作る
     // parameter: [String] と Int
     // return: [String]
@@ -627,15 +677,23 @@ class DrillFunctionViewController: UIViewController {
 //    array = array + otherArray
     
     
-
-    
-    // ドリル33
+    // ドリル33★
     // 1〜1000の整数の中で、奇数だけをすべて足した値をprintする関数を作成する
     // parameter: なし
     // return: なし
     // 答え: 250000
     
-    // ドリル34
+    func oddNumber(){
+        var result:Int = 0
+        for i in 1...1000 {
+            if !(i % 2 == 0) {
+                result += i
+            }
+        }
+        print(result)
+    }
+    
+    // ドリル34★★
     // TeamColor（以下に定義）の配列を渡すと、全てのdisplayTitleをprintする関数を作成する
     
     enum TeamColor {
@@ -657,99 +715,256 @@ class DrillFunctionViewController: UIViewController {
             }
         }
     }
-}
     
-    // ドリル35（難しかったら飛ばして）
+    //(color:TeamColor)だと１つしか呼び出せない↓
+    func showTeamColor(color:[TeamColor]){
+        color.forEach {
+            print($0.getDisplayTitle())
+        }
+    }
+    
+    
+    // ドリル35★★
+    //再帰処理：funcはforを使わなくても自分を呼び出すことでループできる
     // 整数nを与えると、"今は\(n)!!"　とprintして、自分自身を再度呼び出す関数を作る
     // ただし、nが11以上だと自分自身を呼び出さず、"\(n)なので終了!!"とprintする
     // また、自分自身を呼び出すときはn+1を渡す
     
+    func callMyself(n:Int){
+        if n <= 10 {
+            print("今は\(n)!!")
+            callMyself(n: n+1)
+        } else {
+            print("\(n)なので終了!!")
+        }
+    }
     
-    // ドリル36
+    // ドリル36★★
     // 文字列の配列を与えると、5文字以下の文字列だけをフィルターして返す関数を作る
     // parameters: [String]
     // return: [String]
     // 備考: filterは使わないでfor文を使ってみて
     
+    func filterUnderFive(one: [String]) -> [String]{
+        var result:[String] = []
+        for i in one {
+            if i.count <= 5 {
+                result.append(i)
+            }
+        }
+        return result
+    }
     
-    // ドリル37
+    
+    // ドリル37★
     // 文字列の配列を与えると、5文字以上の文字列を除外して返す関数を作る
     // parameters: [String]
     // return: [String]
     // 備考: filterは使わないでfor文を使ってみて
     
+    func filterFiveStr(one: [String]) -> [String]{
+        var result:[String] = []
+        for i in one {
+            if i.count < 5 {
+                result.append(i)
+            }
+        }
+        return result
+    }
     
-    // ドリル38
+    
+    // ドリル38★★
     // 簡単な関数を4つ作ります
     // 1. 関数1は、関数2に整数を渡して、返り値をprintする
     // 2. 関数2は、関数3に整数を渡して、返り値をそのまま返す
     // 3. 関数3は、関数4に整数を渡して、返り値をそのまま返す
     // 4. 関数4は、与えられた整数をそのまま返す
     // メモ: 関数1で与えた整数がそのままprintされるだけになる
-
     
-    // ドリル39
+    func one(i:Int){
+        print(two(a:i))
+    }
+    func two(a:Int) -> Int {
+        return three(b:a)
+    }
+    func three(b:Int) -> Int {
+        return four(c:b)
+    }
+    func four(c:Int) -> Int {
+        return c
+    }
+    
+    
+    // ドリル39★★★
     // OptionalのInt型を与えたとき、それがnilなら0を返し、nilでなければInt型にして返す関数を作る
     // parameters: Int?
     // return: Int
-    // メモ: if letを使う
+    // メモ: if letを使う(オプショナルバインディング)
+    //elseじゃなくても、returnを重ねれば処理を分岐できる。
+    
+    func nilCheck(one:Int?) -> Int {
+        //Optional Binding
+        if let noNil = one {
+            return noNil
+        }
+        return 0
+    }
     
     
-    // ドリル40
+    // ドリル40★★
     // OptionalのString型を与えたとき、それがnilなら空文字を返し、nilでなければString型にして返す関数を作る
     // parameters: String?
     // return: String
     // メモ: 1行で書いてみる
     
+    func nilCheckStr(one:String?) -> String {
+        // return value ?? "" ←この書き方もOK
+        if let noNil = one {
+            return noNil
+        }
+        return ""
+    }
     
-    // ドリル41
+    
+    // ドリル41★★
     // 整数型でpizza, coffee, cakeを与えると、与えた回数分それぞれ🍕、☕、🍰をprintする関数を作る
     // ただし最大個数は5個になるようにする
     // parameters: pizza: Int, coffe: Int, cake: Int
     // ヒント: for文とbreakを使うとやりやすいと思う
-    // ヒント: 改行しないprintって、print("なにか", terminator: "") って書くらしい！ 使わなくてもいいけど
+    // ヒント: 改行しないprintは、print("なにか", terminator: "") と書く
+    //1より小さい数を省くために、if pizza >= 1 を最初に書く
+    
+    func foodMenu(pizza: Int, coffee: Int, cake: Int) {
+        if pizza >= 1 {
+            for i in 1...pizza{
+                print("🍕", terminator: "")
+                if i == 5 {
+                    break
+                }
+            }
+        }
+        
+        if coffee >= 1 {
+            for i in 1...coffee{
+                print("☕", terminator: "")
+                if i == 5 {
+                    break
+                }
+            }
+        }
+        if cake >= 1 {
+            for i in 1...cake{
+                print("🍰", terminator: "")
+                if i == 5 {
+                    break
+                }
+            }
+        }
+    }
     
     
     // ドリル42
     // ドリル41のpizza, coffee, cakeのパラメータを、cake, coffee, pizzaの順にしても
     // 関数の中身は変わらないことを確認する
     
+    func foodMenu2(cake: Int, coffee: Int, pizza: Int) {
+        if pizza >= 1 {
+            for i in 1...pizza{
+                print("🍕", terminator: "")
+                if i == 5 {
+                    break
+                }
+            }
+        }
+        
+        if coffee >= 1 {
+            for i in 1...coffee{
+                print("☕", terminator: "")
+                if i == 5 {
+                    break
+                }
+            }
+        }
+        if cake >= 1 {
+            for i in 1...cake{
+                print("🍰", terminator: "")
+                if i == 5 {
+                    break
+                }
+            }
+        }
+    }
     
-    // ドリル43
+    
+    // ドリル43★★
     // key: Int, value: String を与えると、Dictionaryにして返す関数を作る
     // parameters: key: Int, value: String
     // return: 秘密
+    
+    func makeDictionary(key: Int, value: String) ->[Int: String]{
+        return [key: value]
+    }
+    
     
     // ドリル44
     // key: String, value: Int を与えると、Dictionaryにして返す関数を作る
     // parameters: key: String, value: Int
     // return: 秘密
-    // ヒント: 関数名は42と同名でも大丈夫
+    // ヒント: 関数名は42と同名でも大丈夫(パラメーターが違うと、同じ名前でも別々の関数として認識されるから)
     
-    // ドリル45
+    func makeDictionary(key: String, value: Int) ->[String: Int]{
+        return [key: value]
+    }
+    
+    
+    // ドリル45★
     // key: String, value: [Double] を与えると、Dictionaryにして返す関数を作る
     // parameters: key: String, value: [Double]
     // return: 秘密
     // ヒント: 関数名は42と同名でも大丈夫
     
-    // ドリル46
+    func makeDictionary(key: String, value: [Double]) ->[String: [Double]]{
+           return [key: value]
+       }
+    
+    
+    // ドリル46★★
     // red: Int, green: Int, blue: Int を与えたとき、UIColorを返す関数を作る
-    // ただしこれらの値は0〜255の256段階で表示するものとする（意味分からなかったら聞いて）
+    // ただしこれらの値は0〜255の256段階で表示するものとする。8ビットだから、２の８乗で256。redの濃さを256段階で選べる。
     // alphaは1固定とする
     // ヒント: UIColor(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
-    //        ここで各値は0〜1.0で表現されている
+    // ここで各値は0〜1.0で表現されている。255/255は１だから。
+    
+    func createColor(red: Int, green: Int, blue: Int) -> UIColor {
+        return UIColor(red: CGFloat(red)/255.0, green: CGFloat(green)/255.0, blue: CGFloat(blue)/255.0, alpha: 1)
+    }
+    
     
     // ドリル47
     // red: Int, green: Int, blue: Int を与えたとき、redとblueを差し替えたUIColorを返す関数を作る
     // メモ: viewDidLoadで、view.backgroundColorに指定すると確認しやすい
     
-    // ドリル48
+    func createColor2(red: Int, green: Int, blue: Int) -> UIColor {
+        return UIColor(red: CGFloat(blue)/255.0, green: CGFloat(green)/255.0, blue: CGFloat(red)/255.0, alpha: 1)
+    }
+    
+    // ドリル48★★★
     // UIColorを与えると、redとblueを差し替えたUIColorを返す
     // なお、UIColorから(red, green, blue)の値（0〜1）を抽出するには以下の関数を用いる
+    
     func convertToRGB(color: UIColor) -> (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
         let components = color.cgColor.components!
         return (red: components[0], green: components[1], blue: components[2], alpha: components[3])
     }
+    
+    func createColor3(all: UIColor) -> UIColor{
+        let result = convertToRGB(color: all)
+        return UIColor(red: result.blue, green: result.green, blue: result.red, alpha: 1)
+    }
+    
+
+
+
     
     // ドリル49
     // 整数2つを入力して、足したものをprintする関数を作成する
@@ -759,7 +974,7 @@ class DrillFunctionViewController: UIViewController {
     
     
     
-
+}
     
 
     // --- 以下は難しいので後回し😇 ---
@@ -1174,7 +1389,7 @@ class DrillFunctionViewControllerAnswer: UIViewController {
         }
     }
     
-    // ドリル35
+    // ドリル35　再帰処理
     func callMyself(n: Int) {
         if n <= 10 {
             print("今は\(n)!!")
@@ -1210,17 +1425,21 @@ class DrillFunctionViewControllerAnswer: UIViewController {
     
     // ドリル38
     func kaesudakeCheck() {
-        print(kaesudake1(value: 10))
+        print(kaesudake1(value1: 10))
     }
-    func kaesudake1(value: Int) -> Int {
-        return kaesudake2(value: value)
+    func kaesudake1(value1: Int) -> Int {
+        return kaesudake2(value2: value1)
     }
-    func kaesudake2(value: Int) -> Int {
-        return kaesudake3(value: value)
+    func kaesudake2(value2: Int) -> Int {
+        return kaesudake3(value3: value2)
     }
-    func kaesudake3(value: Int) -> Int {
-        return value
+    func kaesudake3(value3: Int) -> Int {
+        return value3
     }
+    
+//    呼び出し方
+//    kaesudakeCheck()
+    
 
     // ドリル39
     func safeInt(value: Int?) -> Int {
@@ -1231,11 +1450,13 @@ class DrillFunctionViewControllerAnswer: UIViewController {
     }
     
     // ドリル40
+    //return A ?? B (Aがなかったら、Bを返すという意味。nilの可能性がなくなるので、Optional Bindingの必要がない。)
     func safeString(value: String?) -> String {
         return value ?? ""
     }
     
     // ドリル41
+    //0から始まっているから、5ではなく４。
     func showIcons(pizza: Int, coffee: Int, cake: Int) {
         for i in 0..<pizza {
             print("🍕", terminator: "")
@@ -1294,19 +1515,20 @@ class DrillFunctionViewControllerAnswer: UIViewController {
     }
     
     // ドリル45
+    //多次元配列ではない。Dictionaryの中にArrayが入っているだけ。だから、return [key: [value]]ではない。
     func createDictionary(key: String, value: [Double]) -> [String: [Double]] {
         return [key: value]
     }
     
     // ドリル46
     func createColor(red: Int, green: Int, blue: Int) -> UIColor {
-        return UIColor(red: CGFloat(red/255), green: CGFloat(green/255), blue: CGFloat(blue/255), alpha: 1)
+        return UIColor(red: CGFloat(red)/255.0, green: CGFloat(green)/255.0, blue: CGFloat(blue)/255.0, alpha: 1)
     }
     
     // ドリル47
     func createColorChangeColor(red: Int, green: Int, blue: Int) -> UIColor {
-        return UIColor(red: CGFloat(blue/255), green: CGFloat(green/255), blue: CGFloat(red/255), alpha: 1)
-    }
+           return UIColor(red: CGFloat(blue)/255.0, green: CGFloat(green)/255.0, blue: CGFloat(red)/255.0, alpha: 1)
+       }
     
     // ドリル48
     func changeColor(color: UIColor) -> UIColor {
