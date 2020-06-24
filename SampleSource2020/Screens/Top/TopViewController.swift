@@ -172,7 +172,7 @@ extension TopViewController: UITableViewDataSource, UITableViewDelegate {
             self.performSegue(withIdentifier: "AboutDidSet", sender: nil)
         }
         if cellData.identifier == "DrillPractice" {
-            self.performSegue(withIdentifier: "AboutDidSet", sender: nil)
+            self.performSegue(withIdentifier: "DrillPractice", sender: nil)
         }
         if cellData.identifier == "DrillFunction2" {
             self.performSegue(withIdentifier: "DrillFunction2", sender: nil)

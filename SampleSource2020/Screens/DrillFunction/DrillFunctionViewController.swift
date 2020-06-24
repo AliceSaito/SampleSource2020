@@ -33,13 +33,13 @@ class DrillFunctionViewController: UIViewController {
         
         let kg = square(width:5, height:6)
         print(kg)
-        
+        // ドリル8
         let xg = xCenter(frame: CGRect(x: 100, y: 150, width: 200, height: 200))
         print(xg)
         
         let ed = strInt(one:"10")
         print(ed)
-        
+        // ドリル10
         let mp = sumStr(one:"モデル", two:"プレス")
         print(mp)
         

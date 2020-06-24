@@ -14,10 +14,42 @@ class DrillPracticeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // ドリル7
+        let s = square(width:100, height:140)
+        print(s)
         
+        // ドリル8
+        let ss = xaxis(frame : CGRect(x: 100, y: 150, width: 200, height: 200))
+        print(ss)
         
+        // ドリル9
+        let sss = intstr(parameter: "200")
+        print(sss)
         
+        // ドリル10
+        let w = strtwo(para: "あ", meter: "い")
+        print(w)
         
+        // ドリル11
+        onebyone(para: ["あ", "い", "う", "え"])
+        
+        // ドリル12
+        let ww = strthree(pa: 2, ra: 5, meter: 3)
+        print(ww)
+        
+        // ドリル13
+        let www = startend(start:0, end: 8)
+        print(www)
+        
+        // ドリル14
+        
+        // ドリル15
+        
+        // ドリル16
+        
+        // ドリル17
+        
+        // ドリル18
     }
     
    
@@ -27,9 +59,9 @@ class DrillPracticeViewController: UIViewController {
     // やること: 面積を計算して返す
     // return: CGFloat型
     
-    
-    
-   
+    func square(width:CGFloat, height:CGFloat) -> CGFloat {
+        return width * height
+    }
     
     // ドリル8★
     // frame（CGRect型）から、x軸のcenterの値を返す関数を作成する、引数はCGFloat型とする
@@ -37,15 +69,19 @@ class DrillPracticeViewController: UIViewController {
     // ヒント: frame.origin.x これがxの位置、　frame.size.width これが幅
     // return: CGFloat型
     
-  
-      
-    // ドリル9★
+    func xaxis(frame : CGRect) -> CGFloat {
+        return frame.origin.x + (frame.size.width / 2.0)
+    }
+    
+    // ドリル9★★★
     // String型からInt型に変換する関数を作成する. （入力は必ずIntに変換できる想定）
     // parameter: String型
     // やること: 入力値をInt型に変換する
     // return: Int型（整数）
     
-     
+     func intstr(parameter: String) -> Int {
+         return  Int(parameter)!
+     }
     
     // ドリル10
     // 2つの文字列を連結して返す関数を作成する
@@ -53,32 +89,56 @@ class DrillPracticeViewController: UIViewController {
     // やること: 文字列連結
     // return: String型
     
+    func strtwo(para: String, meter: String) -> String {
+        return para + meter
+    }
   
-    // ドリル11★
+    // ドリル11★★★
     // String型の配列を渡すと、全て1つずつprintする関数を作成する
     // parameter: [String]型
     // やること: 1個ずつprintする
     // return: なし
     
-    
+    func onebyone(para: [String]) {
+        para.forEach {
+            print($0)
+        }
+    }
 
-    // ドリル12★
+    // ドリル12★★★
     // 整数を3つ与えると、それらを配列にして返す関数を作成する
     // parameter: 整数3つ
     // やること: 全部まとめて配列にする
     // return: 整数の配列型
     
+    func strthree(pa: Int, ra: Int, meter: Int) -> [Int] {
+        return [pa, ra, meter]
+    }
     
-    
-    // ドリル13★★
+    // ドリル13★★★
     // 整数startから整数endを与えると、start〜endの整数を入れた整数型の配列を返す
     // parameter: startからend
     // やること: 整数型の配列を用意して、startからendまでfor文で詰めていって返す
     // return: 整数の配列型
     
+    func startend(start:Int, end: Int) -> [Int] {
+        var result:[Int] = []
+        //startの数値がendより大きい場合がエラーになる
+        if start < end {
+            for i in start...end {
+                result.append(i)
+            }
+        }
+        return result
+    }
+    
+//パラメーターが多い場合は下記のやり方
+//    var array = [start, pa, ra, meter, end]
+//    for i in array {
+//    }
     
     
-    // ドリル14★
+    // ドリル14★★
     // 文字列を1つ与えると、その文字列3つを配列にして返す関数を作成する
     // parameter: String
     // return: [String]
