@@ -55,6 +55,8 @@
 		1EF972242489F10E00E47A13 /* DrillFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF972232489F10E00E47A13 /* DrillFunctionViewController.swift */; };
 		1EFD4F6F2461022E004ED092 /* AboutFunction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFD4F6E2461022E004ED092 /* AboutFunction.storyboard */; };
 		1EFD4F7124610240004ED092 /* AboutFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */; };
+		1EFF8A7424A31B9E00BCDF7D /* DrillFunction2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF8A7224A31B9E00BCDF7D /* DrillFunction2ViewController.swift */; };
+		1EFF8A7524A31B9E00BCDF7D /* DrillFunction2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFF8A7324A31B9E00BCDF7D /* DrillFunction2.storyboard */; };
 		65025BA7249CA39D009A20F0 /* DrillPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65025BA6249CA39D009A20F0 /* DrillPracticeViewController.swift */; };
 		65025BA9249CA3BC009A20F0 /* DrillPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65025BA8249CA3BC009A20F0 /* DrillPractice.storyboard */; };
 		652FA6992484BFE6000616E2 /* RenshuAPI2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652FA6982484BFE6000616E2 /* RenshuAPI2.storyboard */; };
@@ -154,6 +156,8 @@
 		1EF972232489F10E00E47A13 /* DrillFunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillFunctionViewController.swift; sourceTree = "<group>"; };
 		1EFD4F6E2461022E004ED092 /* AboutFunction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutFunction.storyboard; sourceTree = "<group>"; };
 		1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFunctionViewController.swift; sourceTree = "<group>"; };
+		1EFF8A7224A31B9E00BCDF7D /* DrillFunction2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrillFunction2ViewController.swift; sourceTree = "<group>"; };
+		1EFF8A7324A31B9E00BCDF7D /* DrillFunction2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DrillFunction2.storyboard; sourceTree = "<group>"; };
 		65025BA6249CA39D009A20F0 /* DrillPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillPracticeViewController.swift; sourceTree = "<group>"; };
 		65025BA8249CA3BC009A20F0 /* DrillPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DrillPractice.storyboard; sourceTree = "<group>"; };
 		652FA6982484BFE6000616E2 /* RenshuAPI2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RenshuAPI2.storyboard; sourceTree = "<group>"; };
@@ -355,6 +359,7 @@
 		1E999C20245D3FBD00E545E8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1EFF8A7124A31B9E00BCDF7D /* DrillFunction2 */,
 				65025BA5249CA323009A20F0 /* DrillPractice */,
 				1E20C166249C7B0400405889 /* AboutDidSet */,
 				1E20C161249C6F9200405889 /* AboutExtension */,
@@ -489,6 +494,15 @@
 				1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */,
 			);
 			path = AboutFunction;
+			sourceTree = "<group>";
+		};
+		1EFF8A7124A31B9E00BCDF7D /* DrillFunction2 */ = {
+			isa = PBXGroup;
+			children = (
+				1EFF8A7224A31B9E00BCDF7D /* DrillFunction2ViewController.swift */,
+				1EFF8A7324A31B9E00BCDF7D /* DrillFunction2.storyboard */,
+			);
+			path = DrillFunction2;
 			sourceTree = "<group>";
 		};
 		65025BA5249CA323009A20F0 /* DrillPractice */ = {
@@ -684,6 +698,7 @@
 				1E868D67245E5C2E001B183B /* AboutClass.storyboard in Resources */,
 				1ED60254246B8CFD00E85CAB /* AboutDictionary.storyboard in Resources */,
 				1EF9721B24889C5B00E47A13 /* Syokken.storyboard in Resources */,
+				1EFF8A7524A31B9E00BCDF7D /* DrillFunction2.storyboard in Resources */,
 				1E4DCA7B24860AD6004939CF /* RenshuEnum.storyboard in Resources */,
 				1E999C25245D414700E545E8 /* Top.storyboard in Resources */,
 				1E91CD06245BC2F700CBD37B /* LaunchScreen.storyboard in Resources */,
@@ -769,6 +784,7 @@
 				65025BA7249CA39D009A20F0 /* DrillPracticeViewController.swift in Sources */,
 				65CBA97D2477A91F009684AC /* DaninViewController.swift in Sources */,
 				65AD321F2487800800A28D6F /* enumViewController.swift in Sources */,
+				1EFF8A7424A31B9E00BCDF7D /* DrillFunction2ViewController.swift in Sources */,
 				65A10CFC24890790003D89B3 /* ShokkenTableViewCell.swift in Sources */,
 				1E48E59E24637BEE005DA816 /* AboutFunction3ViewController.swift in Sources */,
 				1EF972242489F10E00E47A13 /* DrillFunctionViewController.swift in Sources */,
