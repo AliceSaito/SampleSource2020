@@ -17,19 +17,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AboutExtension" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmr-Kl-vKs">
-                                <rect key="frame" x="147" y="94" width="120.5" height="21"/>
+                                <rect key="frame" x="147" y="94" width="120.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZD2-YG-8RF">
+                                <rect key="frame" x="157" y="298" width="100" height="300"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="ZKi-YP-aVf"/>
+                                    <constraint firstAttribute="width" constant="100" id="lGG-d8-7Yt"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="ZD2-YG-8RF" firstAttribute="centerX" secondItem="KPn-OI-KdK" secondAttribute="centerX" id="7ey-eJ-DC8"/>
                             <constraint firstItem="hmr-Kl-vKs" firstAttribute="centerX" secondItem="KPn-OI-KdK" secondAttribute="centerX" id="LO8-ah-qQd"/>
+                            <constraint firstItem="ZD2-YG-8RF" firstAttribute="centerY" secondItem="KPn-OI-KdK" secondAttribute="centerY" id="ZBe-6N-PzV"/>
                             <constraint firstItem="hmr-Kl-vKs" firstAttribute="top" secondItem="Q48-Bd-jet" secondAttribute="top" constant="50" id="sbP-l1-Fsc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q48-Bd-jet"/>
                     </view>
+                    <connections>
+                        <outlet property="redview" destination="ZD2-YG-8RF" id="WHS-WP-48e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mof-LM-jHR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

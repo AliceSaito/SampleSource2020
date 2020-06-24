@@ -15,11 +15,7 @@ import UIKit
 class HogeHogeHoge {
     var title: String = "abc"
     
-    
-//    // 例1
-//           var title: String = "abc"
-//           title.showTitle()
-    
+//例1　呼び出し方。viewDidLoadはViewControllerでしか呼び出せない。
 }
 
 extension HogeHogeHoge {
@@ -49,6 +45,7 @@ enum CarType: String {
 extension CarType {
     func getRawName() -> String {
         return self.rawValue
+        //rawValueは"セダン"のこと。
     }
 }
 
@@ -108,13 +105,24 @@ extension String {      // ←ここ 一番左
 class AboutExtensionViewController: UIViewController {
     
     var identifier: String = "AboutExtension😀"
-    let million: Int = 137495730360
-     
-    //呼び出し
+    let million: Int = 13795730360
+    
+    @IBOutlet weak var redview: UIView!
+    
+    func getSize() -> CGSize {
+        //view　：ViewControllerの一番下にあるviewのサイズ
+        //self.view.boundsはサイズ。 例）x0y0width200height300
+        //self.view.frameは位置とサイズ。例）x100y100width200height300
+        return self.view.bounds.size
+    }
+    
+    //呼び出し。viewDidLoadはViewControllerでしか呼び出せない。
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        //例1
+        let h = HogeHogeHoge()
+        h.showTitle()
         
         // 例2
         let str: String = "iPhone"
@@ -137,15 +145,19 @@ class AboutExtensionViewController: UIViewController {
         showSize()
         
         // 課題4.
-        million.makeMoney()
+        let s : String = million.makeMoney()
+        print(s)
+        
+        // 下の方法でも呼べる
+        let a: Int = 20
+        a.changeToYen()
+        
+        //簡易版の呼び方
+        10.changeToYen()
         
         // 課題5.
+        redview.ellipse()
         
-    }
-    
-    
-    func getSize() -> CGSize {
-        return self.view.bounds.size
     }
 
 }
@@ -168,7 +180,7 @@ extension String {
     }
 }
 
-// 課題3. AboutExtensionViewControllerに関数showSize()を作る、この中でgetSize()を使って、sizeをprintする
+// 課題3. AboutExtensionViewControllerを拡張して、関数showSize()を作る。この中でgetSize()を使って、sizeをprintする。
 
 extension AboutExtensionViewController {
     func showSize() {
@@ -186,10 +198,11 @@ extension Int {
     func changeToYen() ->String {
         let f = NumberFormatter()
         // 先頭に通貨記号が付与される。ロケールが日本なら¥記号
+        //NumberFormatterに下の３つを追加する
         f.numberStyle = .currency
         f.groupingSeparator = ","
         f.groupingSize = 3
-
+        //.string(from: NSNumber(value: self)) で返す。ファクトリーパターン。
         return f.string(from: NSNumber(value: self))!
     }
 }
@@ -197,17 +210,30 @@ extension Int {
 
 // 課題5. viewを楕円形にする関数（ellipse）を作成する
 
+extension UIView {
+    
+    func ellipse() {
+        self.layer.cornerRadius = (self.frame.width > self.frame.height) ? self.frame.height/2.0 : self.frame.width/2.0
+        self.clipsToBounds = true
+    }
+}
+
+
+//三項演算子
+//        aa == 1 ? print("1") : print("2")
+//↓を一行で書くと↑
+//        if aa == 1 {
+//            print("1")
+//        }
+//        else {
+//            print("2")
+//        }
 
 
 
 
 
-
-
-
-
-// --------- 答え --------- //
-
+// 課題4の別解答
 //extension Int {
 //
 //    func yen() -> String {
@@ -327,7 +353,6 @@ extension UIView {
     func ellipse_(borderColor: UIColor = .clear, borderWidth: CGFloat = 0) {
         self.layer.borderColor = borderColor.cgColor
         self.layer.borderWidth = borderWidth
-        
         
         self.layer.cornerRadius = (self.frame.width > self.frame.height) ? self.frame.height/2.0 : self.frame.width/2.0
         self.clipsToBounds = true

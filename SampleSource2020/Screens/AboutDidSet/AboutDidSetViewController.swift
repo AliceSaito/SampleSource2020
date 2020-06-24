@@ -41,6 +41,11 @@ class AboutDidSetViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        hoge = "アイウエオ"
+        //値を上書き↓
+        //hoge = "かきくけこ"
+        
     }
     
 }
