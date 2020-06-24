@@ -712,7 +712,7 @@ class DrillFunctionViewController: UIViewController {
         case funny
         case sad
         case crazy
-        
+        //enumの直下にいる時はself
         func getDisplayTitle() -> String {
             switch self {
             case .happy:

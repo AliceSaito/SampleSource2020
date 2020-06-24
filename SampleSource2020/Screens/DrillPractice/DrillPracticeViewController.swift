@@ -27,6 +27,8 @@ class DrillPracticeViewController: UIViewController {
     // やること: 面積を計算して返す
     // return: CGFloat型
     
+    
+    
    
     
     // ドリル8★
