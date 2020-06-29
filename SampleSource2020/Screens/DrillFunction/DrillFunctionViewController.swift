@@ -49,7 +49,7 @@ class DrillFunctionViewController: UIViewController {
         let ho = makeArray(one:3, two:6, three:2)
         print(ho)
         
-        let yo = allStory(start:3 , before:4 ,after:5 ,end:6)
+        let yo = allStory(start:3, end:6)
         print(yo)
         
         let go = sumStrArr(one:"Go!")
@@ -63,7 +63,7 @@ class DrillFunctionViewController: UIViewController {
         
         evenAdd()
         
-         // ドリル18
+         // ドリル18。呼び出しは１個でも４個でもいい。同じのを複数書いてもいい。
         decideColor(colors: [MyColor.happy, MyColor.funny, MyColor.sad, MyColor.crazy])
         
         let q = threeMultiple(value: 9)
@@ -73,11 +73,16 @@ class DrillFunctionViewController: UIViewController {
         
         hundredTree()
         
+        // ドリル22
+        challenge(result:true)
+        challenge(result:false)
+        
         getAPIResponse(response: APIResponse.success)
         
         magic(result: 9)
         
         checkNumber(number: 16)
+        
         nextPage(age: 16)
         
         // ドリル26
@@ -103,7 +108,8 @@ class DrillFunctionViewController: UIViewController {
         // ドリル33
         oddNumber()
         
-        showTeamColor(color:[.happy, .funny, .sad, .crazy])
+        // ドリル34
+       showTeamColor(color:[.happy, .funny, .sad, .crazy])
         
         callMyself(n:2)
         
@@ -289,7 +295,7 @@ class DrillFunctionViewController: UIViewController {
     // やること: 整数型の配列を用意して、startからendまでfor文で詰めていって返す
     // return: 整数の配列型
     
-    func allStory(start:Int , before:Int ,after:Int ,end:Int) -> [Int]{
+    func allStory(start:Int, end:Int) -> [Int]{
         var result:[Int] = []
         for i in start...end{
             result.append(i)
@@ -344,7 +350,7 @@ class DrillFunctionViewController: UIViewController {
     
     func evenAdd(){
         var addNumber = 0
-        for i in 1...1000{
+        for i in 1...100{
             if i % 2 == 0{
                 addNumber += i
             }
@@ -513,7 +519,7 @@ class DrillFunctionViewController: UIViewController {
         } else if number < 18 {
             print("18歳未満は本サービスを利用できません")
             return false
-        } else if number > 80 {
+        } else if number >= 80 {
             print("いたずらの可能性あり")
             return false
         } else {
@@ -557,7 +563,6 @@ class DrillFunctionViewController: UIViewController {
     func getRightPosition(one:CGRect) -> CGPoint{
            return CGPoint(x: one.origin.x + one.size.width, y: one.origin.y + one.size.height)
        }
-    
     
 //    ※CGSizeもstructである。
 //    struct CGSize {
@@ -603,7 +608,7 @@ class DrillFunctionViewController: UIViewController {
     // ドリル29★★
     // Int型の値を3つ与えると、小さい順に配列にして返す関数を作る
     // parameter: Int 3つ
-    // return: なし
+    // return:  [Int]
     // ヒント: if文で作ってみよう
     
     func rearranges(one:Int, two:Int, three: Int)-> [Int] {
@@ -742,7 +747,7 @@ class DrillFunctionViewController: UIViewController {
     // また、自分自身を呼び出すときはn+1を渡す
     
     func callMyself(n:Int){
-        if n <= 10 {
+        if n < 11 {
             print("今は\(n)!!")
             callMyself(n: n+1)
         } else {
@@ -766,7 +771,6 @@ class DrillFunctionViewController: UIViewController {
         return result
     }
     
-    
     // ドリル37★
     // 文字列の配列を与えると、5文字以上の文字列を除外して返す関数を作る
     // parameters: [String]
@@ -782,7 +786,6 @@ class DrillFunctionViewController: UIViewController {
         }
         return result
     }
-    
     
     // ドリル38★★
     // 簡単な関数を4つ作ります
@@ -829,7 +832,7 @@ class DrillFunctionViewController: UIViewController {
     // メモ: 1行で書いてみる
     
     func nilCheckStr(one:String?) -> String {
-        // return value ?? "" ←この書き方もOK
+        // return one ?? "" ←この書き方もOK
         if let noNil = one {
             return noNil
         }
@@ -840,7 +843,7 @@ class DrillFunctionViewController: UIViewController {
     // ドリル41★★
     // 整数型でpizza, coffee, cakeを与えると、与えた回数分それぞれ🍕、☕、🍰をprintする関数を作る
     // ただし最大個数は5個になるようにする
-    // parameters: pizza: Int, coffe: Int, cake: Int
+    // parameters: pizza: Int, coffee: Int, cake: Int
     // ヒント: for文とbreakを使うとやりやすいと思う
     // ヒント: 改行しないprintは、print("なにか", terminator: "") と書く
     //1より小さい数を省くために、if pizza >= 1 を最初に書く
@@ -973,7 +976,6 @@ class DrillFunctionViewController: UIViewController {
         let result = convertToRGB(color: all)
         return UIColor(red: result.blue, green: result.green, blue: result.red, alpha: 1)
     }
-
     
     // ドリル49
     // 整数2つを入力して、足したものをprintする関数を作成する
