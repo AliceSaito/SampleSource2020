@@ -57,6 +57,8 @@
 		1EFD4F7124610240004ED092 /* AboutFunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */; };
 		1EFF8A7424A31B9E00BCDF7D /* DrillFunction2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF8A7224A31B9E00BCDF7D /* DrillFunction2ViewController.swift */; };
 		1EFF8A7524A31B9E00BCDF7D /* DrillFunction2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFF8A7324A31B9E00BCDF7D /* DrillFunction2.storyboard */; };
+		1EFF8A7824A33F0300BCDF7D /* RensyuStatic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EFF8A7724A33F0300BCDF7D /* RensyuStatic.storyboard */; };
+		1EFF8A7A24A33F1300BCDF7D /* RensyuStaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFF8A7924A33F1300BCDF7D /* RensyuStaticViewController.swift */; };
 		65025BA7249CA39D009A20F0 /* DrillPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65025BA6249CA39D009A20F0 /* DrillPracticeViewController.swift */; };
 		65025BA9249CA3BC009A20F0 /* DrillPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65025BA8249CA3BC009A20F0 /* DrillPractice.storyboard */; };
 		652FA6992484BFE6000616E2 /* RenshuAPI2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652FA6982484BFE6000616E2 /* RenshuAPI2.storyboard */; };
@@ -158,6 +160,8 @@
 		1EFD4F7024610240004ED092 /* AboutFunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutFunctionViewController.swift; sourceTree = "<group>"; };
 		1EFF8A7224A31B9E00BCDF7D /* DrillFunction2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrillFunction2ViewController.swift; sourceTree = "<group>"; };
 		1EFF8A7324A31B9E00BCDF7D /* DrillFunction2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DrillFunction2.storyboard; sourceTree = "<group>"; };
+		1EFF8A7724A33F0300BCDF7D /* RensyuStatic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RensyuStatic.storyboard; sourceTree = "<group>"; };
+		1EFF8A7924A33F1300BCDF7D /* RensyuStaticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RensyuStaticViewController.swift; sourceTree = "<group>"; };
 		65025BA6249CA39D009A20F0 /* DrillPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrillPracticeViewController.swift; sourceTree = "<group>"; };
 		65025BA8249CA3BC009A20F0 /* DrillPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DrillPractice.storyboard; sourceTree = "<group>"; };
 		652FA6982484BFE6000616E2 /* RenshuAPI2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RenshuAPI2.storyboard; sourceTree = "<group>"; };
@@ -359,6 +363,7 @@
 		1E999C20245D3FBD00E545E8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1EFF8A7624A33EE500BCDF7D /* RensyuStatic */,
 				1EFF8A7124A31B9E00BCDF7D /* DrillFunction2 */,
 				65025BA5249CA323009A20F0 /* DrillPractice */,
 				1E20C166249C7B0400405889 /* AboutDidSet */,
@@ -503,6 +508,15 @@
 				1EFF8A7324A31B9E00BCDF7D /* DrillFunction2.storyboard */,
 			);
 			path = DrillFunction2;
+			sourceTree = "<group>";
+		};
+		1EFF8A7624A33EE500BCDF7D /* RensyuStatic */ = {
+			isa = PBXGroup;
+			children = (
+				1EFF8A7724A33F0300BCDF7D /* RensyuStatic.storyboard */,
+				1EFF8A7924A33F1300BCDF7D /* RensyuStaticViewController.swift */,
+			);
+			path = RensyuStatic;
 			sourceTree = "<group>";
 		};
 		65025BA5249CA323009A20F0 /* DrillPractice */ = {
@@ -696,6 +710,7 @@
 				1E1B9594246430C500EF6C5C /* Renshu1.storyboard in Resources */,
 				1EB411AB245D49DE003A13EF /* AboutButton.storyboard in Resources */,
 				1E868D67245E5C2E001B183B /* AboutClass.storyboard in Resources */,
+				1EFF8A7824A33F0300BCDF7D /* RensyuStatic.storyboard in Resources */,
 				1ED60254246B8CFD00E85CAB /* AboutDictionary.storyboard in Resources */,
 				1EF9721B24889C5B00E47A13 /* Syokken.storyboard in Resources */,
 				1EFF8A7524A31B9E00BCDF7D /* DrillFunction2.storyboard in Resources */,
@@ -812,6 +827,7 @@
 				1ED60256246B8D0500E85CAB /* AboutDictionaryViewController.swift in Sources */,
 				1E20C16A249C7B1F00405889 /* AboutDidSetViewController.swift in Sources */,
 				1EC70732247BC5960035C68C /* RenshuAPIViewController.swift in Sources */,
+				1EFF8A7A24A33F1300BCDF7D /* RensyuStaticViewController.swift in Sources */,
 				1E1B9596246430D400EF6C5C /* Renshu1ViewController.swift in Sources */,
 				65CBA97B2477A8FB009684AC /* KumoViewController.swift in Sources */,
 				1EDFC0B02471685700D2E96B /* MagazinesViewController.swift in Sources */,
@@ -994,7 +1010,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B4Y472NUDL;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SampleSource2020/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1015,7 +1031,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B4Y472NUDL;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SampleSource2020/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

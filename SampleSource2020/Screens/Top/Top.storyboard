@@ -106,6 +106,7 @@
                         <segue destination="zri-Kb-4Zm" kind="show" identifier="AboutDidSet" id="eES-Ts-EJe"/>
                         <segue destination="1UW-gi-bYN" kind="show" identifier="DrillPractice" id="ncL-nL-rmz"/>
                         <segue destination="qNB-Bi-Nko" kind="show" identifier="DrillFunction2" id="KFP-oB-Hwr"/>
+                        <segue destination="nEa-Uu-snl" kind="show" identifier="RensyuStatic" id="Ziw-rr-l4s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uiy-kL-m7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -349,6 +350,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygn-h9-Umz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-180" y="690"/>
+        </scene>
+        <!--RensyuStatic-->
+        <scene sceneID="gYK-JW-j2z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RensyuStatic" id="nEa-Uu-snl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="go2-hi-Y2m"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FfP-Rg-juD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-168" y="738"/>
         </scene>
         <!--RenshuAPI2-->
         <scene sceneID="e7a-FJ-ahT">
