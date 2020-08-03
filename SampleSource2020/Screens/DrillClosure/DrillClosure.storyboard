@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V3D-FP-wSO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Drill Closure View Controller-->
+        <scene sceneID="po1-fZ-dbw">
+            <objects>
+                <viewController storyboardIdentifier="DrillClosureViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V3D-FP-wSO" customClass="DrillClosureViewController" customModule="SampleSource2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p6F-Ye-MTy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5X9-KU-Iwe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DrillClosureTableViewCell" rowHeight="114" id="ail-Ih-LJq" customClass="DrillClosureTableViewCell" customModule="SampleSource2020" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="114"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ail-Ih-LJq" id="lAu-ah-tIF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="114"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fs-Gx-tW8">
+                                                    <rect key="frame" x="20" y="20" width="100" height="74"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="gz1-X0-2Ru"/>
+                                                        <constraint firstAttribute="width" constant="100" id="zRY-aa-VCt"/>
+                                                    </constraints>
+                                                    <state key="normal" title="PrintButton"/>
+                                                    <connections>
+                                                        <action selector="tappedPrintButton:" destination="ail-Ih-LJq" eventType="touchUpInside" id="egc-jb-hWl"/>
+                                                    </connections>
+                                                </button>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UJ1-Wy-WbE">
+                                                    <rect key="frame" x="140" y="20" width="254" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="UJ1-Wy-WbE" secondAttribute="trailing" constant="20" id="2dZ-Ci-d0J"/>
+                                                <constraint firstItem="UJ1-Wy-WbE" firstAttribute="leading" secondItem="2Fs-Gx-tW8" secondAttribute="trailing" constant="20" id="AMO-OZ-Q2q"/>
+                                                <constraint firstItem="UJ1-Wy-WbE" firstAttribute="top" secondItem="lAu-ah-tIF" secondAttribute="top" constant="20" id="SDO-A6-NyL"/>
+                                                <constraint firstItem="2Fs-Gx-tW8" firstAttribute="leading" secondItem="lAu-ah-tIF" secondAttribute="leading" constant="20" id="W7G-6o-Auj"/>
+                                                <constraint firstAttribute="bottom" secondItem="2Fs-Gx-tW8" secondAttribute="bottom" constant="20" id="p2m-Ny-k4V"/>
+                                                <constraint firstItem="2Fs-Gx-tW8" firstAttribute="top" secondItem="lAu-ah-tIF" secondAttribute="top" constant="20" id="yDK-oe-moR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textField" destination="UJ1-Wy-WbE" id="eCa-4G-3qN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="V3D-FP-wSO" id="5eN-Ql-GYG"/>
+                                    <outlet property="delegate" destination="V3D-FP-wSO" id="KqR-JT-bRE"/>
+                                </connections>
+                            </tableView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nsd-hH-Q4m">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7Cw-Cb-w9g"/>
+                                    <constraint firstAttribute="height" constant="100" id="aef-yM-H2n"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9j5-8B-65G" firstAttribute="bottom" secondItem="5X9-KU-Iwe" secondAttribute="bottom" id="Etc-hc-qek"/>
+                            <constraint firstItem="Nsd-hH-Q4m" firstAttribute="centerX" secondItem="p6F-Ye-MTy" secondAttribute="centerX" id="NZ9-Pj-A6Q"/>
+                            <constraint firstItem="Nsd-hH-Q4m" firstAttribute="centerY" secondItem="p6F-Ye-MTy" secondAttribute="centerY" id="Qb2-fF-jh8"/>
+                            <constraint firstItem="5X9-KU-Iwe" firstAttribute="leading" secondItem="9j5-8B-65G" secondAttribute="leading" id="VoT-E5-bo9"/>
+                            <constraint firstItem="5X9-KU-Iwe" firstAttribute="top" secondItem="9j5-8B-65G" secondAttribute="top" id="e41-3D-7Zn"/>
+                            <constraint firstItem="9j5-8B-65G" firstAttribute="trailing" secondItem="5X9-KU-Iwe" secondAttribute="trailing" id="kxx-hZ-Ocf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9j5-8B-65G"/>
+                    </view>
+                    <connections>
+                        <outlet property="heightConstraint" destination="aef-yM-H2n" id="nVG-s8-95e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oMY-oQ-c8i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33.333333333333336" y="150"/>
+        </scene>
+    </scenes>
+</document>
