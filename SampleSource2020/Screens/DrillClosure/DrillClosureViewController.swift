@@ -60,6 +60,7 @@ class DrillClosureViewController: UIViewController {
         // 課題7. intの引数を取り、それを2倍するClosureを作る
         // これを実行して、返却値をprintする
 
+        // 課題8. 既に用意してあるTableViewとCellのClosureについて見てみる
     }
     
     override func viewDidAppear(_ animated: Bool) {
