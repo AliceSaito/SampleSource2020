@@ -42,14 +42,126 @@ class DrillPracticeViewController: UIViewController {
         print(www)
         
         // ドリル14
+        let wwi = strconnect(pa: "あ")
+        print(wwi)
         
         // ドリル15
+        let v = strint(pa: 3, ra:"う")
+        print(v)
         
         // ドリル16
+        let vd = oddeven(pa: 3)
+        print(vd)
         
         // ドリル17
+        oddplus()
         
         // ドリル18
+        getMyColor(colors: [MyColor.crazy])
+        
+        // ドリル19
+        onetohundred()
+        
+        // ドリル20
+        onetoHundredMultiple()
+        
+        // ドリル21
+        onetoHundredMultiple(para: 5, meter: 25)
+        
+        // ドリル22
+        judgement(result:true)
+        
+        // ドリル23
+        getAPIResponse(result:APIResponse.success)
+        
+        // ドリル24
+        hisoka(card:5)
+        
+        // ドリル25
+        getmisconduct(meter: 5)
+        
+        // ドリル26
+        let g = getCGSize(parameter: CGRect(x: 100, y: 150, width: 200, height: 200))
+        print(g)
+        
+        // ドリル27
+        let r = lowerRight(one: CGRect(x: 100, y: 150, width: 200, height: 200))
+        print(r)
+        
+        // ドリル28
+        let rr = longplus(parameter: ["shall","we","dance","?"])
+        print(rr)
+        
+        // ドリル29
+        let rrr = smallArray(pa:45, ra:666, me:78)
+        print(rrr)
+        
+        // ドリル30
+        let rrrr = onlyreturn()
+        print(rrrr)
+        
+        // ドリル31
+        let o = onlyreturn(num: 59)
+        print(o)
+        
+        // ドリル32
+        let od = repeatarray(num: 4, para: ["shall"])
+        print(od)
+        
+        // ドリル33
+        ichekarasen()
+        
+        // ドリル34
+        printdisplayTitle(color:[.happy, .funny, .sad, .crazy])
+        
+        // ドリル35
+        recursiveProcessing(n:5)
+        
+        // ドリル36
+        let og = lessthanfive(parameters: ["shalll","weee","dance","?"])
+        print(og)
+        
+        // ドリル37
+        let ogg =  removemorethanfive(parameters:["shalll","weee","dance","?"])
+        print(ogg)
+        
+        // ドリル38
+        kantan1(pa:4)
+        
+        // ドリル39
+        //nilの入れ方は下記の２通り
+        let px: Int? = nil
+        let x =  nilcheckint(parameter: px)
+        print(x)
+        
+        // ドリル40
+        let z =  nilcheckstr(parameter: nil)
+        print(z)
+        
+        // ドリル41
+        foody(pizza: 6, coffee: 1, cake: 5)
+        
+        // ドリル43
+        let sa = makeDictionary(key: 4, value: "shall")
+        print(sa)
+        
+        // ドリル45
+        let si = makeDictionary2(key: "shall", value: [2.1, 2.2, 2.3, 2.4, 2.5])
+        print(si)
+        
+        // ドリル46
+        let pu = foody(red: 200, green: 180, blue: 249)
+        print(pu)
+        
+        // ドリル48
+        let ddoo = createcolor(all: UIColor(red: 1, green: 1, blue: 0.5, alpha: 1))
+        print(ddoo)
+        
+      
+        
+        
+        
+        
     }
     
    
@@ -143,39 +255,61 @@ class DrillPracticeViewController: UIViewController {
     // parameter: String
     // return: [String]
     
-   
+    func strconnect(pa: String) -> [String] {
+        return [pa, pa, pa]
+    }
     
     // ドリル15★★
     // 文字列strと整数numを与えると、そのstrをnum個の配列にして返す関数を作成する
     // parameter: String
     // return: [String]
     
-    
+    func strint(pa: Int, ra: String) -> [String] {
+        var result:[String] = []
+        for _ in 1...pa {
+            result.append(ra)
+        }
+        return result
+    }
     
     // ドリル16
     // 整数を与えると、偶数ならtrue、奇数ならfalseを返す関数を作成する
     // parameter: Int
     // return: Bool
+    func oddeven(pa: Int) -> Bool {
+        return pa % 2 == 0
+    }
     
-    
-    
-    // もっとシンプルに描くなら↓
-    
-
     // ドリル17★★
     // 1〜100の整数の中で、偶数だけをすべて足した値をprintする関数を作成する
     // parameter: なし
     // return: なし
-    
-    
+    func oddplus(){
+        var result = 0
+        for i in 1...100 {
+            if i % 2 == 0 {
+                result += i
+            }
+        }
+        print(result)
+    }
     
     // ドリル18★★
     // MyColorの配列を渡すと、全てprintする関数を作成する
     // colors: [MyColor]
     
+    enum MyColor {
+        case happy
+        case funny
+        case sad
+        case crazy
+    }
     
-    
-    // 2020/06/07追記
+    func getMyColor(colors: [MyColor]){
+        for c in colors {
+            print(c)
+        }
+    }
     
     // ドリル19★★
     // この問題は関数を2つ作ります
@@ -186,7 +320,17 @@ class DrillPracticeViewController: UIViewController {
     //    parameter: なし
     //    return: なし
     
+    func treemultiple(pa:Int) -> Bool {
+        return pa % 3 == 0
+    }
     
+    func onetohundred(){
+        for i in 1...100 {
+            if treemultiple(pa:i){
+                print(i)
+            }
+        }
+    }
     
     // ドリル20★★
     // この問題は関数を2つ作ります
@@ -197,9 +341,15 @@ class DrillPracticeViewController: UIViewController {
     //    parameter: なし
     //    return: なし
     
-    
-    
-    
+    func onetoHundredMultiple(){
+        var result = 0
+        for i in 1...100 {
+            if treemultiple(pa:i){
+                result += i
+            }
+        }
+        print(result)
+    }
     
     // ドリル21★★
     // ドリル20.2で作った関数を改造する
@@ -207,8 +357,15 @@ class DrillPracticeViewController: UIViewController {
     // parameter: Int
     // return: なし
     
-    
-   
+    func onetoHundredMultiple(para: Int, meter: Int){
+        var result = 0
+        for i in para...meter {
+            if treemultiple(pa:i){
+                result += i
+            }
+        }
+        print(result)
+    }
     
     // ドリル22★★
     // この問題は関数を3つ作ります
@@ -217,34 +374,64 @@ class DrillPracticeViewController: UIViewController {
     // 3.入力がresult:Boolで、resultがtrueのときには関数1を呼び出し、resultがfalseのときには関数2を呼び出す関数を作る
     // ちなみに、こういうのはAPIレスポンスの部分でよくやる
     
-   
+    func success() {
+        print("成功しました")
+    }
     
+    func failure() {
+        print("失敗しました")
+    }
     
-    // ドリル23★★
+    func judgement(result:Bool) {
+        if result {
+            success()
+        } else {
+            failure()
+        }
+    }
+    
+    // ドリル23★★★
     // APIResponseを与えて、successの場合は「成功しました」と表示し、failureの場合は「失敗しました」と表示する関数を作る
     // ヒント:switchを使う
     
+    enum APIResponse {
+        case success
+        case failure
+    }
     
+    func getAPIResponse(result:APIResponse) {
+        switch result {
+        case .success:
+            print("成功しました")
+        case .failure:
+            print("失敗しました")
+        }
+    }
     
-    
-    // ドリル24★★
+    // ドリル24★
     // 以下を関数にして確認する
     // ヒソカ「この中から1つ好きな数を選んで、頭に思い浮かべて
-    //       思い浮かべたら、その数に4を足して、更に倍にする
+    //       思い浮かべたら、その数に4を足して、倍にする
     //       そこから6を引き、2で割った後　最初に思った数を引くと、いくらになるかな？
     //       答えは・・・1だろ？」
     // parameter: Int
     // return: なし
     
-   
-    
+    func hisoka(card:Int){
+        var a = card + 4
+        var b = a * 2
+        var c = b - 6
+        var d = c / 2
+        var e = d - card
+        print(e)
+    }
     
     // ドリル25★★
     // この問題は関数を2つ作ります
     // 1. 整数の入力に対して
     //    マイナスなら「不正な入力です」とprintしてfalseを返す
     //    18未満なら「18歳未満は本サービスを利用できません」とprintしてfalseを返す
-    //    80以上なら「いたずらの可能性あり」とprintしてtrueを返す
+    //    80以上なら「いたずらの可能性あり」とprintしてfalseを返す
     //    それ以外ならtrueを返す関数を作る
     // parameter: Int
     // return: Bool
@@ -253,7 +440,28 @@ class DrillPracticeViewController: UIViewController {
     // parameter: Int
     // return: なし
     
+    func misconduct(para: Int) -> Bool{
+        if para < 0 {
+            print("不正な入力です")
+            return false
+        } else if para < 18 {
+            print("18歳未満は本サービスを利用できません")
+            return false
+        } else if para >= 80 {
+            print("いたずらの可能性あり")
+            return false
+        } else {
+            return true
+        }
+    }
     
+    func getmisconduct(meter: Int) {
+        if misconduct(para: meter){
+            print("次の画面に進む")
+        } else {
+            print("エラーダイアログを出す")
+        }
+    }
     
 //※returnの後にprintは書けない
 //    func hoge() {
@@ -263,13 +471,15 @@ class DrillPracticeViewController: UIViewController {
     
 
     
-    // ドリル26★★★
+    // ドリル26★
     // CGRectを与えると、その中のサイズだけを返す関数を作る
     // parameter: CGRect
     // return: CGSize
-    // ヒント: CGRectはCGPointのoriginと、CGSizeのsizeから構成されるstructである
+    // ヒント: CGRectはsizeから構成されるstructである
     
-   
+    func getCGSize(parameter: CGRect) -> CGSize {
+        return parameter.size
+    }
     
     // ドリル27★★★
     // CGRectを与えると、右下の位置を返す関数を作る
@@ -277,8 +487,9 @@ class DrillPracticeViewController: UIViewController {
     // return: CGPoint
     // ヒント: CGRectのoriginは左上、iPhoneにおいてx軸とy軸は右方向、下方向に伸びている
     
-    
-    
+    func lowerRight(one: CGRect) -> CGPoint {
+        return CGPoint(x: one.origin.x + one.size.width, y: one.origin.y + one.size.height)
+    }
     
 //    ※CGSizeもstructである。
 //    struct CGSize {
@@ -292,13 +503,15 @@ class DrillPracticeViewController: UIViewController {
     // parameter: [String]
     // return: Int
     
-   
+    func longplus(parameter: [String])-> Int {
+        var long: Int = 0
+        parameter.forEach { $0
+            long += $0.count
+        }
+        return long
+    }
+
     
-
-//配列の要素数は、array.count
-//文字列の長さは、str.count
-
-
 //forEachの使い方
 //その１
 //[配列].forEach { (s) in
@@ -318,28 +531,69 @@ class DrillPracticeViewController: UIViewController {
     // ドリル29★★
     // Int型の値を3つ与えると、小さい順に配列にして返す関数を作る
     // parameter: Int 3つ
-    // return: なし
+    // return: [Int]
     // ヒント: if文で作ってみよう
     
-    
-    
+    func smallArray(pa:Int, ra:Int, me:Int)-> [Int] {
+        var result :[Int] = []
+        
+        if pa < ra && pa < me {
+            result.append(pa)
+            if ra < me {
+                result.append(ra)
+                result.append(me)
+            }
+            else {
+                result.append(me)
+                result.append(ra)
+            }
+        } else if ra < pa && ra < me {
+            result.append(ra)
+            if pa < me {
+                result.append(pa)
+                result.append(me)
+            }
+            else {
+                result.append(me)
+                result.append(pa)
+            }
+        } else if me < pa && me < ra {
+            result.append(me)
+            if pa < ra {
+                result.append(pa)
+                result.append(ra)
+            }
+            else {
+                result.append(ra)
+                result.append(pa)
+            }
+        }
+        return result
+    }
     
     // ドリル30★
     // ["result" : ["1", "2", "3"]] を返すだけの関数を作る
     // 入力: なし
     // 出力:[String: [String]]
     
+    func onlyreturn()-> [String: [String]] {
+        return ["result" : ["1", "2", "3"]]
+    }
     
-    
-    // ドリル31★
+    // ドリル31
     // 整数numを与えると、1〜numの整数を入れた整数型の配列を返す
     // parameter: num
     // return: 整数型の配列
     
-    
+    func onlyreturn(num: Int)->  [Int] {
+        var result :[Int] = []
+        for i in 1...num {
+            result.append(i)
+        }
+        return result
+    }
        
-    
-    // ドリル32★
+    // ドリル32★★
     // 文字列の配列と、整数を与えると、文字列の配列を整数回分繰り返した配列を返す関数を作る
     // parameter: [String] と Int
     // return: [String]
@@ -352,15 +606,32 @@ class DrillPracticeViewController: UIViewController {
 //    array = array + otherArray
     
     
+    func repeatarray(num: Int, para: [String])->  [String] {
+           var result :[String] = []
+           for i in 1...num {
+               result = result + para
+           }
+           return result
+       }
+         
+    
     // ドリル33★
     // 1〜1000の整数の中で、奇数だけをすべて足した値をprintする関数を作成する
     // parameter: なし
     // return: なし
     // 答え: 250000
     
+    func ichekarasen() {
+        var result = 0
+        for i in 1...1000 {
+            if !(i % 2 == 0) {
+                result += i
+            }
+        }
+        print(result)
+    }
     
-    
-    // ドリル34★★
+    // ドリル34★★★
     // TeamColor（以下に定義）の配列を渡すと、全てのdisplayTitleをprintする関数を作成する
     
     enum TeamColor {
@@ -369,12 +640,25 @@ class DrillPracticeViewController: UIViewController {
         case sad
         case crazy
         
-        
+        func displayTitle() -> String {
+            switch self {
+            case .happy:
+                return "ハッピー"
+            case .funny:
+                return "ファニー"
+            case .sad:
+                return "サッド"
+            case .crazy:
+                return "クレイジー"
+            }
+        }
     }
     
-   
-    
-    
+    func printdisplayTitle(color:[TeamColor]){
+        color.forEach {
+            print ($0.displayTitle())
+        }
+    }
     
     // ドリル35★★
     //再帰処理：funcはforを使わなくても自分を呼び出すことでループできる
@@ -382,7 +666,15 @@ class DrillPracticeViewController: UIViewController {
     // ただし、nが11以上だと自分自身を呼び出さず、"\(n)なので終了!!"とprintする
     // また、自分自身を呼び出すときはn+1を渡す
     
-    
+    func recursiveProcessing(n:Int){
+        if n < 11 {
+            print("今は\(n)!!")
+            recursiveProcessing(n: n+1)
+        } else{
+            print("\(n)なので終了!!")
+            //callMyself(n: n+1)を呼び出してないから、ここでループは終了。
+        }
+    }
     
     // ドリル36★★
     // 文字列の配列を与えると、5文字以下の文字列だけをフィルターして返す関数を作る
@@ -390,16 +682,32 @@ class DrillPracticeViewController: UIViewController {
     // return: [String]
     // 備考: filterは使わないでfor文を使ってみて
     
-   
+    func lessthanfive(parameters: [String]) -> [String]{
+        var result :[String] = []
+        for i in parameters {
+            if i.count <= 5 {
+                result.append(i)
+            }
+        }
+        return result
+    }
     
-    // ドリル37★
+    // ドリル37
     // 文字列の配列を与えると、5文字以上の文字列を除外して返す関数を作る
     // parameters: [String]
     // return: [String]
     // 備考: filterは使わないでfor文を使ってみて
     
-   
-    
+    func removemorethanfive(parameters: [String]) -> [String]{
+        var result :[String] = []
+        for i in parameters {
+            if i.count < 5 {
+                result.append(i)
+            }
+        }
+        return result
+    }
+      
     // ドリル38★★
     // 簡単な関数を4つ作ります
     // 1. 関数1は、関数2に整数を渡して、返り値をprintする
@@ -408,7 +716,24 @@ class DrillPracticeViewController: UIViewController {
     // 4. 関数4は、与えられた整数をそのまま返す
     // メモ: 関数1で与えた整数がそのままprintされるだけになる
     
+    func kantan1(pa:Int){
+        print(kantan2(ra:pa))
+        //　↑  丁寧に書くと　↓
+        //        let k2 = kantan2(ra: pa)
+        //        print(k2)
+    }
     
+    func kantan2(ra:Int) -> Int {
+        return kantan3(me:ra)
+    }
+    
+    func kantan3(me:Int) -> Int {
+        return kantan4(ter:me)
+    }
+    
+    func kantan4(ter:Int) -> Int {
+        return ter
+    }
     
     // ドリル39★★★
     // OptionalのInt型を与えたとき、それがnilなら0を返し、nilでなければInt型にして返す関数を作る
@@ -417,17 +742,21 @@ class DrillPracticeViewController: UIViewController {
     // メモ: if letを使う(オプショナルバインディング)
     //elseじゃなくても、returnを重ねれば処理を分岐できる。
     
+    func nilcheckint(parameter: Int?) -> Int {
+        if let nonil = parameter {
+            return nonil
+        }
+        return 0
+    }
     
-    
-    
-    // ドリル40★★
+    // ドリル40★★(1行で書く)
     // OptionalのString型を与えたとき、それがnilなら空文字を返し、nilでなければString型にして返す関数を作る
     // parameters: String?
     // return: String
-    // メモ: 1行で書いてみる
     
-   
-    
+    func nilcheckstr(parameter: String?) -> String {
+        return parameter ?? ""
+    }
     
     // ドリル41★★
     // 整数型でpizza, coffee, cakeを与えると、与えた回数分それぞれ🍕、☕、🍰をprintする関数を作る
@@ -437,29 +766,41 @@ class DrillPracticeViewController: UIViewController {
     // ヒント: 改行しないprintは、print("なにか", terminator: "") と書く
     //1より小さい数を省くために、if pizza >= 1 を最初に書く
     
-    
-    
-    // ドリル42
-    // ドリル41のpizza, coffee, cakeのパラメータを、cake, coffee, pizzaの順にしても
-    // 関数の中身は変わらないことを確認する
-    
-   
+    func foody(pizza: Int, coffee: Int, cake: Int) {
+        if pizza >= 1 {
+            for p in 1...pizza {
+                print("🍕", terminator: "")
+                if p == 5 {
+                    break
+                }
+            }
+        }
+        if coffee >= 1 {
+            for f in 1...coffee {
+                print("☕", terminator: "")
+                if f == 5 {
+                    break
+                }
+            }
+        }
+        if cake >= 1 {
+            for c in 1...cake {
+                print("🍰", terminator: "")
+                if c == 5 {
+                    break
+                }
+            }
+        }
+    }
     
     // ドリル43★★
     // key: Int, value: String を与えると、Dictionaryにして返す関数を作る
     // parameters: key: Int, value: String
     // return: 秘密
     
-    
-    
-    // ドリル44
-    // key: String, value: Int を与えると、Dictionaryにして返す関数を作る
-    // parameters: key: String, value: Int
-    // return: 秘密
-    // ヒント: 関数名は42と同名でも大丈夫(パラメーターが違うと、同じ名前でも別々の関数として認識されるから)
-    
-    
-    
+    func makeDictionary(key: Int, value: String) -> [Int:String]{
+        return [key:value]
+    }
     
     // ドリル45★
     // key: String, value: [Double] を与えると、Dictionaryにして返す関数を作る
@@ -467,8 +808,9 @@ class DrillPracticeViewController: UIViewController {
     // return: 秘密
     // ヒント: 関数名は42と同名でも大丈夫
     
-    
-    
+    func makeDictionary2(key: String, value: [Double]) -> [String:[Double]]{
+        return [key:value]
+    }
     
     // ドリル46★★
     // red: Int, green: Int, blue: Int を与えたとき、UIColorを返す関数を作る
@@ -477,29 +819,23 @@ class DrillPracticeViewController: UIViewController {
     // ヒント: UIColor(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
     // ここで各値は0〜1.0で表現されている。255/255は１だから。
     
-   
-    
-    
-    // ドリル47
-    // red: Int, green: Int, blue: Int を与えたとき、redとblueを差し替えたUIColorを返す関数を作る
-    // メモ: viewDidLoadで、view.backgroundColorに指定すると確認しやすい
-    
-   
+    func foody(red: Int, green: Int, blue: Int) -> UIColor{
+        return UIColor(red: CGFloat(red)/255.0, green: CGFloat(green)/255.0, blue: CGFloat(blue)/255.0, alpha: 1)
+    }
     
     // ドリル48★★★
     // UIColorを与えると、redとblueを差し替えたUIColorを返す
     // なお、UIColorから(red, green, blue)の値（0〜1）を抽出するには以下の関数を用いる
     //豆知識：カラーとアルファ値を取り出す cgColor.components
     
-   
-
+    func getcolor(color: UIColor) -> (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+        let components = color.cgColor.components!
+        return (red: components[0], green: components[1], blue: components[2], alpha: components[3])
+    }
     
-    // ドリル49
-    // 整数2つを入力して、足したものをprintする関数を作成する
-    // ここで、パラメーターの前に_を付けて作成してみてください
-    // func hoge(_ a: Int,_ b: Int)
-    // 呼び出す際にa,bの記載が不要になります（コード補完を見てみて）
-    
-   
+    func createcolor(all: UIColor) -> UIColor {
+        let result = getcolor(color: all)
+        return UIColor(red: result.blue, green: result.green, blue: result.red, alpha: 1)
+    }
 
 }

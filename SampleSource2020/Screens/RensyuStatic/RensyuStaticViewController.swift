@@ -6,9 +6,27 @@
 //
 
 import UIKit
+/// プロトコル
+//UITableViewDelegate, UITableViewDataSourceはプロトコルの一種
+protocol HaveShowBackColorProtocol {
+    func showBackColor()
+}
+
+class HogeHogeHogeHoge {
+    func hoge() {
+        var rensyuStaticVC: RensyuStaticViewController!
+        rensyuStaticVC.showBackColor()
+        
+    }
+}
 
 /// Staticの練習をする
-class RensyuStaticViewController: UIViewController {
+class RensyuStaticViewController: UIViewController, HaveShowBackColorProtocol {
+    
+    func showBackColor() {
+        print(view.backgroundColor!)
+    }
+    
 
     // staticをつけると、クラス関数やクラス変数となる
     
@@ -26,6 +44,25 @@ class RensyuStaticViewController: UIViewController {
     }
     
     
+    class Kisetsu {
+        static var summer: String = "夏"
+        var winter: String = "冬"
+        
+        static func spring() {
+            print("春")
+//  ×       print(winter)
+//staticからstaticは呼び出せる
+            print(summer)
+            
+        }
+        func autumn() {
+            print("秋")
+            print(winter)
+//  ×       print(summer)
+        }
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +73,7 @@ class RensyuStaticViewController: UIViewController {
         print(hoge.b)       // -> 20
         
         let fuga = Hoge()
-        fuga.b = 30
+        fuga.b = 30         // -> 20だったbに、30を代入した
         print(fuga.b)       // -> 30
         print(hoge.b)       // -> 20のまま　hoge.b と fuga.b は別物
 
@@ -50,22 +87,21 @@ class RensyuStaticViewController: UIViewController {
         
         // 関数も同様
         hoge.ddd()          // -> ddd
-//        hoge.ccc()        // これは呼べない
+//        hoge.ccc()        // staticあり。これは呼べない
         Hoge.ccc()          // -> ccc  これは呼べる
-//        Hoge.ddd()        // これは呼べない
+//        Hoge.ddd()        // staticなし。これは呼べない
         
         
-        // structでもできる
-        // enumでもできる
+        // staticの中にstructやenumも使える
         
     
         // extensionで
-        // var aaa: Int = 0         // できない🙅‍♂️ Extensions must not contain stored properties
-        // static var aaa: Int = 0  // できる🙆‍♂️
+        // var aaa: Int = 0         // 宣言はできない🙅‍♂️ Extensions must not contain stored properties
+        // static var aaa: Int = 0  // staticがあれば宣言できる🙆‍♂️
         
         
         // どういう時に使うの？
-        // staticをつける、つけないで大違い！
+        // staticをつける、つけないでは別物
         // staticをつけるのは、定数のようなもの
         // たとえば、Int.max, Int.min というstatic変数がある
         // これは、Int型の最大の数と、最小の数を定義してある
@@ -80,7 +116,8 @@ class RensyuStaticViewController: UIViewController {
         //            var gender: Gender = .male
         //
         //            static func size() -> Int {
-        //                // staticが付いてるから、ここからisChildやgenderは見えない、別の世界
+        //                // staticを付けると、class Animalの直下につく。isChildやgenderは使えない。
+        //                //Animal.sizeというfanction。
         //            }
         //        }
 
@@ -92,18 +129,28 @@ class RensyuStaticViewController: UIViewController {
         //   メンバ関数から、staticメンバ変数にアクセスできないことを確認する
         //   メンバ関数から、メンバ変数にアクセスできることを確認する
         
+        
+        let kisetsu = Kisetsu()
+        kisetsu.autumn()
+// ×    kisetsu.spring()
+        
+        print(kisetsu.winter)
+// ×    print(kisetsu.summer)
+        
     }
     
     
-    // おまけ
-    // こういうのは、クラス変数やクラスプロパティと呼ばれる
-    // 実は、似たものに「class」がある
+    // static func と class func
+    // static func：ステイティック変数やステイティックプロパティと呼ばれる
+    //class func：クラス変数やクラスプロパティと呼ばれる
+    //static funcはoverrdeできないけど、class funcはできる。
     
     // 例 両者は似ている, a()からb()にアクセスできるし、逆もできる
     class Hoge2 {
         static func a() -> Int {
             return 0
         }
+        //あまり使わない↓
         class func b() -> Int {
             return 0
         }
